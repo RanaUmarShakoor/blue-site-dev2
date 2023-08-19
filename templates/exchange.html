@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon & Title -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon.png') }}" />
+    <title>educloud</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+</head>
+
+<body>
+    <div class="main-wrpper">
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="/">
+                        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" class="normallg" />
+                        <img src="{{ url_for('static', filename='images/logo2.svg') }}" alt="Logo" class="bluelg" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#NavbarToggle" aria-controls="NavbarToggle" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="NavbarToggle">
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li><a class="nav-link" href="/index">Home</a></li>
+                            <li><a class="nav-link" href="/about">About</a></li>
+                            <li><a class="nav-link" href="/courses">Courses</a></li>
+                            <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li><a class="nav-link" href="/jobs">Jobs</a></li>
+                            <li><a class="nav-link" href="/blog">Blog</a></li>
+                        </ul>
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li class="loginbtn">
+                                <a class="nav-link" href="login">Login</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav d-lg-none">
+                            <li><a class="nav-link" href="/">Home</a></li>
+                            <li><a class="nav-link" href="/about">About</a></li>
+                            <li><a class="nav-link" href="/courses">Courses</a></li>
+                            <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li><a class="nav-link" href="/jobs">Jobs</a></li>
+                            <li><a class="nav-link" href="/blog">Blog</a></li>
+                            <li class="loginbtn">
+                                <a class="nav-link" href="/login">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Banner -->
+        <section class="banner-wrapper courses-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
+                        <div class="banner-data">
+                            <h1>Join the student <br>exchange program</h1>
+
+                            <h5>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat .</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <div class="banner-img">
+                            <img src="{{ url_for('static', filename='images/course-banner-img@2x.png' ) }}" alt=""
+                                class="main-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Banner -->
+
+        <!-- Exchange -->
+        <section class="exchange-wrp">
+            <div class="container">
+                <h2>Exchange</h2>
+                <div class="swiper exchange-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="exchange-box">
+                                <div class="exchange-flag">
+                                    <img src="{{ url_for('static', filename='images/flag1.svg') }}" alt="">
+                                </div>
+                                <h3>Surinamese</h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="exchange-box">
+                                <div class="exchange-flag">
+                                    <img src="{{ url_for('static', filename='images/flag2.svg') }}" alt="">
+                                </div>
+                                <h3>Dutch</h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="exchange-box">
+                                <div class="exchange-flag">
+                                    <img src="{{ url_for('static', filename='images/flag3.svg') }}" alt="">
+                                </div>
+                                <h3>Curacao</h3>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Exchange -->
+
+        <!-- Programs -->
+        <section class="program-wrp">
+            <div class="container">
+                <h2>Program</h2>
+
+                <h6>During the online classroom lessons, a teacher gives a summary of a lesson. Progress is discussed
+                    per participant. And problems encountered by participants are discussed. We discuss assignments and
+                    issues with a group. During the lessons there is also room to guide participants individually.
+                    During the online classroom lessons, a teacher gives a summary of a lesson. Progress is discussed
+                    per participant. And problems encountered by participants are discussed.</h6>
+
+                <div class="swiper program-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="program-box">
+                                <div class="program-img">
+                                    <img src="{{ url_for('static', filename='images/program-img1.png') }}" alt="">
+                                </div>
+                                <h3>Living</h3>
+                                <p>IT solutions are continue improving. Now a days emerging technologies such as cloud
+                                    computing, microservices and machine </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="program-box">
+                                <div class="program-img">
+                                    <img src="{{ url_for('static', filename='images/program-img2.png') }}" alt="">
+                                </div>
+                                <h3>Study</h3>
+                                <p>IT solutions are continue improving. Now a days emerging technologies such as cloud
+                                    computing, microservices and machine </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="program-box">
+                                <div class="program-img">
+                                    <img src="{{ url_for('static', filename='images/program-img3.png') }}" alt="">
+                                </div>
+                                <h3>Culture</h3>
+                                <p>IT solutions are continue improving. Now a days emerging technologies such as cloud
+                                    computing, microservices and machine </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="program-box">
+                                <div class="program-img">
+                                    <img src="{{ url_for('static', filename='images/program-img4.png') }}" alt="">
+                                </div>
+                                <h3>Social</h3>
+                                <p>IT solutions are continue improving. Now a days emerging technologies such as cloud
+                                    computing, microservices and machine </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Programs -->
+
+        <!-- Benifits -->
+        <section class="benifit-wrp">
+            <div class="container">
+                <h2>Benefits of an exchange year</h2>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="exchange-box">
+                            <div class="exchange-flag">
+                                <img src="{{ url_for('static', filename='images/benifit-ic1.svg') }}" alt="">
+                            </div>
+                            <h3>Personal growth</h3>
+                            <p>IT solutions are continue improving. Now a days emerging technologies such as cloud
+                                computing, microservices and machine </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="exchange-box">
+                            <div class="exchange-flag">
+                                <img src="{{ url_for('static', filename='images/benifit-ic2.svg') }}" alt="">
+                            </div>
+                            <h3>Part of culture</h3>
+                            <p>IT solutions are continue improving. Now a days emerging technologies such as cloud
+                                computing, microservices and machine </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="exchange-box">
+                            <div class="exchange-flag">
+                                <img src="{{ url_for('static', filename='images/benifit-ic3.svg') }}" alt="">
+                            </div>
+                            <h3>Expand your network</h3>
+                            <p>IT solutions are continue improving. Now a days emerging technologies such as cloud
+                                computing, microservices and machine </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Benifits -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-cnt">
+                            <img src="{{ url_for('static', filename='images/footer-logo.svg') }}" alt="">
+
+                            <p>Educloud wordt beheerd vanuit Rotterdam.
+                            </p>
+
+                            <div class="f-cntbx">
+                                <h6>Phone</h6>
+                                <a href="tel:85558155656">
+                                    <h3>+31 558 155 656</h3>
+                                </a>
+                            </div>
+
+                            <div class="f-cntbx">
+                                <h6>Email address</h6>
+                                <a href="mailto:Contact@educlode.com">
+                                    <h3>info@educlouduniversity.com</h3>
+                                </a>
+                            </div>
+
+                            <div class="quicklinks">
+                                <ul>
+                                    <li><a href="/online-training">Online training</a></li>
+                                    <li><a href="/platform">Platform</a></li>
+                                    <li><a href="/certification">Certification</a></li>
+                                    <li><a href="/team">Teams</a></li>
+                                    <li><a href="/solutions">Build solutions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-contact">
+                            <h3>Neem contact op</h3>
+                            <p>Benieuwd wat Educloud voor jou kan betekenen?
+                                Vul voor vragen of verzoeken onderstaand formulier in.
+                            </p>
+
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" name="" placeholder="Full Name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" name="" placeholder="Email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Messages" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-main">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-footer">
+                    <div class="social-bx">
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social1.svg') }}"
+                                alt=""></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social2.svg') }}"
+                                alt=""></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social3.svg') }}"
+                                alt=""></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social4.svg') }}"
+                                alt=""></a>
+
+                    </div>
+                    <div class="tersm">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <p>All Rights Reserved © educloud 2023 </p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="social-bx">
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social1.svg') }}" alt=""></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social2.svg') }}" alt=""></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social3.svg') }}" alt=""></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social4.svg') }}" alt=""></a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="tersm">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+        
+        <!-- Go To Top -->
+        <button id="myBtn" title="Go to top"><i class="fal fa-angle-up" aria-hidden="true"></i></button>
+    </div>
+
+    <!-- script -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <!-- End script -->
+</body>
+
+</html>

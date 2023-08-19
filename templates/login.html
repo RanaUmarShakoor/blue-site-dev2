@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon & Title -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon.png') }}" />
+    <title>educloud</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+</head>
+
+<body>
+    <div class="main-wrpper">
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="/"><img src="{{ url_for('static', filename='images/logo.svg') }}"
+                            alt="Logo"></a>
+
+                    <div class="lang-bx">
+                        <select class="form-control">
+                            <option>English</option>
+                            <option>Spenish</option>
+                        </select>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <section class="login-wrapper">
+
+            <div class="login-row">
+                <div class="login-block">
+                    <h1>Sign In</h1>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed diam nonumy eirmod</p>
+
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Email Address" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="" placeholder="Password" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-main">SIGN IN</button>
+
+                    <h6 class="already">Don't have any Account? <a href="/register">SIGN UP</a></h6>
+                </div>
+            </div>
+
+            <img src="{{ url_for('static', filename='images/loginshp1.png') }}" alt="" class="loginshp">
+            <img src="{{ url_for('static', filename='images/loginshp2.png') }}" alt="" class="loginshp2">
+        </section>
+
+        <!-- Go To Top -->
+        <button id="myBtn" title="Go to top"><i class="fal fa-angle-up" aria-hidden="true"></i></button>
+    </div>
+
+    <!-- script -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <!-- End script -->
+</body>
+
+</html>

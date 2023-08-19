@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon & Title -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon.png') }}" />
+    <title>educloud</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+</head>
+
+<body>
+    <div class="main-wrpper">
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="/">
+                        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" class="normallg" />
+                        <img src="{{ url_for('static', filename='images/logo2.svg') }}" alt="Logo" class="bluelg" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#NavbarToggle" aria-controls="NavbarToggle" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="NavbarToggle">
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li><a class="nav-link" href="/index">Home</a></li>
+                            <li><a class="nav-link" href="/about">About</a></li>
+                            <li><a class="nav-link" href="/courses">Courses</a></li>
+                            <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li><a class="nav-link" href="/jobs">Jobs</a></li>
+                            <li><a class="nav-link" href="/blog">Blog</a></li>
+                        </ul>
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li class="loginbtn">
+                                <a class="nav-link" href="login">Login</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav d-lg-none">
+                            <li><a class="nav-link" href="/">Home</a></li>
+                            <li><a class="nav-link" href="/about">About</a></li>
+                            <li><a class="nav-link" href="/courses">Courses</a></li>
+                            <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li><a class="nav-link" href="/jobs">Jobs</a></li>
+                            <li><a class="nav-link" href="/blog">Blog</a></li>
+                            <li class="loginbtn">
+                                <a class="nav-link" href="/login">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Banner -->
+        <section class="banner-wrapper solutions-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
+                        <div class="banner-data">
+                            <h1>Oplossing bouwen op wereldschaal</h1>
+
+                            <h5>Educloud leert cursisten oplossingen bouwen van A tot Z.
+                                Met toegang tot datacenters wereldwijd kunnen zij deze bouwen en beheren vanuit het
+                                Educloud platform.</h5>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <div class="banner-img">
+                            <img src="{{ url_for('static', filename='images/soluction-banner-img@2x.png') }}" alt=""
+                                class="main-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Banner -->
+
+        <!-- Build Global Solutions -->
+        <section class="build-solution-wrp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="build-img">
+                            <img src="{{ url_for('static', filename='images/build@2x.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="build-data">
+                            <h3><span>Wereldwijde</span> oplossingen</h3>
+                            <p>Bouw vanachter je eigen computer oplossingen in datacenters in Japan, Brazilië of
+                                bijvoorbeeld de Verenigde Staten! Via het Educloud platform krijg je direct toegang tot
+                                ‘s werelds grootste cloud-providers.
+                                Leer hoe je complexe oplossingen bouwt die direct bruikbaar zijn.
+                                In jouw gepersonaliseerde dashboard monitor je in één oogopslag al jouw oplossingen!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Build Global Solutions -->
+
+        <!-- Biggest Cloud Providers -->
+        <section class="biggest-provider-wrp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="biggest-data">
+                            <h3>‘s Werelds Grootste <span>Cloud-providers</span></h3>
+                            <p>Cloud computing is dé technologie van de toekomst.
+                                Educloud leert je daarom oplossingen op wereldschaal te bouwen met gebruik van de drie
+                                grootste cloud-providers: Microsoft Azure, Amazon Web Services en Google Cloud Platform.
+                                In de projecten leer je stap voor stap hoe je hiermee aan de slag kan om échte
+                                oplossingen te bouwen.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="biggest-img">
+                            <img src="{{ url_for('static', filename='images/biggest-img@2x.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Biggest Cloud Providers -->
+
+        <section class="platform-agenda-wrp">
+            <div class="container">
+                <h2>Management omgeving</h2>
+                <p>De zelfgebouwde oplossingen blijven van jou: jij bent de bouwer en beheerder.
+                    In de gepersonaliseerde management omgeving kan je in één oogopslag al je oplossingen monitoren.
+                    Wil je iets bouwen of een analyse maken van je resources? Het kan allemaal.
+                </p>
+
+                <div class="plat-agenda-img">
+                    <img src="{{ url_for('static', filename='images/management-img@2x.png') }}" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-cnt">
+                            <img src="{{ url_for('static', filename='images/footer-logo.svg') }}" alt="">
+
+                            <p>Educloud wordt beheerd vanuit Rotterdam.
+                            </p>
+
+                            <div class="f-cntbx">
+                                <h6>Phone</h6>
+                                <a href="tel:85558155656">
+                                    <h3>+31 558 155 656</h3>
+                                </a>
+                            </div>
+
+                            <div class="f-cntbx">
+                                <h6>Email address</h6>
+                                <a href="mailto:Contact@educlode.com">
+                                    <h3>info@educlouduniversity.com</h3>
+                                </a>
+                            </div>
+
+                            <div class="quicklinks">
+                                <ul>
+                                    <li><a href="/online-training">Online training</a></li>
+                                    <li><a href="/platform">Platform</a></li>
+                                    <li><a href="/certification">Certification</a></li>
+                                    <li><a href="/team">Teams</a></li>
+                                    <li><a href="/solutions">Build solutions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-contact">
+                            <h3>Neem contact op</h3>
+                            <p>Benieuwd wat Educloud voor jou kan betekenen?
+                                Vul voor vragen of verzoeken onderstaand formulier in.
+                            </p>
+
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" name="" placeholder="Full Name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" name="" placeholder="Email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Messages" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-main">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-footer">
+                    <div class="social-bx">
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social1.svg') }}"
+                                alt="" /></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social2.svg') }}"
+                                alt="" /></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social3.svg') }}"
+                                alt="" /></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social4.svg') }}"
+                                alt="" /></a>
+
+                    </div>
+                    <div class="tersm">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <p>All Rights Reserved © educloud 2023 </p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="social-bx">
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social1.svg') }}" alt="" /></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social2.svg') }}" alt="" /></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social3.svg') }}" alt="" /></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social4.svg') }}" alt="" /></a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="tersm">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+        <!-- Go To Top -->
+        <button id="myBtn" title="Go to top"><i class="fal fa-angle-up" aria-hidden="true"></i></button>
+    </div>
+
+    <!-- script -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <!-- End script -->
+</body>
+
+</html>

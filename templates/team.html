@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon & Title -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon.png') }}" />
+    <title>educloud</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+</head>
+
+<body>
+    <div class="main-wrpper">
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="/">
+                        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" class="normallg" />
+                        <img src="{{ url_for('static', filename='images/logo2.svg') }}" alt="Logo" class="bluelg" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#NavbarToggle" aria-controls="NavbarToggle" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="NavbarToggle">
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li><a class="nav-link" href="/index">Home</a></li>
+                            <li><a class="nav-link" href="/about">About</a></li>
+                            <li><a class="nav-link" href="/courses">Courses</a></li>
+                            <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li><a class="nav-link" href="/jobs">Jobs</a></li>
+                            <li><a class="nav-link" href="/blog">Blog</a></li>
+                        </ul>
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li class="loginbtn">
+                                <a class="nav-link" href="login">Login</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav d-lg-none">
+                            <li><a class="nav-link" href="/">Home</a></li>
+                            <li><a class="nav-link" href="/about">About</a></li>
+                            <li><a class="nav-link" href="/courses">Courses</a></li>
+                            <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li><a class="nav-link" href="/jobs">Jobs</a></li>
+                            <li><a class="nav-link" href="/blog">Blog</a></li>
+                            <li class="loginbtn">
+                                <a class="nav-link" href="/login">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Banner -->
+        <section class="banner-wrapper team-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
+                        <div class="banner-data">
+                            <h1>Samenwerken in teams</h1>
+
+                            <h5>Effectief projectmanagement is belangrijk binnen de IT.
+                                Educloud leert cursisten niet alleen projecten uitvoeren, maar deze ook te leiden en
+                                organiseren!
+                            </h5>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <div class="banner-img">
+                            <img src="{{ url_for('static', filename='images/team-img@2x.png') }}" alt=""
+                                class="main-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Banner -->
+
+        <!-- Team -->
+        <section class="team-wrp">
+            <div class="container">
+                <div class="scrum-block">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="scrum-data">
+                                <h3><span>Projecten</span></h3>
+                                <p>Educloud cursisten leren te werken volgens essentiële projectmanagement principes:
+                                    Scrum, Agile, DevOps en CI/CD.
+                                    Tijdens de opleiding behalen zij hiervoor ook direct officiële EXIN certificaten.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12">
+                            <div class="project-list">
+                                <ul>
+                                    <li>
+                                        <div class="project-img">
+                                            <img src="{{ url_for('static', filename='images/project-lg1.svg') }}"
+                                                alt="">
+                                        </div>
+                                        <h4>Scrum</h4>
+                                    </li>
+                                    <li>
+                                        <div class="project-img">
+                                            <img src="{{ url_for('static', filename='images/project-lg2.svg') }}"
+                                                alt="">
+                                        </div>
+                                        <h4>Agile</h4>
+                                    </li>
+                                    <li>
+                                        <div class="project-img">
+                                            <img src="{{ url_for('static', filename='images/project-lg3.svg') }}"
+                                                alt="">
+                                        </div>
+                                        <h4>Devops</h4>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-planing-box">
+                    <h3>Projectplanning</h3>
+                    <p>Bij een IT project komen vele stappen kijken.
+                        Educloud projecten zijn daarom opgedeeld in fasen en individuele tickets aan de hand van SMART
+                        principes.
+                        Cursisten leren daarnaast ook zelf hoe zij een project vanaf een concept tot uitvoering moeten
+                        aanvliegen.
+                        Zij worden begeleid in het doen van zelfstandig (voor)onderzoek, schrijven van een plan van
+                        aanpak, het aanmaken en verdelen van tickets en nog veel meer.</p>
+
+                    <ul>
+                        <li>
+                            <div class="step-bx">
+                                <div class="step-ic">
+                                    <img src="{{ url_for('static', filename='images/plan-ic1.svg') }}" alt="">
+                                </div>
+                                <h4>Intake</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-bx">
+                                <div class="step-ic">
+                                    <img src="{{ url_for('static', filename='images/plan-ic2.svg') }}" alt="">
+                                </div>
+                                <h4>Research</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-bx">
+                                <div class="step-ic">
+                                    <img src="{{ url_for('static', filename='images/plan-ic3.svg') }}" alt="">
+                                </div>
+                                <h4>Refinement</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-bx">
+                                <div class="step-ic">
+                                    <img src="{{ url_for('static', filename='images/plan-ic4.svg') }}" alt="">
+                                </div>
+                                <h4>Implementation</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="step-bx">
+                                <div class="step-ic">
+                                    <img src="{{ url_for('static', filename='images/plan-ic5.svg') }}" alt="">
+                                </div>
+                                <h4>Closure</h4>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="plan-img">
+                        <img src="{{ url_for('static', filename='images/plainmobileimg.svg') }}" alt="">
+                    </div>
+                </div>
+
+                <div class="scrum-block">
+                    <div class="row">
+                        <div class="col-md-5 col-sm-12">
+                            <div class="agile-scrumbx">
+                                <h3>Agile & Scrum Projectmanagement</h3>
+                                <p>Effectieve samenwerking is van essentieel belang voor de uitvoering van een project.
+                                    Alle Educloud projecten maken daarom gebruik van Agile & Scrum principes zodat alle
+                                    cursisten gewend zijn aan deze werkwijze.
+                                    Cursisten leren essentiële projectmanagement-theorie, waarna zij ook het
+                                    internationaal erkend EXIN Agile & Scrum certificaat kunnen behalen.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-7 col-sm-12">
+                            <div class="cards-lst">
+                                <div class="swiper card-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="cardbox">
+                                                <img src="{{ url_for('static', filename='images/card-1@2x.png') }}"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cardbox">
+                                                <img src="{{ url_for('static', filename='images/card-2@2x.png') }}"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="cardbox">
+                                                <img src="{{ url_for('static', filename='images/card-3@2x.png') }}"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-planing-box">
+                    <h3>Geïntegreerde DevOps CI/CD pipeline</h3>
+                    <p>Softwareontwikkeling gebeurt binnen een ontwikkelstraat om de kwaliteit te waarborgen.
+                        Op een CI/CD pipeline worden documenten zoals code en tekeningen gedeeld.
+                        Veranderingen in documenten worden pas doorgevoerd wanneer alle stakeholders hun goedkeuring
+                        hebben gegeven.
+                        Ook kunnen veranderingen automatisch worden getest.
+                        Er bestaat altijd de mogelijkheid een verandering terug te draaien.</p>
+
+                    <div class="microsoft-flow">
+                        <img src="{{ url_for('static', filename='images/pipeline-flow.svg') }}" alt=""
+                            class="desktopimg">
+                        <img src="{{ url_for('static', filename='images/pipeline-flow-mobile.svg') }}" alt=""
+                            class="mobileimg">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Team -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-cnt">
+                            <img src="{{ url_for('static', filename='images/footer-logo.svg') }}" alt="">
+
+                            <p>Educloud wordt beheerd vanuit Rotterdam.
+                            </p>
+
+                            <div class="f-cntbx">
+                                <h6>Phone</h6>
+                                <a href="tel:85558155656">
+                                    <h3>+31 558 155 656</h3>
+                                </a>
+                            </div>
+
+                            <div class="f-cntbx">
+                                <h6>Email address</h6>
+                                <a href="mailto:Contact@educlode.com">
+                                    <h3>info@educlouduniversity.com</h3>
+                                </a>
+                            </div>
+
+                            <div class="quicklinks">
+                                <ul>
+                                    <li><a href="/online-training">Online training</a></li>
+                                    <li><a href="/platform">Platform</a></li>
+                                    <li><a href="/certification">Certification</a></li>
+                                    <li><a href="/team">Teams</a></li>
+                                    <li><a href="/solutions">Build solutions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-contact">
+                            <h3>Neem contact op</h3>
+                            <p>Benieuwd wat Educloud voor jou kan betekenen?
+                                Vul voor vragen of verzoeken onderstaand formulier in.
+                            </p>
+
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" name="" placeholder="Full Name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" name="" placeholder="Email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Messages" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-main">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-footer">
+                    <div class="social-bx">
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social1.svg') }}"
+                                alt="" /></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social2.svg') }}"
+                                alt="" /></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social3.svg') }}"
+                                alt="" /></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social4.svg') }}"
+                                alt="" /></a>
+
+                    </div>
+                    <div class="tersm">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <p>All Rights Reserved © educloud 2023 </p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="social-bx">
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social1.svg') }}" alt="" /></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social2.svg') }}" alt="" /></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social3.svg') }}" alt="" /></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social4.svg') }}" alt="" /></a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="tersm">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+
+        <!-- Go To Top -->
+        <button id="myBtn" title="Go to top"><i class="fal fa-angle-up" aria-hidden="true"></i></button>
+    </div>
+
+    <!-- script -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <!-- End script -->
+</body>
+
+</html>

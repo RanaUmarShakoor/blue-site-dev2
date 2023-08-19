@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon & Title -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon.png') }}" />
+    <title>educloud</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+</head>
+
+<body>
+    <div class="main-wrpper">
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="/">
+                        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" class="normallg" />
+                        <img src="{{ url_for('static', filename='images/logo2.svg') }}" alt="Logo" class="bluelg" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#NavbarToggle" aria-controls="NavbarToggle" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="NavbarToggle">
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li><a class="nav-link" href="/index">Home</a></li>
+                            <li><a class="nav-link" href="/about">About</a></li>
+                            <li><a class="nav-link active" href="/courses">Courses</a></li>
+                            <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li><a class="nav-link" href="/jobs">Jobs</a></li>
+                            <li><a class="nav-link" href="/blog">Blog</a></li>
+                        </ul>
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li class="loginbtn">
+                                <a class="nav-link" href="login">Login</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav d-lg-none">
+                            <li><a class="nav-link" href="/">Home</a></li>
+                            <li><a class="nav-link" href="/about">About</a></li>
+                            <li><a class="nav-link active" href="/courses">Courses</a></li>
+                            <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li><a class="nav-link" href="/jobs">Jobs</a></li>
+                            <li><a class="nav-link" href="/blog">Blog</a></li>
+                            <li class="loginbtn">
+                                <a class="nav-link" href="/login">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Banner -->
+        <section class="banner-wrapper service-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="banner-data">
+                            <h1>Educloud Opleidingen</h1>
+
+                            <h5>De uitgebreide modules van Educloud kunnen van iedereen een full-stack IT developer
+                                maken.
+                                Van netwerken, artificial intelligence en Cloud computing tot het ontwikkelen van
+                                software en databases, we leren je de essentiële kennis en vaardigheden voor succes!
+                            </h5>
+
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="banner-img">
+                            <img src="{{ url_for('static', filename='images/service-img@2x.png') }}" alt=""
+                                class="main-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Banner -->
+
+        <!-- Services -->
+        <section class="service-wrp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="service-box">
+                            <div class="service-ic">
+                                <img src="{{ url_for('static', filename='images/service-ic1@2x.png') }}" alt="">
+                            </div>
+                            <div class="service-dt">
+                                <h3>Start op je Eigen Niveau</h3>
+                                <p>Elke Educloud cursus begint bij de basis en bouwt langzaam je kennis op.
+                                    Wij leggen complexe concepten op een makkelijke en laagdrempelige manier uit.
+                                    Of je nu een beginner bent of al enige jaren ervaring hebt, je kunt gemakkelijk je
+                                    expertise uitbreiden. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="service-box">
+                            <div class="service-ic">
+                                <img src="{{ url_for('static', filename='images/service-ic2@2x.png') }}" alt="">
+                            </div>
+                            <div class="service-dt">
+                                <h3>Praktijk gebaseerd Leren </h3>
+                                <p>IT oplossingen vanaf de basis bouwen is de beste manier om vertrouwd te raken met het
+                                    lesmateriaal.
+                                    Elke les werken cursisten aan een nieuw project waarin theorie en praktijk
+                                    samenkomen.
+                                    Aan het eind van elke cursus komen alle projecten samen in één zelfgebouwde
+                                    end-to-end oplossing. </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                        <div class="service-box">
+                            <div class="service-ic">
+                                <img src="{{ url_for('static', filename='images/service-ic3@2x.png') }}" alt="">
+                            </div>
+                            <div class="service-dt">
+                                <h3>Projectmanagement</h3>
+                                <p>Een goed begin is het halve werk.
+                                    Aan het begin van elk project richten cursisten daarom projectmanagement tools in om
+                                    op schema te blijven en om kwaliteit te garanderen.
+                                    Naast de technische vaardigheden zijn ook deze vaardigheden essentieel om toekomstig
+                                    IT-succes te verzekeren. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="service-box">
+                            <div class="service-ic">
+                                <img src="{{ url_for('static', filename='images/service-ic4@2x.png') }}" alt="">
+                            </div>
+                            <div class="service-dt">
+                                <h3>Geen hardware en software nodig</h3>
+                                <p>Het Educloud platform bevat alle benodigdheden voor de gehele opleiding.
+                                    Naast het lesmateriaal hebben cursisten toegang tot wereldwijde datacenters,
+                                    hoogstaande software en tools voor DevOps en CI/CD.
+                                    Zo kunnen ze vanuit hun browser échte geavanceerde oplossingen bouwen. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Services -->
+
+        <!-- Career Path -->
+        <section class="career-path-wrp">
+            <div class="container">
+                <h2>Career <span>Path</span> <img src="{{ url_for('static', filename='images/path-ic.svg') }}" alt="">
+                </h2>
+
+                <div class="path-img">
+                    <img src="{{ url_for('static', filename='images/path-img-dekstop.svg') }}" alt=""
+                        class="desktopimg">
+                    <img src="{{ url_for('static', filename='images/path-img-mobile.svg') }}" alt="" class="mobileimg">
+                </div>
+            </div>
+        </section>
+        <!-- End Career Path -->
+
+        <!-- Studies -->
+        <section class="studies-guide-wrp">
+            <div class="container">
+                <h2>Our <span>Courses</span></h2>
+                <div class="desktopstudy">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <div class="guide-block">
+                                <img src="{{ url_for('static', filename='images/study-ic1.svg') }}" alt="">
+                                <h3>HBO</h3>
+                                <p>Behaal binnen 2 jaar je associate degree. Verder specialiseren? Behaal in de 2 jaar
+                                    erna je bachelor degree. </p>
+
+                                <div class="btn-group">
+                                    <a href="{{ url_for('static', filename='images/studiegids.pdf') }}" target="_blank"
+                                        class="btn-main">Meer info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="guide-block">
+                                <img src="{{ url_for('static', filename='images/study-ic2.svg') }}" alt="">
+                                <h3>MBO</h3>
+                                <p>Volg de 2-jarige MBO niveau 4 opleiding in IT Infra of IT Business. </p>
+
+                                <div class="btn-group">
+                                    <a href="{{ url_for('static', filename='images/studiegids.pdf') }}" target="_blank"
+                                        class="btn-main">Meer info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="guide-block">
+                                <img src="{{ url_for('static', filename='images/study-ic4.svg') }}" alt="">
+                                <h3>Modules</h3>
+                                <p>Geen behoefte aan een volledige opleiding? Sluit aan bij de MBO of HBO module die bij
+                                    jou past. </p>
+
+                                <div class="btn-group">
+                                    <a href="{{ url_for('static', filename='images/studiegids.pdf') }}" target="_blank"
+                                        class="btn-main">Meer info</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="guide-block">
+                                <img src="{{ url_for('static', filename='images/study-ic3.svg') }}" alt="">
+                                <h3>Certificaten</h3>
+                                <p>Behaal binnen enkele maanden internationaal erkende certificaten van Microsoft,
+                                    Python, EXIN en UiPath. </p>
+
+                                <div class="btn-group">
+                                    <a href="{{ url_for('static', filename='images/studiegids.pdf') }}" target="_blank"
+                                        class="btn-main">Meer info</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-study">
+                    <div class="swiper study-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="guide-block">
+                                    <img src="{{ url_for('static', filename='images/study-ic1.svg') }}" alt="">
+                                    <h3>HBO</h3>
+                                    <p>Ducloud is an IT training platform, which consists of courses and an IT
+                                        development environment. We always research new technologies and we are very
+                                        excited about this era. </p>
+
+                                    <div class="btn-group">
+                                        <a href="{{ url_for('static', filename='images/studiegids.pdf') }}"
+                                            target="_blank" class="btn-main">Open StudyGuide</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="guide-block">
+                                    <img src="{{ url_for('static', filename='images/study-ic2.svg') }}" alt="">
+                                    <h3>MBO</h3>
+                                    <p>Ducloud is an IT training platform, which consists of courses and an IT
+                                        development environment. We always research new technologies and we are very
+                                        excited about this era. </p>
+
+                                    <div class="btn-group">
+                                        <a href="{{ url_for('static', filename='images/studiegids.pdf') }}"
+                                            target="_blank" class="btn-main">Open StudyGuide</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="guide-block">
+                                    <img src="{{ url_for('static', filename='images/study-ic4.svg') }}" alt="">
+                                    <h3>Modules</h3>
+                                    <p>Ducloud is an IT training platform, which consists of courses and an IT
+                                        development environment. We always research new technologies and we are very
+                                        excited about this era. </p>
+
+                                    <div class="btn-group">
+                                        <a href="{{ url_for('static', filename='images/studiegids.pdf') }}"
+                                            target="_blank" class="btn-main">Open StudyGuide</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="guide-block">
+                                    <img src="{{ url_for('static', filename='images/study-ic3.svg') }}" alt="">
+                                    <h3>Certificaten</h3>
+                                    <p>Ducloud is an IT training platform, which consists of courses and an IT
+                                        development environment. We always research new technologies and we are very
+                                        excited about this era. </p>
+
+                                    <div class="btn-group">
+                                        <a href="{{ url_for('static', filename='images/studiegids.pdf') }}"
+                                            target="_blank" class="btn-main">Open StudyGuide</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Studies -->
+
+        <!-- Full Stack Developer -->
+        <!-- <section class="full-stack-wrp">
+            <div class="container">
+                <h2>Full Stack <span>IT Developer</span></h2>
+                <p>Als Full Stack Developer ken je processen van A tot Z.
+                   Educloud richt zich daarom op verschillende kern onderwerpen binnen deze opleiding.</p>
+
+                <div class="swiper full-stack-slider-wrp">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>Management & Architecture</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/manage-ic3.svg') }}" alt="" class="desktopimg"> 
+                                                    <img src="{{ url_for('static', filename='images/manage-mob-ic2.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Business Process Management</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/manage-ic1.svg') }}" alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/manage-mob-ic3.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>ITIL</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/manage-ic2.svg') }}" alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/manage-mob-ic1.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Lean Six Sigma</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/manage-ic4.svg') }}" alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/manage-mob-ic4.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Scrum + Agile</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/manage-ic5.svg') }}" alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/manage-mob-ic5.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Devops</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/manage-ic6.svg') }}" alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/manage-mob-ic6.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Togaf</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>Intelligence</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/intelli-ic5.svg') }}" alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/intelli-mob-ic1.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Management</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/intelli-ic1.svg') }}" alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/intelli-mob-ic3.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>kubernetes</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/intelli-ic2.svg') }}" alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/intelli-mob-ic2.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Business Intelligence</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/intelli-ic3.svg') }}" alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/intelli-mob-ic4.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>IT Infra Automation</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/intelli-ic6.svg') }}" alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/intelli-mob-ic5.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Business Automation</h4>
+                                            </div>
+                                        </li>    
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/intelli-ic4.svg') }}" alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/intelli-mob-ic6.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Artificial Intelligence</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>Frontend</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/front-ic1.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/front-mob-ic1.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Figma</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/front-ic2.svg') }}" alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/front-mob-ic2.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Next.js</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/front-ic3.svg') }}" alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/front-mob-ic3.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Flask</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/front-ic4.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/front-mob-ic4.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Fast API</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/front-ic5.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/front-mob-ic5.svg') }}" alt="" class="mobileimg">                                                        
+                                                </div>
+                                                <h4>Azure App Service</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>Backend</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/backend-ic1.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/backend-mob-ic1.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Python</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/backend-ic2.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/backend-mob-ic2.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Node Js</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/backend-ic3.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/backend-mob-ic3.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Databases</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/backend-ic4.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/backend-mob-ic4.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Storage</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/backend-ic5.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/backend-mob-ic5.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>API</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>Operating Systems</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/oc-ic1.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/oc-mob-ic1.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Windows</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/oc-ic2.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/oc-mob-ic2.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Linux</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>Systems & Networking</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/network-ic1.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/network-mob-ic1.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Serverless</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/network-ic2.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/network-mob-ic2.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>virtual machine</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/network-ic3.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/network-mob-ic3.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Containers</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/network-ic4.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/network-mob-ic4.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>IOT</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/network-ic5.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/network-mob-ic5.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Security</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/network-ic6.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/network-mob-ic6.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Networking</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>On premise & Cloud Computing</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/cloud-ic4.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/cloud-mob-ic1.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>On-premise</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/cloud-ic1.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/cloud-mob-ic2.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Azure</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/cloud-ic2.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/cloud-mob-ic3.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>Google Cloud</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/cloud-ic3.svg') }}"
+                                                        alt="" class="desktopimg">
+                                                    <img src="{{ url_for('static', filename='images/cloud-mob-ic4.svg') }}" alt="" class="mobileimg">
+                                                </div>
+                                                <h4>AWS</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section> -->
+        <!-- End Full Stack Developer -->
+
+        <!-- Full Stack -->
+        <section class="courses-full-stack-wrp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="courses-full-stack-img">
+                            <img src="{{ url_for('static', filename='images/courses_full_stack_side_img.png') }}"
+                                alt="" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="courses-full-stack-data">
+                            <h2>
+                                Leer Meer Over Onze<br />
+                                Full-Stack Onderwerpen
+                            </h2>
+                            <div class="courses-full-stack-data-button">
+                                <a href="/vacancies" class="btn-main">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Full Stack -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-cnt">
+                            <img src="{{ url_for('static', filename='images/footer-logo.svg') }}" alt="">
+
+                            <p>Educloud wordt beheerd vanuit Rotterdam.
+                            </p>
+
+                            <div class="f-cntbx">
+                                <h6>Phone</h6>
+                                <a href="tel:85558155656">
+                                    <h3>+31 558 155 656</h3>
+                                </a>
+                            </div>
+
+                            <div class="f-cntbx">
+                                <h6>Email address</h6>
+                                <a href="mailto:Contact@educlode.com">
+                                    <h3>info@educlouduniversity.com</h3>
+                                </a>
+                            </div>
+
+                            <div class="quicklinks">
+                                <ul>
+                                    <li><a href="/online-training">Online training</a></li>
+                                    <li><a href="/platform">Platform</a></li>
+                                    <li><a href="/certification">Certification</a></li>
+                                    <li><a href="/team">Teams</a></li>
+                                    <li><a href="/solutions">Build solutions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-contact">
+                            <h3>Neem contact op</h3>
+                            <p>Benieuwd wat Educloud voor jou kan betekenen?
+                                Vul voor vragen of verzoeken onderstaand formulier in.
+                            </p>
+
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" name="" placeholder="Full Name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" name="" placeholder="Email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Messages" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-main">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-footer">
+                    <div class="social-bx">
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social1.svg') }}"
+                                alt=""></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social2.svg') }}"
+                                alt=""></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social3.svg') }}"
+                                alt=""></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social4.svg') }}"
+                                alt=""></a>
+                    </div>
+                    <div class="tersm">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <p>All Rights Reserved © educloud 2023</p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="social-bx">
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social1.svg') }}" alt=""></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social2.svg') }}" alt=""></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social3.svg') }}" alt=""></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social4.svg') }}" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="tersm">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+
+        <!-- Go To Top -->
+        <button id="myBtn" title="Go to top"><i class="fal fa-angle-up" aria-hidden="true"></i></button>
+    </div>
+
+    <!-- script -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <!-- End script -->
+</body>
+
+</html>

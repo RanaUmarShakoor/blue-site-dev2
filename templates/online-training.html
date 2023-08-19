@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon & Title -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon.png') }}" />
+    <title>educloud</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+</head>
+
+<body>
+    <div class="main-wrpper">
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="/">
+                        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" class="normallg" />
+                        <img src="{{ url_for('static', filename='images/logo2.svg') }}" alt="Logo" class="bluelg" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#NavbarToggle" aria-controls="NavbarToggle" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="NavbarToggle">
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li><a class="nav-link" href="/index">Home</a></li>
+                            <li><a class="nav-link" href="/about">About</a></li>
+                            <li><a class="nav-link" href="/courses">Courses</a></li>
+                            <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li><a class="nav-link" href="/jobs">Jobs</a></li>
+                            <li><a class="nav-link" href="/blog">Blog</a></li>
+                        </ul>
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li class="loginbtn">
+                                <a class="nav-link" href="login">Login</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav d-lg-none">
+                            <li><a class="nav-link" href="/">Home</a></li>
+                            <li><a class="nav-link" href="/about">About</a></li>
+                            <li><a class="nav-link" href="/courses">Courses</a></li>
+                            <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li><a class="nav-link" href="/jobs">Jobs</a></li>
+                            <li><a class="nav-link" href="/blog">Blog</a></li>
+                            <li class="loginbtn">
+                                <a class="nav-link" href="/login">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Banner -->
+        <section class="banner-wrapper online-training-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-12">
+                        <div class="banner-data">
+                            <h1>Online training</h1>
+
+                            <h5>De online training van Educloud brengt theorie en praktijk samen.
+                                Cursisten leren via video’s en live lessen essentiële concepten en vaardigheden.
+                                Deze nieuwe kennis wordt direct getest in quizzen en toegepast in projecten.
+                                Deze projecten staan centraal in deze praktijkgerichte opleiding, want we leren het
+                                beste door te doen!
+                            </h5>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-img">
+                <img src="{{ url_for('static', filename='images/training-img@2x.png') }}" alt="" class="main-img">
+            </div>
+        </section>
+        <!-- End Banner -->
+
+        <!-- Online -->
+        <section class="online-wrp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="online-img">
+                            <img src="{{ url_for('static', filename='images/online-class-img.jpg') }}" alt="">
+
+                            <img src="{{ url_for('static', filename='images/online-shp.svg') }}" alt=""
+                                class="onlineshp">
+                        </div>
+                    </div>
+                    <div class="offset-md-1 col-md-5 col-sm-12">
+                        <div class="online-data">
+                            <h3>Online <span>lessen</span></h3>
+                            <p>Tijdens de live lessen komen cursisten in kleine groepen samen met hun docent.
+                                Hier wordt de theorie uit de video’s toegelicht en de voortgang van ieders project
+                                besproken.
+                                Cursisten krijgen zo de mogelijkheid voor persoonlijke begeleiding én om elkaar te
+                                helpen.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="online-videos extraonline">
+            <div class="container">
+                <h2>Video's</h2>
+                <p>Met vooraf opgenomen video’s leren cursisten nieuwe concepten in alledaagse taal.
+                    Hier worden zowel de theorie als de basis van de projecten uitgelegd.
+                    Cursisten gaan zo op hun eigen tempo zelfstandig aan de slag.</p>
+
+                <div class="video-bx">
+                    <img src="{{ url_for('static', filename='images/video-img@2x.png') }}" alt="">
+
+                    <img src="{{ url_for('static', filename='images/video-shp.svg') }}" class="videoshp" alt="">
+                </div>
+            </div>
+        </div>
+
+        <section class="quize-wrp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="quiz-img">
+                            <img src="{{ url_for('static', filename='images/quize-img@2x.png') }}" alt="">
+                        </div>
+                    </div>
+                    <div class="offset-md-1 col-md-5 col-sm-12">
+                        <div class="quize-data">
+                            <h3>Quizzen</h3>
+                            <p>Iedere les wordt afgesloten met een quiz.
+                                Met een afwisseling tussen open, meerkeuze en praktische vragen komt alle lesstof aan
+                                bod.
+                                Via het dashboard kunnen cursisten en docenten zien waar sterke en verbeterpunten
+                                zitten.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quize-wrp project-wrp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 col-sm-12">
+                        <div class="quize-data">
+                            <h3>Projecten</h3>
+                            <p>Elke les bestaat uit een project. Alle geleerde informatie wordt hier toegepast.
+                                Zo doen cursisten vaardigheden op die direct kunnen worden toegepast buiten de cursus.
+                                Aan het eind van elke cursus vormen alle projecten samen de bouwstenen voor één
+                                geavanceerde end-to-end oplossing.
+                                Voor de uitvoering wordt er gebruik gemaakt van projectmanagement methodes: Scrum,
+                                Agile, DevOps en CI/CD pipelines.</p>
+                        </div>
+                    </div>
+                    <div class="offset-md-1 col-md-6 col-sm-12">
+                        <div class="projects-img">
+                            <img src="{{ url_for('static', filename='images/project-img.jpg') }}" alt="">
+
+                            <img src="{{ url_for('static', filename='images/project-shp1.svg') }}" alt=""
+                                class="project-shp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Online -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-cnt">
+                            <img src="{{ url_for('static', filename='images/footer-logo.svg') }}" alt="">
+
+                            <p>Educloud wordt beheerd vanuit Rotterdam.
+                            </p>
+
+                            <div class="f-cntbx">
+                                <h6>Phone</h6>
+                                <a href="tel:85558155656">
+                                    <h3>+31 558 155 656</h3>
+                                </a>
+                            </div>
+
+                            <div class="f-cntbx">
+                                <h6>Email address</h6>
+                                <a href="mailto:Contact@educlode.com">
+                                    <h3>info@educlouduniversity.com</h3>
+                                </a>
+                            </div>
+
+                            <div class="quicklinks">
+                                <ul>
+                                    <li><a href="/online-training">Online training</a></li>
+                                    <li><a href="/platform">Platform</a></li>
+                                    <li><a href="/certification">Certification</a></li>
+                                    <li><a href="/team">Teams</a></li>
+                                    <li><a href="/solutions">Build solutions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-contact">
+                            <h3>Neem contact op</h3>
+                            <p>Benieuwd wat Educloud voor jou kan betekenen?
+                                Vul voor vragen of verzoeken onderstaand formulier in.
+                            </p>
+
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" name="" placeholder="Full Name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" name="" placeholder="Email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Messages" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-main">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-footer">
+                    <div class="social-bx">
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social1.svg') }}"
+                                alt="" /></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social2.svg') }}"
+                                alt="" /></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social3.svg') }}"
+                                alt="" /></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social4.svg') }}"
+                                alt="" /></a>
+
+                    </div>
+                    <div class="tersm">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <p>All Rights Reserved © educloud 2023 </p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="social-bx">
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social1.svg') }}" alt="" /></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social2.svg') }}" alt="" /></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social3.svg') }}" alt="" /></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social4.svg') }}" alt="" /></a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="tersm">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+
+        <!-- Go To Top -->
+        <button id="myBtn" title="Go to top"><i class="fal fa-angle-up" aria-hidden="true"></i></button>
+    </div>
+
+    <!-- script -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <!-- End script -->
+</body>
+
+</html>

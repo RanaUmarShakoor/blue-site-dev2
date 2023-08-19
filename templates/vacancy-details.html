@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon & Title -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon.png') }}" />
+    <title>educloud</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css') }}" />
+</head>
+
+<body>
+    <div class="main-wrpper vacancies-pg-detailswrp">
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="/">
+                        <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" class="normallg" />
+                        <img src="{{ url_for('static', filename='images/logo2.svg') }}" alt="Logo" class="bluelg" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#NavbarToggle" aria-controls="NavbarToggle" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- <div class="collapse navbar-collapse" id="NavbarToggle">
+                        <ul class="navbar-nav">
+                            <li><a class="nav-link" href="/index">Home</a></li>
+                            <li><a class="nav-link" href="/about">About</a></li>
+                            <li><a class="nav-link" href="/courses">Courses</a></li>
+                            <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li><a class="nav-link" href="/jobs">Exchange</a></li>
+                            <li><a class="nav-link" href="/blog">Blog</a></li>
+                            <li><a class="nav-link active" href="/vacancies">Vacancies</a></li>
+                            <li class="loginbtn"><a class="nav-link" href="/login">Login</a></li>
+                        </ul>
+                    </div> -->
+                    <div class="collapse navbar-collapse" id="NavbarToggle">
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li><a class="nav-link" href="/index">Home</a></li>
+                            <li><a class="nav-link" href="/about">About</a></li>
+                            <li><a class="nav-link" href="/courses">Courses</a></li>
+                            <li><a class="nav-link" href="/jobs">Jobs</a></li>
+                            <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li><a class="nav-link" href="/blog">Blog</a></li>
+                        </ul>
+                        <ul class="navbar-nav d-none d-lg-flex">
+                            <li class="loginbtn">
+                                <a class="nav-link" href="login">Login</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav d-lg-none">
+                            <li><a class="nav-link" href="/">Home</a></li>
+                            <li><a class="nav-link" href="/about">About</a></li>
+                            <li><a class="nav-link" href="/courses">Courses</a></li>
+                            <li><a class="nav-link" href="/jobs">Jobs</a></li>
+                            <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                            <li><a class="nav-link" href="/blog">Blog</a></li>
+                            <li class="loginbtn">
+                                <a class="nav-link" href="/login">Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <!-- Blog Banner -->
+        <section class="blog-banner vacancies-banner">
+            <div class="container">
+                <div class="blog-banner-row">
+                    <h1>Vacancies</h1>
+
+                    <ul>
+                        <li><a href="/index">Home</a></li>
+                        <li><a href="/vacancies">Vacancies</a></li>
+                        <li>Vacancies Details</li>
+                    </ul>
+
+                    <img src="{{ url_for('static', filename='images/vacancy-sp1.svg') }}" alt="" class="blogbnsh1">
+                    <img src="{{ url_for('static', filename='images/vacancy-sp2.svg') }}" alt="" class="blogbnsh2">
+                </div>
+            </div>
+            <img src="{{ url_for('static', filename='images/vacancy-sp3.svg') }}" alt="" class="blogbnsh3">
+
+            <div class="mobile-shp">
+                <img src="{{ url_for('static', filename='images/vac-mshp1.svg') }}" alt="" class="vac-mbshp1">
+                <img src="{{ url_for('static', filename='images/vac-mshp2.svg') }}" alt="" class="vac-mbshp2">
+                <img src="{{ url_for('static', filename='images/vac-mshp3.svg') }}" alt="" class="vac-mbshp3">
+                <img src="{{ url_for('static', filename='images/vac-mshp4.svg') }}" alt="" class="vac-mbshp4">
+            </div>
+        </section>
+        <!-- End Blog Banner -->
+
+
+        <!-- Vacancies List -->
+        <section class="blog-detailswrp vacancies-wrp">
+            <div class="container">
+                <div class="vacancies-cover">
+                    <img src="{{ url_for('static', filename='images/vacancy-big.jpg') }}" alt="">
+
+                    <div class="company-lg">
+                        <img src="{{ url_for('static', filename='images/vacancy-img1@2x.png') }}" alt="">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <div class="vacancies-details-content">
+                            <h2>JunIor Ui Ux Designer <span>(Full Time)</span></h2>
+                            <h6><i class="fas fa-map-marker-alt fa-fw"></i> Oslo, Norway</h6>
+
+                            <h3>$35,01215 Yearly + Benefits</h3>
+
+                            <p>Slack designers work with speed and efficiency to deliver the highest quality of work. We
+                                are looking for someone who is passionate about their client’s business, and ready to
+                                work on exciting projects with Fortune 500 companies and Silicon Valley startups, with
+                                great rates and zero hassles. If you are looking for a place to advance your career,
+                                enhance your skill set, and build connections around the globe,</p>
+
+                            <h4>Description</h4>
+                            <p>Slack designers work with speed and efficiency to deliver the highest quality of work. We
+                                are looking for someone who is passionate.</p>
+
+                            <p>A their client’s business, and ready to work on exciting projects with Fortune 500
+                                companies and Silicon Valley startups, with great rates and zero hassles. If you are
+                                looking for a place to advance your career, enhance your skill set, and build
+                                connections around the globe. <br> A their client’s business, and ready to work on
+                                exciting projects with Fortune 500 companies and Silicon Valley startups, with great
+                                rates and zero hassles.</p>
+
+                            <h4>Skill and Experience Requirements</h4>
+                            <ul>
+                                <li>Minimum 4 years of demonstrated experience in UI/UX design for digital products or
+                                    services.</li>
+                                <li>A portfolio of professional UI/UX design work for both web and mobile platforms.
+                                </li>
+                                <li>Working knowledge of the following technologies and software: Sketch, InVision,
+                                    visio, HTML, CSS (SCSS), iOS, Android, design Systems, and Adobe Creative Suite.
+                                </li>
+                                <li>Counted education and research into UX trends and current design strategy and
+                                    technologies.</li>
+                                <li>Experience creating storyboards and website mapping.</li>
+                                <li>The applicants should have experience in the following business area(s): Software
+                                    Company</li>
+                            </ul>
+
+                            <div class="share-bx">
+                                <h6><span>Share</span></h6>
+                                <a href="#"><i class="fab fa-facebook fa-fw"></i></a>
+                                <a href="#"><i class="fab fa-twitter fa-fw"></i></a>
+                                <a href="#"><i class="fab fa-instagram fa-fw"></i></a>
+                            </div>
+
+                            <a href="#" class="btn-main">
+                                <img src="{{ url_for('static', filename='images/apply-ic.svg') }}" alt="">
+                                Apply For This Job
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="blog-sidebar">
+                            <div class="vacancies-actions">
+                                <a href="#" class="btn-main">
+                                    <span>
+                                        <img src="{{ url_for('static', filename='images/apply-ic.svg') }}" alt="">
+                                    </span>
+                                    Apply For This Job
+                                </a>
+
+                                <a href="#" class="social-btn">
+                                    <span>
+                                        <img src="{{ url_for('static', filename='images/social-ic1.svg') }}" alt="">
+                                    </span>
+                                    Share On Facebook
+                                </a>
+                                <a href="#" class="social-btn">
+                                    <span>
+                                        <img src="{{ url_for('static', filename='images/social-ic2.svg') }}" alt="">
+                                    </span>
+                                    Share on Linkedin
+                                </a>
+                                <a href="#" class="social-btn">
+                                    <span>
+                                        <img src="{{ url_for('static', filename='images/social-ic3.svg') }}" alt="">
+                                    </span>
+                                    Share on twitter
+                                </a>
+                            </div>
+
+                            <div class="populer-post">
+                                <h3>Popular Tags</h3>
+
+                                <div class="populer-tags">
+                                    <a href="#">Ux Design</a>
+                                    <a href="#">Ux Designer</a>
+                                    <a href="#">ui/ux</a>
+                                    <a href="#">Consultion</a>
+                                    <a href="#">Design</a>
+                                    <a href="#">Consultion</a>
+                                    <a href="#">Programm</a>
+                                    <a href="#">Ux Design</a>
+                                    <a href="#">Ux Designer</a>
+                                    <a href="#">ui/ux</a>
+                                    <a href="#">Consultion</a>
+                                    <a href="#">Design</a>
+                                    <a href="#">Consultion</a>
+                                    <a href="#">Programm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-wrp">
+            <div class="container">
+                <div class="contact-block">
+                    <h2>Contact Us</h2>
+
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Full Name" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="form-group">
+                                    <input type="text" placeholder="Type Your Email Address" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" placeholder="Type Your Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-main" type="submit">Submit now</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- End Vacancies List -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-cnt">
+                            <img src="{{ url_for('static', filename='images/footer-logo.svg') }}" alt="">
+
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                            </p>
+
+                            <div class="f-cntbx">
+                                <h6>Phone</h6>
+                                <a href="tel:85558155656">
+                                    <h3>+85 558 155 656</h3>
+                                </a>
+                            </div>
+
+                            <div class="f-cntbx">
+                                <h6>Email address</h6>
+                                <a href="mailto:Contact@educlode.com">
+                                    <h3>Contact@educlode.com</h3>
+                                </a>
+                            </div>
+
+                            <div class="quicklinks">
+                                <ul>
+                                    <li><a href="/online-training">Online training</a></li>
+                                    <li><a href="/platform">Platform</a></li>
+                                    <li><a href="/certification">Certification</a></li>
+                                    <li><a href="/team">Teams</a></li>
+                                    <li><a href="/solutions">Build solutions</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="footer-contact">
+                            <h3>Neem contact op</h3>
+                            <p>Benieuwd wat Educloud voor jou kan betekenen?
+                                Vul voor vragen of verzoeken onderstaand formulier in.
+                            </p>
+
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" name="" placeholder="Full Name" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <input type="text" name="" placeholder="Email" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control" placeholder="Messages" rows="5"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-main">SUBMIT</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mobile-footer">
+                    <div class="social-bx">
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social1.svg') }}"
+                                alt=""></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social2.svg') }}"
+                                alt=""></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social3.svg') }}"
+                                alt=""></a>
+                        <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social4.svg') }}"
+                                alt=""></a>
+
+                    </div>
+                    <div class="tersm">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <p>All Rights Reserved © educloud 2023 </p>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="social-bx">
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social1.svg') }}" alt=""></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social2.svg') }}" alt=""></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social3.svg') }}" alt=""></a>
+                            <a href="#" target="_blank"><img
+                                    src="{{ url_for('static', filename='images/social4.svg') }}" alt=""></a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="tersm">
+                            <ul>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Terms & Conditions </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Footer -->
+
+        <!-- Go To Top -->
+        <button id="myBtn" title="Go to top"><i class="fal fa-angle-up" aria-hidden="true"></i></button>
+    </div>
+
+    <!-- script -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <!-- End script -->
+</body>
+
+</html>
