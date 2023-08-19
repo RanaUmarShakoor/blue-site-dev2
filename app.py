@@ -47,6 +47,10 @@ def gallery():
 def jobs():
     return render_template("jobs.html")
 
+@app.route("/full-it-stack")
+def full_it_stack():
+    return render_template("full-it-stack.html")
+
 @app.route("/blog")
 def blog():
     return render_template("blog.html")
@@ -56,12 +60,14 @@ def blog():
 def blog_details():
     return render_template("blog-details.html")
 
+@app.route("/exchange")
+def exchange():
+    return render_template("exchange.html")
 
 # Replace with full-it-stack
 @app.route("/vacancies")
 def vacancies():
-    return render_template("full-it-stack.html")
-
+    return render_template("vacancies.html")
 
 @app.route("/vacancy-details")
 def vacancy_details():
