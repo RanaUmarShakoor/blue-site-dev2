@@ -15,14 +15,7 @@
     .navbar-light .navbar-nav li{margin-right: 35px;}
     .navbar-light .navbar-nav .nav-link{font-size: 14px;}
 
-    .banner-wrapper{height: auto;min-height: auto;padding: 100px 0 0;}
-    .banner-data h1{font-size: 42px;margin: 0 0 25px;}
-    .banner-data h1 br{display: none;}
-    .banner-data .btn-group .btn-main{padding: 12px 35px;font-size: 14px;margin-right: 15px;}
-    .banner-data .btn-group h6{font-size: 14px;}
-    img.bannerimgshp{right:-15px;width: 150px;}
-
-    .edu-mission-wrp{padding: 80px 0 60px;}
+    .edu-mission-wrp{padding: 90px 0 60px;}
     .edu-mission-wrp h2{font-size: 30px;}
     .edu-mission-wrp h6{font-size: 16px;line-height: 26px;margin: 0 0 30px;}
     .mission-data h3{font-size: 28px;margin: 0 0 20px;}
@@ -72,7 +65,7 @@
     /* **** Full IT Stack Page **** */
     .full-it-stack-banner{padding: 150px 50px 100px 120px;}
     .full-it-stack-banner-img img.main-img{width: 80%; padding: 30px 0;}
-    .full-it-stack.edu-mission-wrp{padding-bottom: 40px;}
+    .full-it-stack.edu-mission-wrp{padding: 90px 0 60px;}
     .full-stack-wrp{padding: 100px 0;}
     .full-stack-wrp h2{font-size: 32px;}
     .full-stack-block h3{font-size: 24px;padding: 30px;}
@@ -177,7 +170,6 @@
     .full-it-stack-banner .banner-data h6{margin: 0 0 25px;}
     .full-it-stack-banner .banner-data h1{margin: 0 0 15px;}
     .full-it-stack-banner .banner-data h5{margin: 0 0 60px;}
-    .full-it-stack.edu-mission-wrp{padding-bottom: 30px;}
     .full-stack-wrp{padding: 100px 0;}
     .full-stack-wrp h2{font-size: 32px;}
     .full-stack-block h3{font-size: 24px;padding: 30px;}
@@ -273,7 +265,6 @@
     
     /* **** Full IT Stack Page **** */
     .full-it-stack-banner{padding: 100px 0 35px}
-    .full-it-stack.edu-mission-wrp{padding-bottom: 20px;}
     .full-it-stack-banner .banner-data h5{margin: 0 0 20px;}
     .full-stack-wrp{padding: 100px 0;}
     .full-stack-wrp h2{font-size: 32px;}
@@ -348,7 +339,7 @@
     .banner-data .btn-group h6{font-size: 14px;}
     img.bannerimgshp{right:-15px;width: 150px;}
 
-    .edu-mission-wrp{padding: 80px 0 60px;}
+    .edu-mission-wrp{padding: 60px 0 60px;}
     .edu-mission-wrp h2{font-size: 30px;}
     .edu-mission-wrp h6{font-size: 16px;line-height: 26px;margin: 0 0 30px;}
     .mission-data h3{font-size: 28px;margin: 0 0 20px;}
@@ -967,7 +958,7 @@
     .banner-data .btn-group .btn-main{width: 100%;margin: 0 0 25px;text-align: center;display: block;}
     .banner-data .btn-group h6{font-size: 16px;margin: 0 0 40px}
 
-    .edu-mission-wrp{padding: 67px 0;}
+    .edu-mission-wrp{padding: 50px 0;}
     .edu-mission-wrp h2{font-size: 27px;margin: 0 0 20px;}
     .edu-mission-wrp h6{font-size: 14px;line-height: 22px;margin: 0 0 30px;}
     .video-section video{border-radius: 24px;}
@@ -1445,7 +1436,7 @@
     .banner-data .btn-group .btn-main{width: 100%;margin: 0 0 25px;text-align: center;display: block;}
     .banner-data .btn-group h6{font-size: 16px;margin: 0 0 40px}
 
-    .edu-mission-wrp{padding: 67px 0;}
+    .edu-mission-wrp{padding: 40px 0;}
     .edu-mission-wrp h2{font-size: 27px;margin: 0 0 20px;}
     .edu-mission-wrp h6{font-size: 14px;line-height: 22px;margin: 0 0 30px;}
     .video-section video{border-radius: 24px;}
