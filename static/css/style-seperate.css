@@ -3030,7 +3030,73 @@ img.plat-shp2 {
     border-radius: 30px;
     z-index: 3;
 }
+
+.roles{
+  background-color: #F5FAFF;
+}
+
+.roles p{
+  font-size: 16px; 
+  opacity: 70;
+  text-align: left;
+}
+
+.roles-card-section {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.roles-card-section > div {
+  width: 45%;
+  flex: 1 0 auto;
+}
+
+.roles-card-section .full-stack-block{
+  margin-bottom: 0;
+}
+
+.roles-card-section .roles-card-outer{
+  padding: 20px 20px 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #535AE84D;
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.roles-card{
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.roles-card img{
+  height: 80px; 
+  width: 80px
+}
+
+.roles-card .title{
+  display: flex; 
+  flex-flow: column;
   
+}
+
+.roles-card .title h5{
+  font-size: 22px; 
+  font-weight: 600;
+}
+
+.roles-card .title h6{
+  padding: 5px 10px;
+  width: fit-content;
+  text-align: center;
+  color: #fcb415;
+  background-color: #fcb4150f;
+  border: 1px solid #fcb4151a;
+  border-radius: 50px;
+}
 
 /* ***** End Jobs Page ***** */
 
@@ -3166,6 +3232,7 @@ img.plat-shp2 {
 .feature-video a.play {
   left: 80px;
 }
+
 /* ***** End Video Section ***** */
 
 /* ***** End Footer ***** */
