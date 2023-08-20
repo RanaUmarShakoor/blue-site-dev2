@@ -1993,3 +1993,17 @@
     .full-it-stack-banner .btn-group .btn-main{padding: 8px;}
     /* **** End Full IT Stack Page **** */
 }
+
+@media (max-width: 767px) {
+    .video-block .play,
+    .video-block .play:after {
+      height: 45px;
+      width: 45px;
+      font-size: 18px;
+      line-height: 45px;
+    }
+  
+    .tab-video video {
+      height: auto;
+    }
+  }
