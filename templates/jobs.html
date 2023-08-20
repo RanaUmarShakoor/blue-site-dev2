@@ -1,204 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Meta tag -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <!-- Meta tag -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Favicon & Title -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ url_for('static', filename='images/favicon.png') }}"
+    />
+    <title>educloud</title>
 
-  <!-- Favicon & Title -->
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon.png') }}" />
-  <title>educloud</title>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style-seperate.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/responsive-seperate.css') }}"
+    />
+  </head>
 
-  <!-- CSS only -->
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style-seperate.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/responsive-seperate.css') }}" />
-</head>
+  <body>
+    <div class="main-wrpper">
+      <!-- Header -->
+      <header>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="{{ url_for('static', filename='images/logo.svg') }}"
+                alt="Logo"
+                class="normallg"
+              />
+              <img
+                src="{{ url_for('static', filename='images/logo2.svg') }}"
+                alt="Logo"
+                class="bluelg"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#NavbarToggle"
+              aria-controls="NavbarToggle"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="NavbarToggle">
+              <ul class="navbar-nav d-none d-lg-flex">
+                <li><a class="nav-link" href="/index">Home</a></li>
+                <li><a class="nav-link" href="/about">About</a></li>
+                <li><a class="nav-link" href="/courses">Courses</a></li>
+                <li><a class="nav-link active" href="/jobs">Jobs</a></li>
+                <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                <li><a class="nav-link" href="/blog">Blog</a></li>
+              </ul>
+              <ul class="navbar-nav d-none d-lg-flex">
+                <li class="loginbtn">
+                  <a class="nav-link" href="login">Login</a>
+                </li>
+              </ul>
 
-<body>
-  <div class="main-wrpper">
-    <!-- Header -->
-    <header>
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="index.html">
-            <img src="{{ url_for('static', filename='images/logo.svg') }}" alt="Logo" class="normallg" />
-            <img src="{{ url_for('static', filename='images/logo2.svg') }}" alt="Logo" class="bluelg" />
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NavbarToggle"
-            aria-controls="NavbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="NavbarToggle">
-            <ul class="navbar-nav d-none d-lg-flex">
-              <li><a class="nav-link" href="/index">Home</a></li>
-              <li><a class="nav-link" href="/about">About</a></li>
-              <li><a class="nav-link" href="/courses">Courses</a></li>
-              <li><a class="nav-link active" href="/jobs">Jobs</a></li>
-              <li><a class="nav-link" href="/gallery">Gallery</a></li>
-              <li><a class="nav-link" href="/blog">Blog</a></li>
-            </ul>
-            <ul class="navbar-nav d-none d-lg-flex">
-              <li class="loginbtn">
-                <a class="nav-link" href="login">Login</a>
-              </li>
-            </ul>
-
-            <ul class="navbar-nav d-lg-none">
-              <li><a class="nav-link" href="/">Home</a></li>
-              <li><a class="nav-link" href="/about">About</a></li>
-              <li><a class="nav-link" href="/courses">Courses</a></li>
-              <li><a class="nav-link active" href="/jobs">Jobs</a></li>
-              <li><a class="nav-link" href="/gallery">Gallery</a></li>
-              <li><a class="nav-link" href="/blog">Blog</a></li>
-              <li class="loginbtn">
-                <a class="nav-link" href="/login">Login</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- End Header -->
-
-    <!-- Banner -->
-    <section class="banner-wrapper courses-banner jobs-banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-12 jobs-banner-content">
-            <div class="banner-data">
-              <h1>Full IT Stack <br />Jobs</h1>
-
-              <h5>
-                According to the Central Bureau of Statistics, 28,000 ICT jobs were open in the 1st quarter of 2023.
-              </h5>
+              <ul class="navbar-nav d-lg-none">
+                <li><a class="nav-link" href="/">Home</a></li>
+                <li><a class="nav-link" href="/about">About</a></li>
+                <li><a class="nav-link" href="/courses">Courses</a></li>
+                <li><a class="nav-link active" href="/jobs">Jobs</a></li>
+                <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                <li><a class="nav-link" href="/blog">Blog</a></li>
+                <li class="loginbtn">
+                  <a class="nav-link" href="/login">Login</a>
+                </li>
+              </ul>
             </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="jobs-banner-img">
-              <img src="{{ url_for('static', filename='images/jobs_bg1.png') }}" alt="" class="main-img d-none d-md-block" />
-              <img src="{{ url_for('static', filename='images/jobs_side_img_1.png') }}" alt="" class="main-img d-md-none" />
-              <!-- <img src="../static/images/jobs_side_img_1.png" alt="" class="main-img"/> -->
+          </nav>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Banner -->
+      <section class="banner-wrapper courses-banner jobs-banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 jobs-banner-content">
+              <div class="banner-data">
+                <h1>Full IT Stack <br />Jobs</h1>
+
+                <h5>
+                  According to the Central Bureau of Statistics, 28,000 ICT jobs
+                  were open in the 1st quarter of 2023.
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="jobs-banner-img">
+                <img
+                  src="{{ url_for('static', filename='images/jobs_bg1.png') }}"
+                  alt=""
+                  class="main-img d-none d-md-block"
+                />
+                <img
+                  src="{{ url_for('static', filename='images/jobs_side_img_1.png') }}"
+                  alt=""
+                  class="main-img d-md-none"
+                />
+                <!-- <img src="../static/images/jobs_side_img_1.png" alt="" class="main-img"/> -->
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- End Banner -->
+      </section>
+      <!-- End Banner -->
 
-    <!-- Blank Section -->
-    <section style="height: 1500px"></section>
-    <!-- End Blank Section -->
+      <!-- ICT Jobs Section -->
+      <section class="ict-jobs-section jobs-wrp">
+        <div class="container">
+          <h2>Most requested <span>ICT Jobs</span></h2>
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="footer-cnt">
-              <img src="{{ url_for('static', filename='images/footer-logo.svg') }}" alt="" />
-              <!-- <img src="../static/images/footer-logo.svg" alt="" /> -->
-
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor
-              </p>
-
-              <div class="f-cntbx">
-                <h6>Phone</h6>
-                <a href="tel:85558155656">
-                  <h3>+85 558 155 656</h3>
-                </a>
-              </div>
-
-              <div class="f-cntbx">
-                <h6>Email address</h6>
-                <a href="mailto:Contact@educlode.com">
-                  <h3>Contact@educlode.com</h3>
-                </a>
-              </div>
-
-              <div class="quicklinks">
-                <ul>
-                  <li><a href="/online-training">Online training</a></li>
-                  <li><a href="/platform">Platform</a></li>
-                  <li><a href="/certification">Certification</a></li>
-                  <li><a href="/team">Teams</a></li>
-                  <li><a href="/solutions">Build solutions</a></li>
-                </ul>
+          <div class="row card-block-section">
+            <div class="col-12 col-sm-8 col-md-auto card-block">
+              <div>
+                <h6>ON MBO LEVEL</h6>
+                <div class="card-point">
+                  <img
+                    src="{{ url_for('static', filename='images/jobs_block1_ic1.svg') }}"
+                  />
+                  <p>ICT Service Desk</p>
+                </div>
+                <div class="card-point">
+                  <img
+                    src="{{ url_for('static', filename='images/jobs_block1_ic2.svg') }}"
+                  />
+                  <p>ICT Administrator</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="footer-contact">
-              <h3>Contact Us</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed
-                diam nonumy eirmod tempori
-              </p>
 
-              <form>
-                <div class="row">
-                  <div class="col-md-6 col-sm-12">
-                    <div class="form-group">
-                      <input type="text" name="" placeholder="Full Name" class="form-control" />
-                    </div>
+            <div class="col-12 col-sm-8 col-md-auto card-block">
+              <div class="type1">
+                <h6>ON HBO LEVEL</h6>
+                <div class="block">
+                  <div class="card-point">
+                    <img
+                      src="{{ url_for('static', filename='images/jobs_block2_ic1.svg') }}"
+                    />
+                    <p>Data Scientist</p>
                   </div>
-                  <div class="col-md-6 col-sm-12">
-                    <div class="form-group">
-                      <input type="text" name="" placeholder="Email" class="form-control" />
-                    </div>
-                  </div>
-                  <div class="col-md-12 col-sm-12">
-                    <div class="form-group">
-                      <textarea class="form-control" placeholder="Messages" rows="5"></textarea>
-                    </div>
+                  <div class="card-point">
+                    <img
+                      src="{{ url_for('static', filename='images/jobs_block2_ic2.svg') }}"
+                    />
+                    <p>ICT Consultant</p>
                   </div>
                 </div>
-                <button type="submit" class="btn-main">SUBMIT</button>
-              </form>
-            </div>
-          </div>
-        </div>
 
-        <div class="mobile-footer">
-          <div class="social-bx">
-            <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social1.svg') }}" alt="" /></a>
-            <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social2.svg') }}" alt="" /></a>
-            <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social3.svg') }}" alt="" /></a>
-            <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social4.svg') }}" alt="" /></a>
-          </div>
-          <div class="tersm">
-            <ul>
-              <li><a href="#">Privecy Policy</a></li>
-              <li><a href="#">Trams & Conditions </a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-12">
-            <p>Alright reserved © 2020 educloud</p>
-          </div>
-          <div class="col-md-4 col-sm-12">
-            <div class="social-bx">
-              <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social1.svg') }}"
-                  alt="" /></a>
-              <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social2.svg') }}"
-                  alt="" /></a>
-              <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social3.svg') }}"
-                  alt="" /></a>
-              <a href="#" target="_blank"><img src="{{ url_for('static', filename='images/social4.svg') }}"
-                  alt="" /></a>
+                <div class="block">
+                  <div class="card-point">
+                    <img
+                      src="{{ url_for('static', filename='images/jobs_block2_ic3.svg') }}"
+                    />
+                    <p>Software Developer</p>
+                  </div>
+                  <div class="card-point">
+                    <img
+                      src="{{ url_for('static', filename='images/jobs_block2_ic4.svg') }}"
+                    />
+                    <p>Database Specialist</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12">
+          <h5>
+            Non-technical professions such as project & business management are
+            not included. These form the bulk of the applications because these
+            professions can be widely used. In our processes, we train
+            participants to be able to
+            <span>fill the above vacancies.</span> This also applies to project
+            & business professions.
+          </h5>
+        </div>
+      </section>
+      <!-- IT Jobs Section -->
+
+      <!-- End ICT Jobs Section -->
+      <section class="it-jobs-section jobs-wrp">
+        <div class="container">
+          <h2>Full Stack <span>IT Jobs</span></h2>
+          <div class="video-box">
+            <img src="{{ url_for('static', filename='images/jobs_vertical_matrix.png') }}" alt="" class="side-img d-none d-md">
+            <div class="tab-video video-block">
+              <a href="javascript:void(0);" class="play"></a>
+              <div class="video">
+                <video
+                  class="video-div"
+                  poster="{{ url_for('static', filename='images/jobs_video_thumbnail.png') }}"
+                >
+                  <source
+                    src="https://bluesite.azureedge.net/demo-video.mp4"
+                    type="video/mp4"
+                  />
+                  <source
+                    src="https://bluesite.azureedge.net/demo-video.mp4"
+                    type="video/ogg"
+                  />
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End IT Jobs Section -->
+
+
+
+
+
+
+
+
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+              <div class="footer-cnt">
+                <img
+                  src="{{ url_for('static', filename='images/footer-logo.svg') }}"
+                  alt=""
+                />
+                <!-- <img src="../static/images/footer-logo.svg" alt="" /> -->
+
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor
+                </p>
+
+                <div class="f-cntbx">
+                  <h6>Phone</h6>
+                  <a href="tel:85558155656">
+                    <h3>+85 558 155 656</h3>
+                  </a>
+                </div>
+
+                <div class="f-cntbx">
+                  <h6>Email address</h6>
+                  <a href="mailto:Contact@educlode.com">
+                    <h3>Contact@educlode.com</h3>
+                  </a>
+                </div>
+
+                <div class="quicklinks">
+                  <ul>
+                    <li><a href="/online-training">Online training</a></li>
+                    <li><a href="/platform">Platform</a></li>
+                    <li><a href="/certification">Certification</a></li>
+                    <li><a href="/team">Teams</a></li>
+                    <li><a href="/solutions">Build solutions</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed
+                  diam nonumy eirmod tempori
+                </p>
+
+                <form>
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name=""
+                          placeholder="Full Name"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name=""
+                          placeholder="Email"
+                          class="form-control"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-md-12 col-sm-12">
+                      <div class="form-group">
+                        <textarea
+                          class="form-control"
+                          placeholder="Messages"
+                          rows="5"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn-main">SUBMIT</button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="mobile-footer">
+            <div class="social-bx">
+              <a href="#" target="_blank"
+                ><img
+                  src="{{ url_for('static', filename='images/social1.svg') }}"
+                  alt=""
+              /></a>
+              <a href="#" target="_blank"
+                ><img
+                  src="{{ url_for('static', filename='images/social2.svg') }}"
+                  alt=""
+              /></a>
+              <a href="#" target="_blank"
+                ><img
+                  src="{{ url_for('static', filename='images/social3.svg') }}"
+                  alt=""
+              /></a>
+              <a href="#" target="_blank"
+                ><img
+                  src="{{ url_for('static', filename='images/social4.svg') }}"
+                  alt=""
+              /></a>
+            </div>
             <div class="tersm">
               <ul>
                 <li><a href="#">Privecy Policy</a></li>
@@ -207,20 +358,61 @@
             </div>
           </div>
         </div>
+      </footer>
+      <div class="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-12">
+              <p>Alright reserved © 2020 educloud</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="social-bx">
+                <a href="#" target="_blank"
+                  ><img
+                    src="{{ url_for('static', filename='images/social1.svg') }}"
+                    alt=""
+                /></a>
+                <a href="#" target="_blank"
+                  ><img
+                    src="{{ url_for('static', filename='images/social2.svg') }}"
+                    alt=""
+                /></a>
+                <a href="#" target="_blank"
+                  ><img
+                    src="{{ url_for('static', filename='images/social3.svg') }}"
+                    alt=""
+                /></a>
+                <a href="#" target="_blank"
+                  ><img
+                    src="{{ url_for('static', filename='images/social4.svg') }}"
+                    alt=""
+                /></a>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="tersm">
+                <ul>
+                  <li><a href="#">Privecy Policy</a></li>
+                  <li><a href="#">Trams & Conditions </a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+      <!-- End Footer -->
+
+      <!-- Go To Top -->
+      <button id="myBtn" title="Go to top">
+        <i class="fal fa-angle-up" aria-hidden="true"></i>
+      </button>
     </div>
-    <!-- End Footer -->
 
-    <!-- Go To Top -->
-    <button id="myBtn" title="Go to top"><i class="fal fa-angle-up" aria-hidden="true"></i></button>
-  </div>
-
-  <!-- script -->
-  <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
-  <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
-  <!-- End script -->
-</body>
-
+    <!-- script -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <!-- End script -->
+  </body>
 </html>
