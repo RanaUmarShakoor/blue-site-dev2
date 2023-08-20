@@ -2858,6 +2858,13 @@ img.plat-shp2{
 .jobs-banner .container{
     padding: 10px 0 50px;
 }
+.jobs-banner-content{
+    align-self: flex-start;
+    margin-top: 3%;
+}
+.jobs-banner-content h1{
+    margin-bottom: 25px;
+}
 .jobs-banner-img{
     align-items: center;
 }

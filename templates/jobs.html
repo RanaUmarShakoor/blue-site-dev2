@@ -68,22 +68,19 @@
     <section class="banner-wrapper courses-banner jobs-banner">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-sm-12">
+          <div class="col-md-6 col-sm-12 jobs-banner-content">
             <div class="banner-data">
               <h1>Full IT Stack <br />Jobs</h1>
 
               <h5>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat .
+                According to the Central Bureau of Statistics, 28,000 ICT jobs were open in the 1st quarter of 2023.
               </h5>
             </div>
           </div>
           <div class="col-md-6 col-sm-12">
             <div class="jobs-banner-img">
-              <img src="{{ url_for('static', filename='images/jobs_side_img_1.png') }}" alt="" class="main-img" />
+              <img src="{{ url_for('static', filename='images/jobs_bg1.png') }}" alt="" class="main-img d-none d-md-block" />
+              <img src="{{ url_for('static', filename='images/jobs_side_img_1.png') }}" alt="" class="main-img d-md-none" />
               <!-- <img src="../static/images/jobs_side_img_1.png" alt="" class="main-img"/> -->
             </div>
           </div>
