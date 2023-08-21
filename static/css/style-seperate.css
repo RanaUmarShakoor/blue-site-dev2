@@ -2997,12 +2997,12 @@ img.plat-shp2 {
     padding: 0 10px 0 0;
 }
 .ict-jobs-section h5 {
-  font-size: 26px;
+  font-size: 18px;
   font-weight: 400;
   color: #000;
   line-height: 36px;
   text-align: center;
-  padding: 0 45px;
+  padding: 0 40px;
   margin: 0;
 }
 .ict-jobs-section h5 span{
@@ -3035,7 +3035,9 @@ img.plat-shp2 {
 .roles{
   background-color: #F5FAFF;
 }
-
+.full-stack-wrp.roles h2{
+  font-size: 48px;
+}
 .roles p{
   font-size: 16px; 
   opacity: 70;

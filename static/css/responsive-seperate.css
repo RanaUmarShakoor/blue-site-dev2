@@ -296,7 +296,7 @@
     padding: 0 10px 0 0;
   }
   .ict-jobs-section h5 {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 32px;
     padding: 0 35px;
   }
@@ -309,7 +309,9 @@
     bottom: -6%;
     height: 30%;
   }
-
+  .full-stack-wrp.roles h2{
+    font-size: 30px;
+  }
   /* ***** End Jobs Page ***** */
 }
 
@@ -636,7 +638,7 @@
     padding: 0 10px 0 0;
   }
   .ict-jobs-section h5 {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 32px;
     padding: 0 10px;
   }
@@ -649,7 +651,9 @@
     bottom: -6%;
     height: 30%;
   }
-
+  .full-stack-wrp.roles h2{
+    font-size: 30px;
+  }
   /* ***** End Jobs Page ***** */
 }
 
@@ -955,7 +959,7 @@
     padding: 0 10px 0 0;
   }
   .ict-jobs-section h5 {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 32px;
     padding: 0 10px;
   }
@@ -967,6 +971,9 @@
     left: -4%;
     bottom: -6%;
     height: 30%;
+  }
+  .full-stack-wrp.roles h2{
+    font-size: 30px;
   }
   /* ***** End Jobs Page ***** */
 }
@@ -1308,7 +1315,7 @@
     padding: 0;
   }
   .ict-jobs-section h5 {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
     padding: 0 5px;
   }
@@ -1324,6 +1331,10 @@
   
   .roles p{
     font-size: 14px; 
+  }
+
+  .full-stack-wrp.roles h2{
+    font-size: 30px;
   }
 
   .roles-card-section{
@@ -3012,7 +3023,7 @@
     border-radius: 50px;
   }
   .jobs-wrp h2 {
-    font-size: 26px;
+    font-size: 27px;
     margin: 0 0 40px;
   }
   .ict-jobs-section {
@@ -3047,7 +3058,7 @@
     padding: 0;
   }
   .ict-jobs-section h5 {
-    font-size: 18px;
+    font-size: 14px;
     line-height: 26px;
     padding: 0 0px;
   }
@@ -3070,7 +3081,8 @@
     outline: 0.5px solid #16d594;
     outline-offset: 1px;
   }
-  .roles h2{
+  .full-stack-wrp.roles h2{
+    font-size: 27px;
     text-align: left;
   }
   .roles p{
@@ -4718,7 +4730,7 @@
     border-radius: 50px;
   }
   .jobs-wrp h2 {
-    font-size: 26px;
+    font-size: 27px;
     margin: 0 0 40px;
   }
   .ict-jobs-section {
@@ -4753,7 +4765,7 @@
     padding: 0;
   }
   .ict-jobs-section h5 {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 26px;
     padding: 0 0px;
   }
@@ -4771,7 +4783,8 @@
     outline: 0.5px solid #16d594;
     outline-offset: 1px;
   }
-  .roles h2{
+  .full-stack-wrp.roles h2{
+    font-size: 27px;
     text-align: left;
   }
   .roles p{
@@ -6353,7 +6366,7 @@
     border-radius: 50px;
   }
   .jobs-wrp h2 {
-    font-size: 26px;
+    font-size: 27px;
     margin: 0 0 40px;
   }
   .ict-jobs-section {
@@ -6388,7 +6401,7 @@
     padding: 0;
   }
   .ict-jobs-section h5 {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 26px;
     padding: 0 0px;
   }
@@ -6406,7 +6419,8 @@
     outline: 0.5px solid #16d594;
     outline-offset: 1px;
   }
-  .roles h2{
+  .full-stack-wrp.roles h2{
+    font-size: 27px;
     text-align: left;
   }
   .roles p{

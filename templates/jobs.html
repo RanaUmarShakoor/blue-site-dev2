@@ -159,7 +159,7 @@
             <div class="col-12 col-sm-8 col-md-auto card-block">
               <div class="type1">
                 <h6>ON HBO LEVEL</h6>
-                <div class="block">
+                <div class="block d-none d-md-flex">
                   <div class="card-point">
                     <img
                       src="{{ url_for('static', filename='images/jobs_block2_ic1.svg') }}"
@@ -174,12 +174,39 @@
                   </div>
                 </div>
 
-                <div class="block">
+                <div class="block d-none d-md-flex">
                   <div class="card-point">
                     <img
                       src="{{ url_for('static', filename='images/jobs_block2_ic3.svg') }}"
                     />
                     <p>Software Developer</p>
+                  </div>
+                  <div class="card-point">
+                    <img
+                      src="{{ url_for('static', filename='images/jobs_block2_ic4.svg') }}"
+                    />
+                    <p>Database Specialist</p>
+                  </div>
+                </div>
+
+                <div class="block d-md-none">
+                  <div class="card-point">
+                    <img
+                      src="{{ url_for('static', filename='images/jobs_block2_ic1.svg') }}"
+                    />
+                    <p>Data Scientist</p>
+                  </div>
+                  <div class="card-point">
+                    <img
+                      src="{{ url_for('static', filename='images/jobs_block2_ic3.svg') }}"
+                    />
+                    <p>Software Developer</p>
+                  </div>
+                  <div class="card-point">
+                    <img
+                      src="{{ url_for('static', filename='images/jobs_block2_ic2.svg') }}"
+                    />
+                    <p>ICT Consultant</p>
                   </div>
                   <div class="card-point">
                     <img
@@ -240,7 +267,6 @@
       <section class="full-stack-wrp roles">
         <div class="container">
           <h2>Explore different roles as<br /><span>"Full IT Stack"</span></h2>
-
 
           <div class="roles-card-section d-none d-md-flex">
             <!-- Card #1 -->
@@ -383,27 +409,27 @@
 
             <!-- Card #7 -->
             <div class="full-stack-roles-block">
-                <div class="roles-card-outer">
-                  <div class="roles-card">
-                    <img
-                      src="{{ url_for('static', filename='images/full_it_stack_roles_ic7.svg') }}"
-                      alt=""
-                    />
-                    <div class="title">
-                      <h5>Management</h5>
-                      <h6>102 jobs available</h6>
-                    </div>
+              <div class="roles-card-outer">
+                <div class="roles-card">
+                  <img
+                    src="{{ url_for('static', filename='images/full_it_stack_roles_ic7.svg') }}"
+                    alt=""
+                  />
+                  <div class="title">
+                    <h5>Management</h5>
+                    <h6>102 jobs available</h6>
                   </div>
-                  <p>
-                    An Operations Manager manages day-to-day IT operations and
-                    optimizes processes to increase productivity, including
-                    budget and resource management. A Project Manager plans,
-                    coordinates and leads specific IT projects, sets goals,
-                    manages resources and communicates with stakeholders for
-                    successful project delivery.
-                  </p>
                 </div>
+                <p>
+                  An Operations Manager manages day-to-day IT operations and
+                  optimizes processes to increase productivity, including budget
+                  and resource management. A Project Manager plans, coordinates
+                  and leads specific IT projects, sets goals, manages resources
+                  and communicates with stakeholders for successful project
+                  delivery.
+                </p>
               </div>
+            </div>
 
             <!-- Card #8 -->
             <div class="full-stack-roles-block">
