@@ -648,9 +648,10 @@ img.mobimg{
 /******* NEW START ****/
 .video-section{
     position: relative;
+    border-radius: 30px;
 }
 .video-section video{
-    border-radius: 0px;
+    border-radius: 30px;
     width: 100%;
 }
 .video-block .play{
@@ -698,7 +699,7 @@ img.mobimg{
     height: auto;
     margin: 0 auto;
     display: block;
-    border-radius: 0px;
+    border-radius: 30px;
 } 
 
 .video-block.play .video {
