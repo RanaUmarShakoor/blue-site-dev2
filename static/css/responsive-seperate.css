@@ -215,8 +215,9 @@
     padding: 150px 50px 100px 120px;
   }
   .full-it-stack-banner-img img.main-img {
-    width: 80%;
-    padding: 30px 0;
+    width: 90%;
+    margin-top: 30px;
+    padding: 30px 0 0;
   }
   .full-it-stack.edu-mission-wrp {
     padding-bottom: 40px;
@@ -257,8 +258,8 @@
     align-items: center;
   }
   .jobs-banner-img .main-img {
-    width: 90%;
-    margin-left: 10%;
+    width: 98%;
+    margin-left: 8%;
   }
   .jobs-wrp h2 {
     font-size: 30px;
@@ -548,6 +549,7 @@
   .full-it-stack-banner {
     padding: 100px 0 95px;
     background-position: 0 -25px;
+    background-size: 115%;
   }
   .full-it-stack-banner .banner-data h6 {
     margin: 0 0 25px;
@@ -600,7 +602,7 @@
     align-items: center;
   }
   .jobs-banner-img .main-img {
-    width: 90%;
+    width: 100%;
     margin-left: 10%;
   }
   .jobs-wrp h2 {
@@ -866,6 +868,12 @@
   /* **** Full IT Stack Page **** */
   .full-it-stack-banner {
     padding: 100px 0 35px;
+    background-size: 117%;
+  }
+  .full-it-stack-banner-img .main-img {
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px 0 20px;
   }
   .full-it-stack.edu-mission-wrp {
     padding-bottom: 20px;
@@ -912,7 +920,7 @@
     align-items: center;
   }
   .jobs-banner-img .main-img {
-    width: 90%;
+    width: 100%;
     margin-left: 10%;
   }
   .jobs-wrp h2 {
@@ -1264,8 +1272,9 @@
     margin: 0 0 25px;
   }
   .jobs-banner-img .main-img {
-    width: 90%;
+    width: 95%;
     margin-left: 10%;
+    padding: 10px 0;
   }
   .jobs-wrp h2 {
     font-size: 30px;
