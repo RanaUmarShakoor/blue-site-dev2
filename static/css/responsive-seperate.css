@@ -2996,6 +2996,9 @@
     font-size: 14px;
     line-height: 22px;
   }
+  #figma_icon{
+    width: 38px;
+  }
   /* **** End Full IT Stack Page **** */
 
   /* ***** Jobs Page ***** */
@@ -4707,6 +4710,15 @@
   }
   .toolbx {
     margin: 0 0 30px;
+  }
+  #togaf_img{
+    width: 75px;
+  }
+  #figma_icon{
+    width: 35px;
+  }
+  #networking_img{
+    width: 80px;
   }
   /* **** End Full IT Stack Page **** */
 
@@ -6530,6 +6542,15 @@
   }
   .toolbx {
     margin: 0 0 30px;
+  }
+  #togaf_img{
+    width: 75px;
+  }
+  #figma_icon{
+    width: 32px;
+  }
+  #networking_img{
+    width: 80px;
   }
   /* **** End Full IT Stack Page **** */
 }
