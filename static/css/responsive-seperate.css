@@ -250,6 +250,7 @@
   .jobs-banner-content {
     align-self: flex-start;
     margin-top: 8%;
+    padding-left: 50px;
   }
   .jobs-banner-content h1 {
     margin: 0 0 25px;
@@ -258,8 +259,8 @@
     align-items: center;
   }
   .jobs-banner-img .main-img {
-    width: 98%;
-    margin-left: 8%;
+    width: 108%;
+    margin-left: 0%;
   }
   .jobs-wrp h2 {
     font-size: 30px;
@@ -604,8 +605,8 @@
     align-items: center;
   }
   .jobs-banner-img .main-img {
-    width: 100%;
-    margin-left: 10%;
+    width: 112%;
+    margin-left: 7%;
   }
   .jobs-wrp h2 {
     font-size: 30px;
@@ -911,7 +912,7 @@
 
   /* ***** Jobs Page ***** */
   .jobs-banner .container {
-    padding: 10px 0 50px;
+    padding: 10px 0 30px;
   }
   .jobs-banner-content {
     align-self: flex-start;
@@ -1279,7 +1280,7 @@
     margin: 0 0 25px;
   }
   .jobs-banner-img .main-img {
-    width: 95%;
+    width: 105%;
     margin-left: 10%;
     padding: 10px 0;
   }
