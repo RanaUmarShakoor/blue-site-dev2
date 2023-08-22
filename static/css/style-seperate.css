@@ -1023,7 +1023,7 @@ footer {
 }
 .full-stack-block {
   margin: 0 0 30px;
-  background: #fff;
+  background: white;
   border-radius: 24px;
   border: 1px solid #dce3ff;
 }
@@ -1047,12 +1047,11 @@ footer {
   margin: 0 -5px;
 }
 .tools-wrp ul li {
-  padding: 0 5px;
   width: 16.66%;
 }
 .toolbx .tool-img {
-  margin: 0 auto 18px;
-  height: 75px;
+  margin: 0 auto;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;

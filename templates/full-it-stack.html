@@ -133,7 +133,9 @@
                 <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                     invidunutlabore et dolore magna aliquyam erat, sed diam voluptua</p>
 
-                <div class="swiper full-stack-slider-wrp">
+
+                    <!-- Desktop Version -->
+                <div class="swiper full-stack-slider-wrp d-none d-md-block">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="full-stack-block">
@@ -181,7 +183,7 @@
                                             <div class="toolbx">
                                                 <div class="tool-img">
                                                     <img src="{{ url_for('static', filename='images/manage-ic5.svg') }}"
-                                                        alt="">
+                                                        alt="" id="devops_img">
                                                 </div>
                                                 <h4>Devops</h4>
                                             </div>
@@ -520,6 +522,400 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
+
+
+
+                <!-- Mobile Version -->
+                <div class="swiper full-stack-slider-wrp d-md-none">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>Management & Architecture</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/manage-ic1.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Business Process Management</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/manage-ic2.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>ITIL</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/manage-ic3.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Lean Six Sigma</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/manage-ic4.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Scrum + Agile</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/manage-ic5.svg') }}"
+                                                        alt="" id="devops_img">
+                                                </div>
+                                                <h4>Devops</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/manage-ic6.svg') }}"
+                                                        alt="" id="togaf_img">
+                                                </div>
+                                                <h4>Togaf</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>Intelligence</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/intelli-ic1.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Management</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/intelli-ic2.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>kubernetes</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/intelli-ic3.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Business Intelligence</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/intelli-ic4.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>IT Infra Automation</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/intelli-ic5.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Business Automation</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/intelli-ic6.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Artificial Intelligence</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>Frontend</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/front-ic1.svg') }}"
+                                                        alt="" id="figma_icon">
+                                                </div>
+                                                <h4>Figma</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/front-ic2.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Next.js</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/front-ic3.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Flask</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/front-ic4.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Fast API</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/front-ic5.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Azure App Service</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>Backend</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/backend-ic1.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Python</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/backend-ic2.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Node Js</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/backend-ic3.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Databases</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/backend-ic4.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Storage</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/backend-ic5.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>API</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>Operating Systems</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/oc-ic1.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Windows</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/oc-ic2.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Linux</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>Systems & Networking</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/network-ic1.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Serverless</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/network-ic2.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>virtual machine</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/network-ic3.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Containers</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/network-ic4.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>IOT</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/network-ic5.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Security</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/network-ic6.svg') }}"
+                                                        alt="" id="networking_img">
+                                                </div>
+                                                <h4>Networking</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="full-stack-block">
+                                <h3>Cloud Computing</h3>
+
+                                <div class="tools-wrp">
+                                    <ul>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/cloud-ic1.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>On-premise</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/cloud-ic2.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Azure</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/cloud-ic3.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>Google Cloud</h4>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toolbx">
+                                                <div class="tool-img">
+                                                    <img src="{{ url_for('static', filename='images/cloud-ic4.svg') }}"
+                                                        alt="">
+                                                </div>
+                                                <h4>AWS</h4>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+
+
             </div>
         </section>
         <!-- End Full Stack Developer -->

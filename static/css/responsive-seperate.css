@@ -897,16 +897,32 @@
     padding: 30px;
   }
   .tools-wrp {
-    padding: 30px;
+    padding: 0;
+  }
+  .tools-wrp ul{
+    padding: 1.5rem;
+    gap: 1.25rem;
+    
+  }
+  .toolbx .tool-img {
+    margin: 0 auto 0;
+  }
+  .tools-wrp ul li {
+    width: 14.8%;
+    padding: 0;
   }
   .toolbx .tool-img img {
-    height: 35px;
+    height: 50px;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: scale-down;
   }
   .toolbx h4 {
     font-size: 14px;
+    /* margin-top: 12px; */
   }
-  .banner-img img.main-img {
-    width: 100%;
+  .toolbx {
+    margin: 0 0 0px;
   }
   /* **** End Full IT Stack Page **** */
 
@@ -979,7 +995,7 @@
   /* ***** End Jobs Page ***** */
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 991px) {
   /* **** Login & Register Page **** */
   .login-wrapper {
     height: auto;
@@ -1252,20 +1268,38 @@
     padding: 30px;
   }
   .tools-wrp {
-    padding: 30px;
+    padding: 0;
+  }
+  .tools-wrp ul{
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  .toolbx .tool-img {
+    margin: 0 auto 0;
+  }
+  .tools-wrp ul li {
+    width: 31%;
+    padding: 0;
   }
   .toolbx .tool-img img {
-    height: 35px;
+    height: 50px;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: scale-down;
   }
   .toolbx h4 {
     font-size: 14px;
+    /* margin-top: 10px; */
   }
-  #togaf_img {
+  .toolbx {
+    margin: 0 0 0px;
+  }
+  /* #togaf_img {
     width: 100%;
   }
   #networking_img {
     width: 100%;
-  }
+  } */
   /* **** End Full IT Stack Page **** */
 
   /* ***** Jobs Page ***** */
@@ -1968,24 +2002,7 @@
     width: 100%;
     text-align: center;
   }
-  .tools-wrp {
-    padding: 30px 15px 0;
-  }
-  .toolbx .tool-img {
-    margin: 0 auto;
-  }
-  .tools-wrp ul li {
-    width: 33.33%;
-  }
-  .toolbx .tool-img img {
-    width: 50px;
-  }
-  .toolbx h4 {
-    font-size: 13px;
-  }
-  .toolbx {
-    margin: 0 0 30px;
-  }
+
   section.certified-wrp.prerequisites-wrp {
     background-image: url("../images/pre-mobile-back.png");
   }
@@ -2966,22 +2983,32 @@
     text-align: center;
   }
   .tools-wrp {
-    padding: 30px 15px 0;
+    padding: 0;
+  }
+  .tools-wrp ul{
+    padding: 1.5rem;
+    gap: 1.25rem;
+    
   }
   .toolbx .tool-img {
-    margin: 0 auto;
+    margin: 0 auto 0;
   }
   .tools-wrp ul li {
-    width: 33.33%;
+    width: 30.2%;
+    padding: 0;
   }
   .toolbx .tool-img img {
-    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: scale-down;
   }
   .toolbx h4 {
-    font-size: 13px;
+    font-size: 14px;
+    /* margin-top: 12px; */
   }
   .toolbx {
-    margin: 0 0 30px;
+    margin: 0 0 0px;
   }
   section.certified-wrp.prerequisites-wrp {
     background-image: url("../images/pre-mobile-back.png");
@@ -2996,9 +3023,12 @@
     font-size: 14px;
     line-height: 22px;
   }
+  /* #devops_img{
+    width: 85px;
+  }
   #figma_icon{
     width: 38px;
-  }
+  } */
   /* **** End Full IT Stack Page **** */
 
   /* ***** Jobs Page ***** */
@@ -3105,10 +3135,17 @@
     padding: 5px 10px;
     font-size: 14px;
   }
+
+  /* #togaf_img{
+    width: 120px;
+  }
+  #networking_img{
+    width: 120px;
+  } */
   /* ***** End Jobs Page ***** */
 }
 
-@media (min-width: 448px) and (max-width: 575px) {
+@media (min-width: 448px) and (max-width: 576px) {
   /* **** Login & Register Page **** */
   .lang-bx {
     display: none;
@@ -3700,24 +3737,7 @@
     width: 100%;
     text-align: center;
   }
-  .tools-wrp {
-    padding: 30px 15px 0;
-  }
-  .toolbx .tool-img {
-    margin: 0 auto;
-  }
-  .tools-wrp ul li {
-    width: 33.33%;
-  }
-  .toolbx .tool-img img {
-    width: 50px;
-  }
-  .toolbx h4 {
-    font-size: 13px;
-  }
-  .toolbx {
-    margin: 0 0 30px;
-  }
+
   section.certified-wrp.prerequisites-wrp {
     background-image: url("../images/pre-mobile-back.png");
   }
@@ -3793,74 +3813,6 @@
     padding: 50px 0;
   }
   /* **** End Gallery Page ***** */
-
-  /* **** Exchange Page **** */
-  .courses-banner {
-    padding: 120px 0 0;
-  }
-  .courses-banner .banner-img {
-    margin: 0 0 80px;
-  }
-  .banner-data h1 br {
-    display: none;
-  }
-  .courses-banner.banner-wrapper .row {
-    flex-flow: column;
-  }
-  .exchange-wrp {
-    padding: 85px 0;
-    overflow: hidden;
-  }
-  .exchange-wrp h2 {
-    font-size: 27px;
-    text-align: center;
-  }
-  .exchange-wrp .container {
-    padding: 0;
-  }
-  .exchange-wrp .exchange-box {
-    padding: 20px;
-    border-radius: 18px;
-    background-color: rgba(123, 123, 123, 0.05);
-  }
-  .exchange-wrp .swiper-wrapper .swiper-slide:nth-child(even) .exchange-box {
-    background-color: rgba(246, 85, 53, 0.05);
-  }
-  .exchange-wrp .exchange-flag img {
-    height: 50px;
-  }
-  .exchange-box p {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .program-wrp h2 {
-    font-size: 27px;
-    margin: 0 0 20px;
-  }
-  .program-wrp h6 {
-    font-size: 14px;
-    line-height: 22px;
-    margin: 0 0 30px;
-  }
-  .program-box p {
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .benifit-wrp {
-    padding: 90px 0 30px;
-  }
-  .benifit-wrp h2 {
-    font-size: 27px;
-    text-align: center;
-  }
-  .benifit-wrp .exchange-box {
-    text-align: center;
-    margin: 0 0 60px;
-  }
-  .benifit-wrp .exchange-flag img {
-    margin: 0 auto 20px;
-  }
-  /* **** End Exchange Page **** */
 
   /* **** Blog Page **** */
   .blog-banner {
@@ -4694,32 +4646,42 @@
     text-align: center;
   }
   .tools-wrp {
-    padding: 30px 15px 0;
+    padding: 0;
+  }
+  .tools-wrp ul{
+    padding: 1.5rem;
+    gap: 1.25rem;
+    justify-content: center;
   }
   .toolbx .tool-img {
-    margin: 0 auto;
+    margin: 0 auto 0;
   }
   .tools-wrp ul li {
-    width: 33.33%;
+    width: 27%;
+    padding: 0;
   }
   .toolbx .tool-img img {
-    width: 50px;
+    height: 40px;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: contain;
   }
   .toolbx h4 {
-    font-size: 13px;
+    font-size: 10px;
+    /* margin-top: 12px; */
   }
   .toolbx {
-    margin: 0 0 30px;
+    margin: 0 0 0px;
+  }
+  /* #devops_img{
+    width: 85px;
   }
   #togaf_img{
-    width: 75px;
-  }
-  #figma_icon{
-    width: 35px;
+    width: 110px;
   }
   #networking_img{
-    width: 80px;
-  }
+    width: 100px;
+  } */
   /* **** End Full IT Stack Page **** */
 
   /* ***** Jobs Page ***** */
@@ -4820,7 +4782,7 @@
   /* ***** End Jobs Page ***** */
 }
 
-@media (max-width: 447px) {
+@media (max-width: 448px) {
   /* **** Login & Register Page **** */
   .lang-bx {
     display: none;
@@ -5418,24 +5380,7 @@
     width: 100%;
     text-align: center;
   }
-  .tools-wrp {
-    padding: 30px 15px 0;
-  }
-  .toolbx .tool-img {
-    margin: 0 auto;
-  }
-  .tools-wrp ul li {
-    width: 33.33%;
-  }
-  .toolbx .tool-img img {
-    width: 50px;
-  }
-  .toolbx h4 {
-    font-size: 13px;
-  }
-  .toolbx {
-    margin: 0 0 30px;
-  }
+
   section.certified-wrp.prerequisites-wrp {
     background-image: url("../images/pre-mobile-back.png");
   }
@@ -6525,37 +6470,23 @@
     font-size: 16px;
     text-align: center;
   }
-  .tools-wrp {
-    padding: 30px 15px 0;
-  }
-  .toolbx .tool-img {
-    margin: 0 auto;
-  }
-  .tools-wrp ul li {
-    width: 33.33%;
-  }
-  .toolbx .tool-img img {
-    width: 50px;
-  }
-  .toolbx h4 {
-    font-size: 13px;
-  }
-  .toolbx {
-    margin: 0 0 30px;
+  
+  /* #devops_img{
+    width: 85px;
   }
   #togaf_img{
-    width: 75px;
+    width: 100px;
   }
   #figma_icon{
     width: 32px;
   }
   #networking_img{
-    width: 80px;
-  }
+    width: 100px;
+  } */
   /* **** End Full IT Stack Page **** */
 }
 
-@media screen and (min-width: 400px) and (max-width: 447px) {
+@media screen and (min-width: 400px) and (max-width: 448px) {
   /* **** Full IT Stack Page **** */
   .full-it-stack-banner {
     background-image: url("../images/full_stack_it_bg2.png");
@@ -6563,10 +6494,37 @@
     background-position: center;
     text-align: center;
   }
+  .tools-wrp {
+    padding: 0;
+  }
+  .tools-wrp ul{
+    padding: 1.5rem;
+    gap: 1.25rem;
+  }
+  .toolbx .tool-img {
+    margin: 0 auto 0;
+  }
+  .tools-wrp ul li {
+    width: 29.1%;
+    padding: 0;
+  }
+  .toolbx .tool-img img {
+    height: 40px;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .toolbx h4 {
+    font-size: 10px;
+    /* margin-top: 12px; */
+  }
+  .toolbx {
+    margin: 0 0 0px;
+  }
   /* **** End Full IT Stack Page **** */
 }
 
-@media screen and (min-width: 350px) and (max-width: 399px) {
+@media screen and (min-width: 350px) and (max-width: 400px) {
   /* **** Full IT Stack Page **** */
   .full-it-stack-banner {
     background-image: url("../images/full_stack_it_bg2.png");
@@ -6574,16 +6532,70 @@
     background-position: center;
     text-align: center;
   }
+  .tools-wrp {
+    padding: 0;
+  }
+  .tools-wrp ul{
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  .toolbx .tool-img {
+    margin: 0 auto 0;
+  }
+  .tools-wrp ul li {
+    width: 29%;
+    padding: 0;
+  }
+  .toolbx .tool-img img {
+    height: 40px;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .toolbx h4 {
+    font-size: 9px;
+    /* margin-top: 10px; */
+  }
+  .toolbx {
+    margin: 0 0 0px;
+  }
   /* **** End Full IT Stack Page **** */
 }
 
-@media screen and (min-width: 326px) and (max-width: 349px) {
+@media screen and (min-width: 325px) and (max-width: 350px) {
   /* **** Full IT Stack Page **** */
   .full-it-stack-banner {
     background-image: url("../images/full_stack_it_bg2.png");
     background-size: 125%;
     background-position: center;
     text-align: center;
+  }
+  .tools-wrp {
+    padding: 0;
+  }
+  .tools-wrp ul{
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  .toolbx .tool-img {
+    margin: 0 auto 0;
+  }
+  .tools-wrp ul li {
+    width: 29%;
+    padding: 0;
+  }
+  .toolbx .tool-img img {
+    height: 40px;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .toolbx h4 {
+    font-size: 8px;
+    /* margin-top: 10px; */
+  }
+  .toolbx {
+    margin: 0 0 0px;
   }
   /* **** End Full IT Stack Page **** */
 }
@@ -6615,6 +6627,33 @@
   }
   .full-it-stack-banner .btn-group {
     margin: 0 auto 25px;
+  }
+  .tools-wrp {
+    padding: 0;
+  }
+  .tools-wrp ul{
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  .toolbx .tool-img {
+    margin: 0 auto 0;
+  }
+  .tools-wrp ul li {
+    width: 29%;
+    padding: 0;
+  }
+  .toolbx .tool-img img {
+    height: 40px;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .toolbx h4 {
+    font-size: 8px;
+    /* margin-top: 10px; */
+  }
+  .toolbx {
+    margin: 0 0 0px;
   }
   /* **** End Full IT Stack Page **** */
 }
@@ -6650,6 +6689,34 @@
   }
   .full-it-stack-banner .btn-group .btn-main {
     padding: 8px;
+  }
+  .tools-wrp {
+    padding: 0;
+  }
+  .tools-wrp ul{
+    padding: 1.5rem;
+    /* gap: 1rem; */
+    justify-content: space-between;
+  }
+  .toolbx .tool-img {
+    margin: 0 auto 0;
+  }
+  .tools-wrp ul li {
+    width: 29%;
+    padding: 0;
+  }
+  .toolbx .tool-img img {
+    height: 40px;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  .toolbx h4 {
+    font-size: 8px;
+    margin-top: 10px;
+  }
+  .toolbx {
+    margin: 0 0 0px;
   }
   /* **** End Full IT Stack Page **** */
 }
