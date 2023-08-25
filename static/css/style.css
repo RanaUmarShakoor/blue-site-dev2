@@ -479,7 +479,7 @@ img.bannerimgshp{
 }
 .slider-blocks{
     position: relative;
-    padding: 0 22% 0 0;
+    /* padding: 0 22% 0 0; */
 }
 .slider-blocks img{
     width: 100%;
