@@ -1,4 +1,11 @@
-@media (min-width: 1401px) and (max-width: 1700px) {
+/* @media (min-width: 1700px) and (max-width: 1900px) {
+
+  .slider-center {
+    left: 5%;
+  }
+} */
+
+@media (min-width: 1400px) and (max-width: 1700px) {
   .class-img img {
     width: 100%;
   }
@@ -7,9 +14,9 @@
     padding: 0 200px 0 0;
   } */
 
-  .slider-center {
-    right: 5%;
-  }
+  /* .slider-center {
+    left: 15%;
+  } */
 }
 
 @media (min-width: 1201px) and (max-width: 1400px) {
@@ -88,8 +95,9 @@
   } */
 
   .slider-text {
-    max-width: 450px;
+    width: 1150px;
     padding: 45px 24px;
+    margin: 0 auto;
     border-radius: 8px;
   }
 
@@ -98,8 +106,8 @@
   }
 
   .slider-text h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 48px;
+    line-height: 56px;
     margin: 0 0 15px;
   }
 
@@ -119,9 +127,9 @@
     font-size: 16px;
   }
 
-  .slider-center {
-    right: 5%;
-  }
+  /* .slider-center {
+    left: 5%;
+  } */
 
   .slider-blocks img {
     height: auto;
@@ -768,7 +776,7 @@
   } */
 
   .slider-text {
-    max-width: 450px;
+    width: 980px;
     padding: 45px 24px;
     border-radius: 8px;
   }
@@ -778,8 +786,8 @@
   }
 
   .slider-text h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 38px;
+    line-height: 46px;
     margin: 0 0 15px;
   }
 
@@ -803,9 +811,9 @@
     height: auto;
   }
 
-  .slider-center {
-    right: 5%;
-  }
+  /* .slider-center {
+    left: 5%;
+  } */
 
   .edu-mission-wrp {
     padding: 80px 0 60px;
@@ -1629,16 +1637,16 @@
     height: auto;
   }
 
-  .slider-center {
-    right: 5%;
-  }
+  /* .slider-center {
+    left: 5%;
+  } */
 
   /* .slider-blocks .container {
     max-width: 960px;
   } */
 
   .slider-text {
-    max-width: 400px;
+    max-width: 970px;
     padding: 24px;
     border-radius: 8px;
   }
@@ -1648,8 +1656,8 @@
   }
 
   .slider-text h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 36px;
+    line-height: 40px;
     margin: 0 0 15px;
   }
 
@@ -2659,7 +2667,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 992px) {
   /* **** Login & Register Page **** */
   .login-wrapper {
     height: auto;
@@ -2843,17 +2851,17 @@
     height: auto;
   }
 
-  .slider-center {
-    right: 5%;
-  }
+  /* .slider-center {
+    left: 5%;
+  } */
 
   /* .slider-blocks {
     padding: 0 150px 0 0;
   } */
 
   .slider-text {
-    max-width: 400px;
-    padding: 24px;
+    max-width: 710px;
+    padding: 10px;
     border-radius: 8px;
   }
 
@@ -2862,8 +2870,8 @@
   }
 
   .slider-text h1 {
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 38px;
     margin: 0 0 15px;
   }
 
@@ -2873,10 +2881,10 @@
   }
 
   .slider-text .btn-group .btn-main {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 14px 20px;
+    font-size: 14px;
     margin-right: 5px;
-    line-height: 34px;
+    /* line-height: 20px; */
   }
 
   .slider-text h5.noneed {
@@ -4337,6 +4345,9 @@
     max-width: 340px;
     padding: 24px;
     border-radius: 8px;
+    color: #000;
+    background: #fff;
+    box-shadow: 30px 20px 80px rgba(10, 24, 84, 0.08);
     float: none;
     margin: 0 auto;
   }
@@ -6428,6 +6439,9 @@
     max-width: 340px;
     padding: 24px;
     border-radius: 8px;
+    color: #000;
+    background: #fff;
+    box-shadow: 30px 20px 80px rgba(10, 24, 84, 0.08);
     float: none;
     margin: 0 auto;
   }
@@ -8516,6 +8530,9 @@
     max-width: 340px;
     padding: 24px;
     border-radius: 8px;
+    color: #000;
+    background: #fff;
+    box-shadow: 30px 20px 80px rgba(10, 24, 84, 0.08);
     float: none;
     margin: 0 auto;
   }
