@@ -9,6 +9,11 @@
   .class-img img {
     width: 100%;
   }
+
+  .slider-blocks img{
+    height: 80vh;
+  }
+
 /* 
   .slider-blocks {
     padding: 0 200px 0 0;

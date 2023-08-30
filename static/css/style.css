@@ -487,7 +487,8 @@ img.bannerimgshp{
 .slider-blocks img{
     width: 100%;
     /* height: calc(100vh - 106px); */
-    height: 61vh;
+    height: 75vh;
+    object-position: 70% 2%;
     object-fit: cover;
 }
 .slider-center{
