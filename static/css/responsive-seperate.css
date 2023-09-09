@@ -1,3 +1,15 @@
+@media screen and (min-width: 2600px) {
+  .banner-wrapper{
+    min-height: 1000px;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .banner-wrapper{
+    min-height: 730px;
+  }
+}
+
 @media (min-width: 1401px) and (max-width: 1700px) {
   .class-img img {
     width: 100%;
