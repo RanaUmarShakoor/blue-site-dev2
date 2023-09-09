@@ -404,7 +404,7 @@ header.main-header{
     background:#535AE8 url('../images/banner-shap.png') 0 0 no-repeat;
     background-size: 100% 100%;
     position: relative;
-    height: 730px;
+    height: calc(40.40vw);
     width: 100%;
     overflow: hidden;
     padding: 130px 0 0;
@@ -997,8 +997,14 @@ footer{
 .about-banner{
     background-image: url('../images/about-back.png');
 }
+.about-banner .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 .abt-banner-img{
-    max-width: 900px;
+    /* max-width: 900px; */
+    max-width: 1000px;
     margin: 0 auto;
 }
 .abt-banner-img img{
