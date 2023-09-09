@@ -5,6 +5,18 @@
   }
 } */
 
+@media screen and (min-width: 2600px) {
+  .banner-wrapper{
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 1900px) {
+  .banner-wrapper{
+    height: 730px;
+  }
+}
+
 @media (min-width: 1400px) and (max-width: 1700px) {
   .class-img img {
     width: 100%;

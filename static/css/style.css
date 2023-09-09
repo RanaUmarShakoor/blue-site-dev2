@@ -1230,6 +1230,11 @@ footer{
     background-image: url('../images/gallery-back.png');
     padding: 200px 0 100px;
 }
+.gallery-banner .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 .gallery-banner .banner-data h1{
     margin: 0 0 20px;
 }
