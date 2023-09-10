@@ -1354,13 +1354,85 @@ footer {
   font-weight: 500;
   padding: 0 10px 0 0;
 }
+/* Jobs Page Carousel */
+.carousel{
+  padding: 0 2rem;
+}
+.carousel-inner {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  padding: 2rem 0rem 5rem;
+}
+.carousel-item {
+  margin-right: 0;
+  flex: 0 0 23.2%;
+  display: block;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: 3px solid #70707080;
+  border-radius: 0;
+}
+.card-body .card-title{
+  color: black;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: left;
+  padding: 5px 0;
+}
+.card-text{
+  color: #707070;
+  font-size: 9px;
+  font-weight: 500;
+  padding: 5px 0 20px;
+}
+button.carousel-control-prev,
+button.carousel-control-next {
+  background-color: white;
+  border: 1px solid #707070;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  top: 88%;
+  /* transform: translateY(-50%); */
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover{
+  background-color: #545ae8;
+}
+button.carousel-control-prev svg,
+button.carousel-control-next svg{
+  height: 26px;
+  width: 26px;
+  stroke: #707070;
+}
+.carousel-control-prev:hover svg,
+.carousel-control-next:hover svg{
+  stroke: white;
+} 
+.carousel-control-prev{
+  left: 46%;
+  transform: translateX(-54%);
+}
+.carousel-control-next{
+  left: 54%;
+  transform: translateX(-46%);
+}
+
+
+
+
+
 .ict-jobs-section h5 {
   font-size: 18px;
   font-weight: 400;
   color: #000;
   line-height: 36px;
   text-align: center;
-  padding: 0 40px;
+  padding: 100px 40px 0;
   margin: 0;
 }
 .ict-jobs-section h5 span {

@@ -1,12 +1,21 @@
 @media screen and (min-width: 2600px) {
-  .banner-wrapper{
+  .banner-wrapper {
     min-height: 1000px;
   }
 }
 
 @media screen and (max-width: 1900px) {
-  .banner-wrapper{
+  .banner-wrapper {
     min-height: 730px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .carousel-inner{
+    gap: 3px;
+  }
+  .carousel-item{
+    flex: 0 0 47.1%;
   }
 }
 
@@ -320,7 +329,7 @@
     bottom: -6%;
     height: 30%;
   }
-  .full-stack-wrp.roles h2{
+  .full-stack-wrp.roles h2 {
     font-size: 30px;
   }
   /* ***** End Jobs Page ***** */
@@ -662,7 +671,7 @@
     bottom: -6%;
     height: 30%;
   }
-  .full-stack-wrp.roles h2{
+  .full-stack-wrp.roles h2 {
     font-size: 30px;
   }
   /* ***** End Jobs Page ***** */
@@ -909,10 +918,9 @@
   .tools-wrp {
     padding: 0;
   }
-  .tools-wrp ul{
+  .tools-wrp ul {
     padding: 1.5rem;
     gap: 1.25rem;
-    
   }
   .toolbx .tool-img {
     margin: 0 auto 0;
@@ -999,7 +1007,7 @@
     bottom: -6%;
     height: 30%;
   }
-  .full-stack-wrp.roles h2{
+  .full-stack-wrp.roles h2 {
     font-size: 30px;
   }
   /* ***** End Jobs Page ***** */
@@ -1280,7 +1288,7 @@
   .tools-wrp {
     padding: 0;
   }
-  .tools-wrp ul{
+  .tools-wrp ul {
     padding: 1.5rem;
     gap: 1rem;
   }
@@ -1373,44 +1381,44 @@
     bottom: -6%;
     height: 30%;
   }
-  
-  .roles p{
-    font-size: 14px; 
+
+  .roles p {
+    font-size: 14px;
   }
 
-  .full-stack-wrp.roles h2{
+  .full-stack-wrp.roles h2 {
     font-size: 30px;
     margin-bottom: 45px;
   }
 
-  .roles-card-section{
+  .roles-card-section {
     gap: 10px;
   }
-  
+
   .roles-card-section > div {
     width: 45%;
     flex: 1 0 auto;
   }
-  
-  .roles-card-section .roles-card-outer{
+
+  .roles-card-section .roles-card-outer {
     padding: 20px 20px 10px;
   }
-  
-  .roles-card{
+
+  .roles-card {
     gap: 15px;
     margin-bottom: 15px;
   }
 
-  .roles-card img{
-    height: 60px; 
-    width: 60px
+  .roles-card img {
+    height: 60px;
+    width: 60px;
   }
 
-  .roles-card .title h5{
-    font-size: 18px; 
+  .roles-card .title h5 {
+    font-size: 18px;
   }
-  
-  .roles-card .title h6{
+
+  .roles-card .title h6 {
     padding: 5px 10px;
     font-size: 14px;
   }
@@ -2039,10 +2047,9 @@
   .tools-wrp {
     padding: 0;
   }
-  .tools-wrp ul{
+  .tools-wrp ul {
     padding: 1.5rem;
     gap: 1.25rem;
-    
   }
   .toolbx .tool-img {
     margin: 0 auto 0;
@@ -2089,7 +2096,7 @@
   .jobs-banner .container {
     padding: 70px 0 50px;
   }
-  .jobs-banner .row{
+  .jobs-banner .row {
     flex-flow: column;
   }
   .jobs-banner-content {
@@ -2170,24 +2177,24 @@
     outline: 0.5px solid #16d594;
     outline-offset: 1px;
   }
-  .full-stack-wrp.roles h2{
+  .full-stack-wrp.roles h2 {
     font-size: 27px;
     text-align: left;
     margin-bottom: 40px;
   }
-  .roles p{
-    font-size: 14px; 
+  .roles p {
+    font-size: 14px;
   }
-  .roles-card img{
-    height: 60px; 
-    width: 60px
+  .roles-card img {
+    height: 60px;
+    width: 60px;
   }
 
-  .roles-card .title h5{
-    font-size: 18px; 
+  .roles-card .title h5 {
+    font-size: 18px;
   }
-  
-  .roles-card .title h6{
+
+  .roles-card .title h6 {
     padding: 5px 10px;
     font-size: 14px;
   }
@@ -2820,7 +2827,7 @@
   .tools-wrp {
     padding: 0;
   }
-  .tools-wrp ul{
+  .tools-wrp ul {
     padding: 1.5rem;
     gap: 1.25rem;
     justify-content: center;
@@ -2860,7 +2867,7 @@
   .jobs-banner .container {
     padding: 80px 0 60px;
   }
-  .jobs-banner .row{
+  .jobs-banner .row {
     flex-flow: column;
   }
   .jobs-banner-content {
@@ -2933,24 +2940,24 @@
     outline: 0.5px solid #16d594;
     outline-offset: 1px;
   }
-  .full-stack-wrp.roles h2{
+  .full-stack-wrp.roles h2 {
     font-size: 27px;
     text-align: left;
   }
-  .roles p{
-    font-size: 14px; 
+  .roles p {
+    font-size: 14px;
   }
 
-  .roles-card img{
-    height: 60px; 
-    width: 60px
+  .roles-card img {
+    height: 60px;
+    width: 60px;
   }
 
-  .roles-card .title h5{
-    font-size: 18px; 
+  .roles-card .title h5 {
+    font-size: 18px;
   }
-  
-  .roles-card .title h6{
+
+  .roles-card .title h6 {
     padding: 5px 10px;
     font-size: 12px;
   }
@@ -4479,7 +4486,7 @@
   .jobs-banner .container {
     padding: 20px 0 50px;
   }
-  .jobs-banner .row{
+  .jobs-banner .row {
     flex-flow: column;
   }
   .jobs-banner-content {
@@ -4557,24 +4564,24 @@
     outline: 0.5px solid #16d594;
     outline-offset: 1px;
   }
-  .full-stack-wrp.roles h2{
+  .full-stack-wrp.roles h2 {
     font-size: 27px;
     text-align: left;
   }
-  .roles p{
-    font-size: 14px; 
+  .roles p {
+    font-size: 14px;
   }
 
-  .roles-card img{
-    height: 60px; 
-    width: 60px
+  .roles-card img {
+    height: 60px;
+    width: 60px;
   }
 
-  .roles-card .title h5{
-    font-size: 18px; 
+  .roles-card .title h5 {
+    font-size: 18px;
   }
-  
-  .roles-card .title h6{
+
+  .roles-card .title h6 {
     padding: 5px 10px;
     font-size: 12px;
   }
@@ -4650,7 +4657,7 @@
     font-size: 16px;
     text-align: center;
   }
-  
+
   /* #devops_img{
     width: 85px;
   }
@@ -4678,7 +4685,7 @@
   .tools-wrp {
     padding: 0;
   }
-  .tools-wrp ul{
+  .tools-wrp ul {
     padding: 1.5rem;
     gap: 1.25rem;
   }
@@ -4713,12 +4720,12 @@
     background-size: cover;
     background-position: right;
     /* text-align: center; */
-    padding: 50px 0 0 ;
+    padding: 50px 0 0;
   }
   .tools-wrp {
     padding: 0;
   }
-  .tools-wrp ul{
+  .tools-wrp ul {
     padding: 1.5rem;
     gap: 1rem;
   }
@@ -4758,7 +4765,7 @@
   .tools-wrp {
     padding: 0;
   }
-  .tools-wrp ul{
+  .tools-wrp ul {
     padding: 1.5rem;
     gap: 1rem;
   }
@@ -4816,7 +4823,7 @@
   .tools-wrp {
     padding: 0;
   }
-  .tools-wrp ul{
+  .tools-wrp ul {
     padding: 1.5rem;
     gap: 1rem;
   }
@@ -4878,7 +4885,7 @@
   .tools-wrp {
     padding: 0;
   }
-  .tools-wrp ul{
+  .tools-wrp ul {
     padding: 1.5rem;
     /* gap: 1rem; */
     justify-content: space-between;
