@@ -561,8 +561,8 @@
   /* **** Full IT Stack Page **** */
   .full-it-stack-banner {
     padding: 100px 0 95px;
-    background-position: 0 -25px;
-    background-size: 115%;
+    /* background-position: 0 -25px;
+    background-size: 115%; */
   }
   .full-it-stack-banner .banner-data h6 {
     margin: 0 0 25px;
@@ -1973,10 +1973,10 @@
     margin: 0 0 30px;
   }
   .full-it-stack-banner {
-    background-image: url("../images/full_stack_it_bg2.png");
-    background-size: 100%;
-    background-position: center;
-    text-align: center;
+    /* background-image: url("../images/full_stack_it_bg2.png"); */
+    background-size: cover;
+    background-position: right;
+    /* text-align: center; */
   }
   .full-it-stack-banner .banner-data h6 {
     margin: 15px auto;
@@ -1986,7 +1986,7 @@
     margin: 0;
   }
   .full-it-stack-banner .banner-data h5 {
-    margin: 25px auto 30px;
+    margin: 25px 0 30px;
   }
   .full-it-stack-banner .banner-data .btn-group {
     margin: 0 auto 60px;
@@ -2753,10 +2753,10 @@
     margin: 0 0 30px;
   }
   .full-it-stack-banner {
-    background-image: url("../images/full_stack_it_bg2.png");
-    background-size: 110%;
-    background-position: center;
-    text-align: center;
+    /* background-image: url("../images/full_stack_it_bg2.png"); */
+    background-size: cover;
+    background-position: right;
+    /* text-align: center; */
   }
   .full-it-stack-banner-img .main-img {
     width: 90%;
@@ -2771,7 +2771,7 @@
     margin: 0;
   }
   .full-it-stack-banner .banner-data h5 {
-    margin: 25px auto 30px;
+    margin: 25px 0 30px;
   }
   .full-it-stack-banner .btn-group {
     margin: 0 auto 35px;
@@ -4588,9 +4588,9 @@
     img.main-img {
     margin: auto;
   }
-  .full-it-stack-banner {
+  /* .full-it-stack-banner {
     text-align: center;
-  }
+  } */
   .full-it-stack-banner-img .main-img {
     width: 90%;
     margin: 20px auto 40px;
@@ -4604,7 +4604,7 @@
     margin: 0;
   }
   .full-it-stack-banner .banner-data h5 {
-    margin: 20px auto 25px;
+    margin: 20px 0 25px;
   }
   .full-it-stack-banner .btn-group {
     margin: 0 auto 25px;
@@ -4669,10 +4669,11 @@
 @media screen and (min-width: 400px) and (max-width: 448px) {
   /* **** Full IT Stack Page **** */
   .full-it-stack-banner {
-    background-image: url("../images/full_stack_it_bg2.png");
-    background-size: 115%;
-    background-position: center;
-    text-align: center;
+    /* background-image: url("../images/full_stack_it_bg2.png"); */
+    /* background-size: 115%; */
+    background-size: cover;
+    background-position: right;
+    /* text-align: center; */
   }
   .tools-wrp {
     padding: 0;
@@ -4707,10 +4708,11 @@
 @media screen and (min-width: 350px) and (max-width: 400px) {
   /* **** Full IT Stack Page **** */
   .full-it-stack-banner {
-    background-image: url("../images/full_stack_it_bg2.png");
-    background-size: 118%;
-    background-position: center;
-    text-align: center;
+    /* background-image: url("../images/full_stack_it_bg2.png"); */
+    /* background-size: 118%; */
+    background-size: cover;
+    background-position: right;
+    /* text-align: center; */
     padding: 50px 0 0 ;
   }
   .tools-wrp {
@@ -4746,10 +4748,11 @@
 @media screen and (min-width: 325px) and (max-width: 350px) {
   /* **** Full IT Stack Page **** */
   .full-it-stack-banner {
-    background-image: url("../images/full_stack_it_bg2.png");
-    background-size: 125%;
-    background-position: center;
-    text-align: center;
+    /* background-image: url("../images/full_stack_it_bg2.png"); */
+    /* background-size: 125%; */
+    background-size: cover;
+    background-position: right;
+    /* text-align: center; */
     padding: 50px 0 0;
   }
   .tools-wrp {
@@ -4785,10 +4788,10 @@
 @media screen and (min-width: 250px) and (max-width: 325px) {
   /* **** Full IT Stack Page **** */
   .full-it-stack-banner {
-    background-image: url("../images/full_stack_it_bg2.png");
-    background-size: 150%;
-    background-position: center;
-    text-align: center;
+    /* background-image: url("../images/full_stack_it_bg2.png"); */
+    background-size: cover;
+    background-position: right;
+    /* text-align: center; */
   }
   .full-it-stack-banner-img .main-img {
     width: 90%;
@@ -4805,7 +4808,7 @@
   }
   .full-it-stack-banner .banner-data h5 {
     font-size: 12px;
-    margin: 15px auto 20px;
+    margin: 15px 0 20px;
   }
   .full-it-stack-banner .btn-group {
     margin: 0 auto 25px;
@@ -4843,10 +4846,10 @@
 @media screen and (max-width: 249px) {
   /* **** Full IT Stack Page **** */
   .full-it-stack-banner {
-    background-image: url("../images/full_stack_it_bg2.png");
-    background-size: 150%;
-    background-position: center;
-    text-align: center;
+    /* background-image: url("../images/full_stack_it_bg2.png"); */
+    background-size: cover;
+    background-position: right;
+    /* text-align: center; */
   }
   .full-it-stack-banner-img .main-img {
     width: 90%;
@@ -4863,7 +4866,7 @@
   }
   .full-it-stack-banner .banner-data h5 {
     font-size: 10px;
-    margin: 15px auto 20px;
+    margin: 15px 0 20px;
   }
   .full-it-stack-banner .btn-group {
     margin: 0 auto 25px;

@@ -279,6 +279,9 @@ header {
   transition: 0.4s linear;
   -webkit-transition: 0.4s linear;
 }
+header.main-header{
+  background: #5673EA;
+}
 .navbar .container .navbar-brand,
 .navbar .container-fluid .navbar-brand {
   margin-left: 0;
@@ -451,7 +454,8 @@ header {
 
 /* ***** Home Page ***** */
 .banner-wrapper {
-  background: #535ae8 url("../images/banner-shap.png") 0 0 no-repeat;
+  /* background: #535ae8 url("../images/banner-shap.png") 0 0 no-repeat; */
+  background: url("../images/banner-shap.png") 0 0 no-repeat;
   background-size: 100% 100%;
   position: relative;
   min-height: calc(40.40vw);
@@ -1188,11 +1192,13 @@ footer {
 /* ***** End Course Page ***** */
 
 /* ***** Full IT Stack Page ***** */
-.full-it-stack-banner {
-  background-image: url("../images/full_stack_it_bg.png");
-  background-size: 110%;
-  background-position: 0 -80px;
+.full-it-stack-banner.banner-wrapper {
+  background-image: url("../images/full_it_stack_bg.png");
+  background-size: cover;
+  background-position: right;
   padding: 130px 0 100px;
+  display: flex;
+  align-items: center;
 }
 .full-it-stack-banner .banner-data h1 {
   margin: 0 0 15px;
@@ -1263,6 +1269,11 @@ footer {
 /* ***** End Full IT Stack Page ***** */
 
 /* ***** Jobs Page ***** */
+.jobs-banner.banner-wrapper{
+  background-image: url("../../static/images/jobs_bg2.png");
+  background-size: cover;
+  background-position: center;
+}
 .jobs-banner .container {
   padding: 0px 0 28px;
 }

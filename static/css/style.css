@@ -400,6 +400,14 @@ header.main-header{
 /* **** End toggler **** */
 
 /* ***** Home Page ***** */
+/* .banner-wrapper-outer{
+    background-color: #516FE9;
+}
+.banner-wrapper-outer .banner-wrapper{
+    background-clip: content-box;
+    background-position: center;
+    background-size: cover;
+} */
 .banner-wrapper{
     background:#535AE8 url('../images/banner-shap.png') 0 0 no-repeat;
     background-size: 100% 100%;
@@ -994,8 +1002,11 @@ footer{
 
 
 /* ***** About Page ***** */
-.about-banner{
-    background-image: url('../images/about-back.png');
+.about-banner.banner-wrapper{
+    /* background-image: url('../images/about_bg.png'); */
+    background: url('../images/about_bg.png');
+    background-position: right;
+    background-size: cover;
 }
 .about-banner .container{
     height: 100%;
@@ -1009,6 +1020,7 @@ footer{
 }
 .abt-banner-img img{
     width: 100%;
+    opacity: 0;
 }
 .about-wrp{
     padding: 130px 0 100px;
@@ -1063,9 +1075,21 @@ footer{
 /* ***** End About Page ***** */
 
 /* ***** Service Page ***** */
-.service-banner{
-    background-image: url('../images/service-back.png');    
-    padding: 130px 0 100px;
+.service-banner.banner-wrapper{
+    background-image: url('../images/courses_bg.png');    
+    background-position: center;
+    background-size: cover;
+    padding: 130px 0 0px;
+}
+.service-banner .container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    /* flex-flow: column; */
+}
+.service-banner .container .row{
+    flex: 1;
+    margin-bottom: 17%;
 }
 .service-banner .banner-data h1{
     margin: 0 0 15px;
@@ -1226,14 +1250,19 @@ footer{
 /* ***** End Service Page ***** */
 
 /* ***** Gallery Page ***** */
-.gallery-banner{
-    background-image: url('../images/gallery-back.png');
+.gallery-banner.banner-wrapper{
+    background-image: url('../images/gallery_bg.png');
+    background-position: center;
+    background-size: cover;
     padding: 200px 0 100px;
 }
 .gallery-banner .container{
     height: 100%;
     display: flex;
     align-items: center;
+}
+.gallery-banner .container .row{
+    flex: 1;
 }
 .gallery-banner .banner-data h1{
     margin: 0 0 20px;
