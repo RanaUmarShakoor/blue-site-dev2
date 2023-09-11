@@ -4,16 +4,32 @@
     left: 5%;
   }
 } */
-
-@media screen and (min-width: 2600px) {
+@media screen and (min-width: 3400px) {
   .banner-wrapper{
-    height: 1000px;
+    /* height: 1000px; */
+    height: calc(41vw)
   }
 }
 
+
+@media screen and (min-width: 2600px) and (max-width: 3400px) {
+  .banner-wrapper{
+    /* height: 1000px; */
+    height: calc(45vw)
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2600px) {
+  .banner-wrapper{
+    /* height: 1000px; */
+    height: calc(45vw)
+  }
+}
+
+
 @media screen and (max-width: 1900px) {
   .banner-wrapper{
-    height: 730px;
+    /* height: 890px; */
   }
 }
 
@@ -71,7 +87,7 @@
   }
 
   .banner-wrapper {
-    height: 500px;
+    height: 650px;
     padding: 100px 0 0;
   }
 
@@ -751,7 +767,8 @@
   }
 
   .banner-wrapper {
-    height: auto;
+    /* height: auto; */
+    height: 580px;
     min-height: auto;
     padding: 100px 0 0;
   }
@@ -1613,7 +1630,8 @@
   }
 
   .banner-wrapper {
-    height: auto;
+    /* height: auto; */
+    height: 560px;
     min-height: auto;
     padding: 100px 0 0;
   }
@@ -2825,7 +2843,8 @@
   }
 
   .banner-wrapper {
-    height: auto;
+    /* height: auto; */
+    height: 530px;
     min-height: auto;
     padding: 100px 0 0;
   }
@@ -4692,8 +4711,9 @@
   /* **** End About Page **** */
 
   /* **** Courses Page **** */
-  .service-banner {
+  .service-banner.banner-wrapper {
     height: auto;
+    background-position: 50% 0;
   }
 
   section.banner-wrapper.service-banner .banner-img img.main-img {
@@ -4882,6 +4902,23 @@
     text-align: center;
   }
 
+  .courses-full-stack-wrp.full-stack-jobs-wrp{
+    background: url('../images/full_stack_jobs_bg2.png')0 0 no-repeat;
+    background-size: cover;
+    background-position: 80%;
+    padding: 70px 0;
+  }
+  .courses-full-stack-wrp.full-stack-jobs-wrp .row{
+    flex-flow: column-reverse;
+  }
+  .full-stack-jobs-wrp .courses-full-stack-data h2{
+      color: #0A1854;
+  }
+  .full-stack-jobs-wrp .courses-full-stack-img img{
+      padding: 0;
+      margin: 0 auto 40px;
+  }
+
   .tools-wrp {
     padding: 30px 15px 0;
   }
@@ -4995,6 +5032,13 @@
   /* **** End Courses Page **** */
 
   /* **** Gallery Page ***** */
+  .gallery-banner.banner-wrapper{
+    height: auto;
+    background-position: 65%;
+  }
+  .gallery-banner.banner-wrapper .banner-data{
+    padding: 0 70px 0 0;
+  }
   img.gallery-shp {
     display: none;
   }
@@ -6975,6 +7019,23 @@
     width: 100%;
     text-align: center;
   }
+  .courses-full-stack-wrp.full-stack-jobs-wrp{
+    background: url('../images/full_stack_jobs_bg2.png')0 0 no-repeat;
+    background-size: cover;
+    background-position: 80%;
+    padding: 70px 0;
+  }
+  .courses-full-stack-wrp.full-stack-jobs-wrp .row{
+    flex-flow: column-reverse;
+  }
+  .full-stack-jobs-wrp .courses-full-stack-data h2{
+      color: #0A1854;
+  }
+  .full-stack-jobs-wrp .courses-full-stack-img img{
+      padding: 0;
+      margin: 0 auto 40px;
+  }
+
 
   .tools-wrp {
     padding: 30px 15px 0;
@@ -7089,6 +7150,13 @@
   /* **** End Courses Page **** */
 
   /* **** Gallery Page ***** */
+  .gallery-banner.banner-wrapper{
+    height: auto;
+    background-position: 65%;
+  }
+  .gallery-banner.banner-wrapper .banner-data{
+    padding: 0 70px 0 0;
+  }
   img.gallery-shp {
     display: none;
   }
@@ -9072,6 +9140,24 @@
     text-align: center;
   }
 
+  .courses-full-stack-wrp.full-stack-jobs-wrp{
+    background: url('../images/full_stack_jobs_bg2.png')0 0 no-repeat;
+    background-size: cover;
+    background-position: 80%;
+    padding: 70px 0;
+  }
+  .courses-full-stack-wrp.full-stack-jobs-wrp .row{
+    flex-flow: column-reverse;
+  }
+  .full-stack-jobs-wrp .courses-full-stack-data h2{
+      color: #0A1854;
+  }
+  .full-stack-jobs-wrp .courses-full-stack-img img{
+      padding: 0;
+      margin: 0 auto 40px;
+  }
+
+
   .tools-wrp {
     padding: 30px 15px 0;
   }
@@ -9185,6 +9271,13 @@
   /* **** End Courses Page **** */
 
   /* **** Gallery Page ***** */
+  .gallery-banner.banner-wrapper{
+    height: auto;
+    background-position: 65%;
+  }
+  .gallery-banner.banner-wrapper .banner-data{
+    padding: 0 0px 0 0;
+  }
   img.gallery-shp {
     display: none;
   }

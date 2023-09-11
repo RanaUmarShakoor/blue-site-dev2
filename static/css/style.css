@@ -412,7 +412,8 @@ header.main-header{
     background:#535AE8 url('../images/banner-shap.png') 0 0 no-repeat;
     background-size: 100% 100%;
     position: relative;
-    height: calc(40.40vw);
+    /* height: calc(40.40vw); */
+    height: calc(50vw);
     width: 100%;
     overflow: hidden;
     padding: 130px 0 0;
@@ -1079,6 +1080,7 @@ footer{
     background-image: url('../images/courses_bg.png');    
     background-position: center;
     background-size: cover;
+    /* background-clip: content-box; */
     padding: 130px 0 0px;
 }
 .service-banner .container{
@@ -1254,7 +1256,7 @@ footer{
     background-image: url('../images/gallery_bg.png');
     background-position: center;
     background-size: cover;
-    padding: 200px 0 100px;
+    padding: 180px 0 120px;
 }
 .gallery-banner .container{
     height: 100%;
@@ -1574,6 +1576,19 @@ img.gallery-shp{
 .courses-full-stack-data-button{
     display: flex;
     justify-content: center;
+}
+.courses-full-stack-wrp.full-stack-jobs-wrp{
+    background: url('../images/full_stack_jobs_bg.png')0 0 no-repeat;
+    background-size: cover;
+    background-position: 70%;
+    padding: 80px 0 0;
+}
+.full-stack-jobs-wrp .courses-full-stack-data h2{
+    color: #0A1854;
+}
+.full-stack-jobs-wrp .courses-full-stack-img img{
+    padding-top: 80px;
+    margin-left: 40px;
 }
 /* ***** End Course Page ***** */
 
