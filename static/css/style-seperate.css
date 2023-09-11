@@ -1355,21 +1355,6 @@ footer {
   padding: 0 10px 0 0;
 }
 /* Jobs Page Carousel */
-.carousel{
-  padding: 0 2rem;
-}
-.carousel-inner {
-  position: relative;
-  display: flex;
-  justify-content: left;
-  gap: 5px;
-  padding: 2rem 0rem 5rem;
-}
-.carousel-item {
-  margin-right: 0;
-  flex: 0 0 23.2%;
-  display: block;
-}
 .card {
   margin: 0 0.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
@@ -1389,43 +1374,32 @@ footer {
   font-weight: 500;
   padding: 5px 0 20px;
 }
-button.carousel-control-prev,
-button.carousel-control-next {
-  background-color: white;
-  border: 1px solid #707070;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  top: 88%;
-  /* transform: translateY(-50%); */
+.owl-carousel .owl-stage-outer .owl-stage{
+  display: flex;
 }
-.carousel-control-prev:hover,
-.carousel-control-next:hover{
-  background-color: #545ae8;
+.owl-carousel .owl-stage-outer .owl-stage .card{
+  height: 100%;
 }
-button.carousel-control-prev svg,
-button.carousel-control-next svg{
-  height: 26px;
-  width: 26px;
+.owl-carousel .owl-nav{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+.owl-carousel svg{
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border: 0.5px solid black;
+  border-radius: 100%;
   stroke: #707070;
+  stroke-width: 0.001px;
 }
-.carousel-control-prev:hover svg,
-.carousel-control-next:hover svg{
-  stroke: white;
-} 
-.carousel-control-prev{
-  left: 46%;
-  transform: translateX(-54%);
+.owl-carousel svg:hover{
+  border: none;
+  background-color: #4d6ae1;
+  fill: white;
 }
-.carousel-control-next{
-  left: 54%;
-  transform: translateX(-46%);
-}
-
-
-
-
-
 .ict-jobs-section h5 {
   font-size: 18px;
   font-weight: 400;

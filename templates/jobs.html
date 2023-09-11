@@ -15,6 +15,9 @@
     <title>educloud</title>
 
     <!-- CSS only -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}"
+    >
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
@@ -136,7 +139,7 @@
       <section class="ict-jobs-section jobs-wrp">
         <div class="container">
           <h2>Most requested <span>ICT Jobs</span></h2>
-
+<!-- 
           <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="card carousel-item">
@@ -177,23 +180,63 @@
                     <p class="card-text">Transforming raw data into intelligence, your Data Scientist in action</p>
                 </div>
               </div>
-
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <!-- <span class="carousel-control-prev-icon" aria-hidden="true"> -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                   <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
                 </svg>
-              <!-- </span> -->
               <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
               </svg>
               <span class="visually-hidden">Next</span>
             </button>
+          </div>
+           -->
+
+          <div class="owl-carousel">
+            <div class="card">
+              <img src="../static/images/ict-jobs-img1.png" class="d-block w-100" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">ICT SERVICE <br> DESK</h5>
+                  <p class="card-text">Navigating the path to success by connecting talent with opportunity</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="../static/images/ict-jobs-img2.png" class="d-block w-100" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">ICT <br> ADMINISTRATORS</h5>
+                  <p class="card-text">Managing technology seamlessly for a connected tomorrow</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="../static/images/ict-jobs-img3.png" class="d-block w-100" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">DATA <br> SCIENTIST</h5>
+                  <p class="card-text">Transforming raw data into intelligence, your Data Scientist in action</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="../static/images/ict-jobs-img4.png" class="d-block w-100" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">ICT <br> CONSULTANT</h5>
+                  <p class="card-text">Transforming raw data into intelligence, your Data Scientist in action</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="../static/images/ict-jobs-img2.png" class="d-block w-100" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title">DATA <br> SCIENTIST</h5>
+                  <p class="card-text">Transforming raw data into intelligence, your Data Scientist in action</p>
+              </div>
+            </div>
+            
           </div>
 
           <!-- <div class="row card-block-section">
@@ -901,6 +944,9 @@
 
     <!-- script -->
     <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <!-- <script src="jquery.min.js"></script> -->
+    <!-- <script src="owlcarousel/owl.carousel.min.js"></script> -->
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
     <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
