@@ -408,12 +408,15 @@ header.main-header{
     background-position: center;
     background-size: cover;
 } */
+.banner-wrapper-outer{
+    padding-top: 70px;
+}
 .banner-wrapper{
     background:#535AE8 url('../images/banner-shap.png') 0 0 no-repeat;
     background-size: 100% 100%;
     position: relative;
     /* height: calc(40.40vw); */
-    height: calc(50vw);
+    height: calc(41vw);
     width: 100%;
     overflow: hidden;
     padding: 130px 0 0;
