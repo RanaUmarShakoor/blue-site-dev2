@@ -280,7 +280,7 @@ header {
     -webkit-transition: 0.4s linear;
 }
 header.main-header{
-    background: #5673EA;
+    /* background: #5673EA; */
 }
 .navbar .container .navbar-brand,
 .navbar .container-fluid .navbar-brand {
@@ -487,7 +487,7 @@ img.bannerimgshp{
 
 .main-slider{
     position: relative;
-    margin: 106px 0 0;
+    /* margin: 106px 0 0; */
 }
 .swiper-slide.home-banner{
     position: relative;
@@ -500,7 +500,7 @@ img.bannerimgshp{
     width: 100%;
     /* height: calc(100vh - 106px); */
     /* height: 1550px; */
-    height: calc(40.40vw - 134px);
+    height: calc(42vw - 80px);
     object-position: 70% 2%;
     object-fit: cover;
 }
