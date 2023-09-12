@@ -279,8 +279,11 @@ header {
     transition: 0.4s linear;
     -webkit-transition: 0.4s linear;
 }
+header.header{
+    background-color: transparent;
+}
 header.main-header{
-    /* background: #5673EA; */
+    background: #5673EA;
 }
 .navbar .container .navbar-brand,
 .navbar .container-fluid .navbar-brand {

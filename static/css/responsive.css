@@ -997,6 +997,9 @@
   /* **** End Home Page **** */
 
   /* **** About Page **** */
+  .about-banner.banner-wrapper{
+    height: calc(44.4vw - 64px);
+  }
   .about-wrp {
     padding: 80px 0;
   }
@@ -1866,6 +1869,9 @@
   /* **** End Home Page **** */
 
   /* **** About Page **** */
+  .about-banner.banner-wrapper{
+    height: calc(44.4vw - 64px);
+  }
   .about-wrp {
     padding: 80px 0;
   }
@@ -3086,6 +3092,9 @@
   /* **** End Home Page **** */
 
   /* **** About Page **** */
+  .about-banner.banner-wrapper{
+    height: calc(44.4vw - 64px);
+  }
   .about-wrp {
     padding: 80px 0;
   }
@@ -4677,10 +4686,10 @@
   /* **** End Home Page **** */
 
   /* **** About Page **** */
-  .about-banner {
+  .about-banner.banner-wrapper {
     min-height: auto;
     padding: 130px 0 115px;
-    height: auto;
+    height: calc(44.40vw);
   }
 
   .about-banner .container {
