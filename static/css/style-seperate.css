@@ -459,7 +459,7 @@ header.main-header{
   background-size: 100% 100%;
   position: relative;
   /* min-height: calc(40.40vw - 34px); */
-  min-height: calc(42vw - 80px);
+  min-height: calc(42vw - 102px);
   width: 100%;
   overflow: hidden;
   padding: 130px 0 0;

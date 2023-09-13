@@ -1,8 +1,16 @@
-@media screen and (min-width: 1900px) and (max-width: 3000px) {
+@media screen and (min-width: 2100px) and (max-width: 3000px) {
   .banner-wrapper {
     /* min-height: 1000px; */
     /* min-height: calc(40.40vw - 34px); */
     min-height: calc(43vw - 80px);
+  }
+}
+
+@media screen and (min-width: 1900px) and (max-width: 2100px) {
+  .banner-wrapper {
+    /* min-height: 1000px; */
+    /* min-height: calc(40.40vw - 34px); */
+    min-height: calc(44vw - 102px);
   }
 }
 
@@ -11,7 +19,7 @@
     width: 100%;
   }
   .banner-wrapper {
-    height: calc(45vw - 80px);
+    height: calc(45vw - 102px);
   }
 }
 
@@ -45,7 +53,7 @@
 
   .banner-wrapper {
     /* height: auto; */
-    height: calc(44.4vw - 64px);
+    height: calc(45.5vw - 102px);
     min-height: auto;
     padding: 100px 0 0;
   }
@@ -329,7 +337,7 @@
   /* ***** End Jobs Page ***** */
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {
+@media (min-width: 1023px) and (max-width: 1200px) {
   /* **** Login & Register Page **** */
   .login-wrapper {
     height: auto;
@@ -360,7 +368,7 @@
   .banner-wrapper {
     /* height: auto; */
     /* min-height: auto; */
-    height: calc(44.4vw - 64px);
+    height: calc(46vw - 102px);
     padding: 100px 0 0;
   }
   .banner-data h1 {
@@ -683,7 +691,7 @@
   /* ***** End Jobs Page ***** */
 }
 
-@media (min-width: 992px) and (max-width: 1024px) {
+@media (min-width: 992px) and (max-width: 1023px) {
   /* **** Login & Register Page **** */
   .login-wrapper {
     height: auto;
@@ -714,7 +722,7 @@
   .banner-wrapper {
     /* height: auto; */
     /* min-height: auto; */
-    height: calc(40vw - 16px);
+    height: calc(47vw - 80px);
     padding: 100px 0 0;
   }
   .banner-data h1 {
@@ -1151,7 +1159,7 @@
   .banner-wrapper {
     /* height: auto; */
     /* min-height: auto; */
-    height: calc(40.36vw - 16px);
+    height: calc(48vw - 80px);
     padding: 100px 0 0;
   }
   .banner-data h1 {
