@@ -10,7 +10,7 @@
   .banner-wrapper {
     /* min-height: 1000px; */
     /* min-height: calc(40.40vw - 34px); */
-    min-height: calc(45.32vw - 102px);
+    min-height: calc(44vw - 102px);
   }
 }
 
@@ -19,7 +19,7 @@
     width: 100%;
   }
   .banner-wrapper {
-    height: calc(46.5vw - 102px);
+    height: calc(45.5vw - 102px);
   }
 }
 

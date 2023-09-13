@@ -42,7 +42,7 @@
 
 @media (min-width: 1900px) and (max-width: 2100px) {
   .slider-blocks img {
-    height: calc(43.9vw - 102px);
+    height: calc(44.15vw - 102px);
   }
 
   .banner-wrapper-outer {
@@ -50,15 +50,15 @@
   }
 
   .banner-wrapper {
-    height: calc(45.32vw - 102px);
+    height: calc(44vw - 102px);
   }
 
   .service-banner.banner-wrapper {
-    height: calc(45.32vw - 207px);
+    height: calc(44vw - 207px);
   }
 
   .platform-banner{
-    height: calc(45.32vw - 102px);
+    height: calc(44vw - 102px);
     padding: 110px 0 0;
   }
 }
@@ -69,7 +69,7 @@
   }
 
   .slider-blocks img {
-    height: calc(45vw - 102px);
+    height: calc(46vw - 102px);
   }
 
   .banner-wrapper-outer {
@@ -77,16 +77,16 @@
   }
 
   .banner-wrapper {
-    height: calc(46.5vw - 102px);
+    height: calc(45.5vw - 102px);
   }
 
   .service-banner.banner-wrapper {
-    height: calc(46.5vw - 207px);
+    height: calc(45.5vw - 207px);
   }
 
   .platform-banner{
     /* height: auto; */
-    height: calc(46.5vw - 102px);
+    height: calc(45.5vw - 102px);
     padding: 110px 0 0;
   }
 
