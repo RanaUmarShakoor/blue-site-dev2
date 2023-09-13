@@ -1,13 +1,17 @@
-@media screen and (min-width: 1900px) {
+@media screen and (min-width: 1900px) and (max-width: 3000px) {
   .banner-wrapper {
     /* min-height: 1000px; */
-    min-height: calc(40.40vw - 34px);
+    /* min-height: calc(40.40vw - 34px); */
+    min-height: calc(43vw - 80px);
   }
 }
 
-@media (min-width: 1401px) and (max-width: 1700px) {
+@media (min-width: 1400px) and (max-width: 1900px) {
   .class-img img {
     width: 100%;
+  }
+  .banner-wrapper {
+    height: calc(45vw - 80px);
   }
 }
 
@@ -40,7 +44,8 @@
   }
 
   .banner-wrapper {
-    height: auto;
+    /* height: auto; */
+    height: calc(44.4vw - 64px);
     min-height: auto;
     padding: 100px 0 0;
   }
@@ -251,10 +256,13 @@
   /* **** End Full IT Stack Page **** */
 
   /* ***** Jobs Page ***** */
+  .jobs-banner.banner-wrapper{
+    background-position: 27% center;
+  }
 
   .jobs-banner-content {
     align-self: flex-start;
-    margin-top: 8%;
+    /* margin-top: 8%; */
     padding-left: 50px;
   }
   .jobs-banner-content h1 {
@@ -350,8 +358,9 @@
   }
 
   .banner-wrapper {
-    height: auto;
-    min-height: auto;
+    /* height: auto; */
+    /* min-height: auto; */
+    height: calc(44.4vw - 64px);
     padding: 100px 0 0;
   }
   .banner-data h1 {
@@ -554,19 +563,24 @@
   /* **** End Blog Page **** */
 
   /* **** Full IT Stack Page **** */
-  .full-it-stack-banner {
-    padding: 100px 0 95px;
-    /* background-position: 0 -25px;
-    background-size: 115%; */
+  .full-it-stack-banner.banner-wrapper{
+    padding: 80px 0 0;
+    background-position: 45% center;
   }
+  /* .full-it-stack-banner {
+    padding: 100px 0 95px;
+    background-position: 0 -25px;
+    background-size: 115%;
+  } */
   .full-it-stack-banner .banner-data h6 {
-    margin: 0 0 25px;
+    margin: 0 0 5px;
   }
   .full-it-stack-banner .banner-data h1 {
     margin: 0 0 15px;
   }
   .full-it-stack-banner .banner-data h5 {
-    margin: 0 0 60px;
+    /* margin: 0 0 60px; */
+    margin: 0;
   }
   .full-it-stack.edu-mission-wrp {
     padding-bottom: 30px;
@@ -596,15 +610,21 @@
   /* **** End Full IT Stack Page **** */
 
   /* ***** Jobs Page ***** */
+  .jobs-banner.banner-wrapper{
+    background-position: 20% center;
+  }
   .jobs-banner .container {
     padding: 10px 0 60px;
   }
   .jobs-banner-content {
     align-self: flex-start;
-    margin-top: 8%;
+    /* margin-top: 8%; */
   }
   .jobs-banner-content h1 {
     margin: 0 0 25px;
+  }
+  .jobs-banner-content h5{
+    max-width: 440px;
   }
   .jobs-banner-img {
     align-items: center;
@@ -692,8 +712,9 @@
   }
 
   .banner-wrapper {
-    height: auto;
-    min-height: auto;
+    /* height: auto; */
+    /* min-height: auto; */
+    height: calc(40vw - 16px);
     padding: 100px 0 0;
   }
   .banner-data h1 {
@@ -876,7 +897,11 @@
   /* **** End Courses Page **** */
 
   /* **** Full IT Stack Page **** */
-  .full-it-stack-banner {
+  .full-it-stack-banner.banner-wrapper{
+    padding: 70px 0 0;
+    background-position: 40% center;
+  }
+  /* .full-it-stack-banner {
     padding: 100px 0 35px;
     background-size: 117%;
   }
@@ -884,7 +909,7 @@
     width: 80%;
     margin-top: 20px;
     padding: 20px 0 20px;
-  }
+  } */
   .full-it-stack.edu-mission-wrp {
     padding-bottom: 20px;
   }
@@ -931,15 +956,21 @@
   /* **** End Full IT Stack Page **** */
 
   /* ***** Jobs Page ***** */
+  .jobs-banner.banner-wrapper{
+    background-position: 3% center;
+  }
   .jobs-banner .container {
     padding: 10px 0 30px;
   }
   .jobs-banner-content {
     align-self: flex-start;
-    margin-top: 8%;
+    /* margin-top: 8%; */
   }
   .jobs-banner-content h1 {
     margin: 0 0 25px;
+  }
+  .jobs-banner-content h5{
+    max-width: 420px;
   }
   .jobs-banner-img {
     align-items: center;
@@ -1118,8 +1149,9 @@
   }
 
   .banner-wrapper {
-    height: auto;
-    min-height: auto;
+    /* height: auto; */
+    /* min-height: auto; */
+    height: calc(40.36vw - 16px);
     padding: 100px 0 0;
   }
   .banner-data h1 {
@@ -1250,13 +1282,26 @@
   /* **** End Home Page **** */
 
   /* **** Full IT Stack Page **** */
-  .full-it-stack-banner {
+  /* .full-it-stack-banner {
     background-size: 115%;
     background-position: 0 -20px;
     padding: 100px 0 35px;
+  } */
+  .full-it-stack-banner.banner-wrapper{
+    padding: 70px 0 0;
+    background-position: 40% center;
+  }
+  .full-it-stack-banner .container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .full-it-stack-banner h6{
+    font-size: 16px;
+    margin: 0 0 5px;
   }
   .full-it-stack-banner .banner-data h5 {
-    margin: 0 0 20px;
+    margin: 0;
   }
   .full-it-stack.edu-mission-wrp {
     padding-bottom: 15px;
@@ -1307,15 +1352,21 @@
   /* **** End Full IT Stack Page **** */
 
   /* ***** Jobs Page ***** */
+  .jobs-banner.banner-wrapper{
+    background-position: 0% center;
+  }
   .jobs-banner .container {
     padding: 0px 0 10px;
   }
   .jobs-banner-content {
     align-self: flex-start;
-    margin-top: 5%;
+    margin-top: 0%;
   }
   .jobs-banner-content h1 {
-    margin: 0 0 25px;
+    margin: 0 0 15px;
+  }
+  .jobs-banner-content h5{
+    max-width: 350px;
   }
   .jobs-banner-img .main-img {
     width: 105%;
@@ -1966,21 +2017,26 @@
   section.banner-wrapper.full-it-stack-banner .banner-img img.main-img {
     margin: 0 0 30px;
   }
-  .full-it-stack-banner {
-    /* background-image: url("../images/full_stack_it_bg2.png"); */
-    background-size: cover;
-    background-position: right;
-    /* text-align: center; */
+  .full-it-stack-banner.banner-wrapper{
+    background-position: center;
   }
+  /* .full-it-stack-banner {
+    background-image: url("../images/full_stack_it_bg2.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+  } */
   .full-it-stack-banner .banner-data h6 {
-    margin: 15px auto;
+    margin: 0 0 5px;
   }
   .full-it-stack-banner .banner-data h1 {
-    font-size: 60px;
-    margin: 0;
+    /* font-size: 60px; */
+    font-size: 34px;
+    margin: 0 0 10px;
   }
   .full-it-stack-banner .banner-data h5 {
-    margin: 25px 0 30px;
+    margin: 0;
+    max-width: 400px;
   }
   .full-it-stack-banner .banner-data .btn-group {
     margin: 0 auto 60px;
@@ -2079,6 +2135,9 @@
   /* **** End Full IT Stack Page **** */
 
   /* ***** Jobs Page ***** */
+  .jobs-banner.banner-wrapper {
+    background-position: 38% center;
+  }
   .jobs-banner .container {
     padding: 70px 0 50px;
   }
@@ -2088,6 +2147,7 @@
   .jobs-banner-content {
     align-self: flex-start;
     margin-top: 0;
+    max-width: 300px;
   }
   .jobs-banner{
     padding-left: 12px;
@@ -2101,6 +2161,7 @@
   .jobs-banner .banner-data h5 {
     /* text-align: center; */
     /* margin: auto; */
+    /* min-width: 280px; */
   }
   .jobs-banner-img .main-img {
     width: 90%;
@@ -2748,10 +2809,10 @@
   section.banner-wrapper.full-it-stack-banner .banner-img img.main-img {
     margin: 0 0 30px;
   }
-  .full-it-stack-banner {
+  .full-it-stack-banner.banner-wrapper {
     /* background-image: url("../images/full_stack_it_bg2.png"); */
     background-size: cover;
-    background-position: right;
+    background-position: 50% center;
     /* text-align: center; */
   }
   .full-it-stack-banner-img .main-img {
@@ -2853,8 +2914,11 @@
   /* **** End Full IT Stack Page **** */
 
   /* ***** Jobs Page ***** */
+  .jobs-banner.banner-wrapper{
+    background-position: 37% center;
+  }
   .jobs-banner .container {
-    padding: 80px 0 60px;
+    padding: 80px 15px 60px;
   }
   .jobs-banner .row {
     flex-flow: column;
@@ -2862,6 +2926,7 @@
   .jobs-banner-content {
     align-self: flex-start;
     margin-top: 0;
+    max-width: 280px;
   }
   .jobs-banner .banner-data h1 {
     /* text-align: center; */
@@ -4486,6 +4551,9 @@
   /* **** End Solution Page **** */
 
   /* ***** Jobs Page ***** */
+  .jobs-banner.banner-wrapper{
+    background-position: 34% center;
+  }
   .jobs-banner .container {
     padding: 20px 0 50px;
   }
@@ -4495,13 +4563,14 @@
   .jobs-banner-content {
     align-self: flex-start;
     margin-top: 0;
+    max-width: 250px;
   }
   .jobs-banner .banner-data h1 {
     /* text-align: center; */
     font-size: 28px;
     padding: 0 15px;
     /* margin: 0 auto 20px; */
-    width: 70%;
+    /* width: 70%; */
   }
   .jobs-banner .banner-data h5 {
     /* text-align: center; */
@@ -4615,14 +4684,17 @@
     img.main-img {
     margin: auto;
   }
+  .full-it-stack-banner.banner-wrapper{
+    background-position: 84% center;
+  }
   /* .full-it-stack-banner {
     text-align: center;
   } */
-  .full-it-stack-banner-img .main-img {
+  /* .full-it-stack-banner-img .main-img {
     width: 90%;
     margin: 20px auto 40px;
     padding: 80px 0 0px;
-  }
+  } */
   .full-it-stack-banner .banner-data h6 {
     margin: 40px auto 15px;
   }

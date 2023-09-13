@@ -8,39 +8,60 @@
   .slider-blocks img{
     height: calc(43vw - 80px);
   }
-}
-
-
-@media screen and (min-width: 1900px) {
-  .banner-wrapper{
+  .banner-wrapper-outer{
+    padding-top: 105px;
+  }
+  .banner-wrapper {
     /* height: 1000px; */
-    height: calc(40.40vw - 34px)
+    height: calc(43vw - 80px)
   }
-  .platform-banner .container{
-    height: 100%;
-    display: flex;
-    align-items: center;
+  .service-banner.banner-wrapper {
+    /* height: 1000px; */
+    height: calc(43vw - 185px)
+  }
+  .platform-banner {
+    height: calc(43vw - 80px)
   }
 }
-
 
 @media (min-width: 1400px) and (max-width: 1900px) {
   .class-img img {
     width: 100%;
   }
 
-  .slider-blocks img{
+  .slider-blocks img {
     /* height: 500px; */
     height: calc(45vw - 80px);
   }
 
+  .banner-wrapper-outer {
+    padding-top: 105px;
+  }
+
+  .banner-wrapper {
+    height: calc(45vw - 80px);
+  }
+
+  .service-banner.banner-wrapper {
+    height: calc(45vw - 180px);
+  }
+
   .platform-banner{
-    height: auto;
+    /* height: auto; */
+    height: calc(45vw - 80px);
     padding: 110px 0 0;
   }
 
-  .platform-box{
+  .platform-box {
     margin-bottom: 0;
+  }
+
+  .platform-box h1 {
+    margin-bottom: 15px;
+  }
+
+  .platform-img img {
+    width: 95%;
   }
 
 /* 
@@ -88,7 +109,8 @@
   }
 
   .banner-wrapper {
-    height: 550px;
+    /* height: 550px; */
+    height: calc(44.4vw - 64px);
     padding: 100px 0 0;
   }
 
@@ -344,6 +366,12 @@
   /* **** End About Page **** */
 
   /* **** Courses Page **** */
+  .banner-wrapper-outer{
+    padding-top: 72px;
+  }
+  .service-banner.banner-wrapper{
+    height: calc(44.4vw - 136px);
+  }
   .service-banner .banner-data h5 {
     margin: 0 0 25px;
     font-size: 16px;
@@ -590,9 +618,8 @@
   /* **** Platform Page **** */
   .platform-banner {
     padding: 80px 0 0;
-    /* height: 500px; */
-    /* height: calc(44vw); */
-    height: 550px;
+    height: calc(44.4vw - 64px);
+    /* height: 550px; */
   }
 
   .platform-banner .container{
@@ -782,7 +809,8 @@
   }
 
   .banner-wrapper {
-    height: auto;
+    height: calc(44.4vw - 64px);
+    /* height: auto; */
     /* height: 580px; */
     min-height: auto;
     padding: 100px 0 0;
@@ -1042,6 +1070,12 @@
   /* **** End About Page **** */
 
   /* **** Courses Page **** */
+  .banner-wrapper-outer{
+    padding-top: 72px;
+  }
+  .service-banner.banner-wrapper{
+    height: calc(44.4vw - 136px);
+  }
   .service-banner {
     padding: 100px 0 35px;
   }
@@ -1411,7 +1445,8 @@
 
   /* **** Platform Page **** */
   .platform-banner {
-    height: auto;
+    /* height: auto; */
+    height: calc(44.4vw - 64px);
     padding: 120px 0 0;
   }
 
@@ -1420,8 +1455,8 @@
   }
 
   .platform-box h1 {
-    font-size: 48px;
-    margin: 0 0 15px;
+    font-size: 42px;
+    margin: 0 0 12px;
   }
 
   img.plat-shp1 {
@@ -1437,7 +1472,7 @@
   .platform-img img {
     position: relative;
     z-index: 1;
-    width: 85%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -1654,7 +1689,8 @@
   }
 
   .banner-wrapper {
-    height: auto;
+    height: calc(40vw - 16px);
+    /* height: auto; */
     /* height: 560px; */
     min-height: auto;
     padding: 100px 0 0;
@@ -1914,6 +1950,12 @@
   /* **** End About Page **** */
 
   /* **** Courses Page **** */
+  .banner-wrapper-outer{
+    padding-top: 72px;
+  }
+  .service-banner.banner-wrapper{
+    height: calc(40vw - 88px);
+  }
   .service-banner {
     padding: 100px 0 35px;
   }
@@ -2443,7 +2485,8 @@
   .platform-banner {
     /* padding: 120px 0 0; */
     padding: 80px 0 0;
-    height: 560px;
+    /* height: 560px; */
+    height: calc(40vw - 16px);
   }
 
   .platform-box{
@@ -2451,8 +2494,8 @@
   }
 
   .platform-box h1 {
-    font-size: 48px;
-    margin: 0 0 15px;
+    font-size: 44px;
+    margin: 10px 0 15px;
   }
 
   img.plat-shp1 {
@@ -2460,7 +2503,7 @@
   }
 
   img.plat-shp2 {
-    left: -30px;
+    left: 50px;
     bottom: 35px;
     width: 50px;
   }
@@ -2468,6 +2511,8 @@
   .platform-img img {
     position: relative;
     z-index: 1;
+    width: 70%;
+    margin: auto;
   }
 
   .platform-content {
@@ -2879,7 +2924,8 @@
   }
 
   .banner-wrapper {
-    height: auto;
+    height: calc(40.36vw - 16px);
+    /* height: auto; */
     /* height: 530px; */
     min-height: auto;
     padding: 100px 0 0;
@@ -3137,9 +3183,15 @@
   /* **** End About Page **** */
 
   /* **** Courses Page **** */
-  .service-banner {
-    padding: 100px 0 35px;
+  .banner-wrapper-outer{
+    padding-top: 56px;
   }
+  .service-banner.banner-wrapper{
+    height: calc(40vw - 72px);
+  }
+  /* .service-banner {
+    padding: 100px 0 35px;
+  } */
 
   .service-banner .banner-data h5 {
     margin: 0 0 20px;
@@ -3793,7 +3845,8 @@
   .platform-banner {
     /* padding: 120px 0 0; */
     padding: 70px 0 0;
-    height: 530px;
+    /* height: 530px; */
+    height: calc(40.36vw - 16px);
   }
 
   .platform-banner .container{
@@ -3807,8 +3860,8 @@
   }
 
   .platform-box h1 {
-    font-size: 48px;
-    margin: 0 0 15px;
+    font-size: 36px;
+    margin: 0 0 10px;
   }
 
   img.plat-shp1 {
@@ -3816,14 +3869,16 @@
   }
 
   img.plat-shp2 {
-    left: -30px;
-    bottom: 35px;
-    width: 50px;
+    left: 70px;
+    bottom: 15px;
+    width: 40px;
   }
 
   .platform-img img {
     position: relative;
     z-index: 1;
+    width: 60%;
+    margin: 0 auto;
   }
 
   .platform-content {
@@ -4767,9 +4822,13 @@
   /* **** End About Page **** */
 
   /* **** Courses Page **** */
+  .banner-wrapper-outer{
+    padding-top: 70px;
+  }
   .service-banner.banner-wrapper {
     height: auto;
     background-position: 50% 0;
+    padding: 95px 0 0;
   }
 
   section.banner-wrapper.service-banner .banner-img img.main-img {
@@ -5919,14 +5978,16 @@
   }
 
   img.plat-shp2 {
-    left: -10px;
-    bottom: 28%;
-    width: 50px;
+    left: 30px;
+    bottom: 3%;
+    width: 40px;
   }
 
   .platform-img img {
     position: relative;
     z-index: 1;
+    width: 65%;
+    margin: 0 auto;
   }
 
   .platform-content {
@@ -6901,9 +6962,15 @@
   /* **** End About Page **** */
 
   /* **** Courses Page **** */
-  .service-banner {
+  .banner-wrapper-outer{
+    padding-top: 70px;
+  }
+  .service-banner.banner-wrapper{
     height: auto;
   }
+  /* .service-banner {
+    height: auto;
+  } */
 
   section.banner-wrapper.service-banner .banner-img img.main-img {
     margin: 0 0 30px;
@@ -9029,9 +9096,16 @@
   /* **** End About Page **** */
 
   /* **** Courses Page **** */
-  .service-banner {
-    height: auto;
+  .banner-wrapper-outer{
+    padding-top: 70px;
   }
+  .service-banner.banner-wrapper{
+    height: auto;
+    padding-bottom: 20px;
+  }
+  /* .service-banner {
+    height: auto;
+  } */
 
   section.banner-wrapper.service-banner .banner-img img.main-img {
     margin: 0 0 30px;

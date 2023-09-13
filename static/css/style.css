@@ -412,14 +412,16 @@ header.main-header{
     background-size: cover;
 } */
 .banner-wrapper-outer{
-    padding-top: 70px;
+    /* padding-top: 70px; */
+    padding-top: 105px;
 }
 .banner-wrapper{
     background:#535AE8 url('../images/banner-shap.png') 0 0 no-repeat;
     background-size: 100% 100%;
     position: relative;
     /* height: calc(40.40vw); */
-    height: calc(40.40vw - 134px);
+    /* height: calc(40.40vw - 134px); */
+    height: calc(42vw - 80px);
     width: 100%;
     overflow: hidden;
     padding: 130px 0 0;
@@ -1012,7 +1014,7 @@ footer{
 /* ***** About Page ***** */
 .about-banner.banner-wrapper{
     /* background-image: url('../images/about_bg.png'); */
-    background: url('../images/about_bg.png');
+    background: url('../images/about_bg3.png');
     background-position: right;
     background-size: cover;
 }
@@ -1084,12 +1086,13 @@ footer{
 
 /* ***** Service Page ***** */
 .service-banner.banner-wrapper{
-    background-image: url('../images/courses_bg.png');    
+    background-image: url('../images/courses_bg2.png');    
     background-position: center;
     background-size: cover;
     /* background-clip: content-box; */
     padding: 130px 0 0px;
-    height: calc(40.40vw);
+    /* height: calc(40.40vw); */
+    height: calc(42vw - 185px);
 }
 .service-banner .container{
     display: flex;
@@ -1261,7 +1264,7 @@ footer{
 
 /* ***** Gallery Page ***** */
 .gallery-banner.banner-wrapper{
-    background-image: url('../images/gallery_bg.png');
+    background-image: url('../images/gallery_bg2.png');
     background-position: center;
     background-size: cover;
     padding: 180px 0 120px;
@@ -2929,12 +2932,13 @@ img.project-shp{
     padding: 171px 0 0;
     overflow: hidden;
     /* height: 730px; */
-    height: calc(40.40vw);
+    /* height: calc(40.40vw); */
+    height: calc(42vw - 80px);
 }
 .platform-banner .container{
-    /* height: 100%; */
-    /* display: flex; */
-    /* align-items: center; */
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .platform-box{

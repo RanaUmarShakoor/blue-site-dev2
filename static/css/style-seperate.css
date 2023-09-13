@@ -458,7 +458,8 @@ header.main-header{
   background: url("../images/banner-shap.png") 0 0 no-repeat;
   background-size: 100% 100%;
   position: relative;
-  min-height: calc(40.40vw - 34px);
+  /* min-height: calc(40.40vw - 34px); */
+  min-height: calc(42vw - 80px);
   width: 100%;
   overflow: hidden;
   padding: 130px 0 0;
@@ -1193,9 +1194,9 @@ footer {
 
 /* ***** Full IT Stack Page ***** */
 .full-it-stack-banner.banner-wrapper {
-  background-image: url("../images/full_it_stack_bg.png");
+  background-image: url("../images/full_it_stack_bg2.png");
   background-size: cover;
-  background-position: right;
+  background-position: 65% center;
   padding: 130px 0 100px;
   display: flex;
   align-items: center;
@@ -1270,9 +1271,9 @@ footer {
 
 /* ***** Jobs Page ***** */
 .jobs-banner.banner-wrapper{
-  background-image: url("../../static/images/jobs_bg2.png");
+  background-image: url("../../static/images/jobs_bg3.png");
   background-size: cover;
-  background-position: center;
+  background-position: 25% center;
 }
 .jobs-banner .container {
   padding: 0px 0 28px;
@@ -1283,6 +1284,9 @@ footer {
 }
 .jobs-banner-content h1 {
   margin-bottom: 25px;
+}
+.jobs-banner-content h5 {
+  max-width: 450px;
 }
 .jobs-banner-img {
   align-items: center;
