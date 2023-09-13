@@ -421,7 +421,7 @@ header.main-header{
     position: relative;
     /* height: calc(40.40vw); */
     /* height: calc(40.40vw - 134px); */
-    height: calc(42vw - 102px);
+    height: calc(41.2vw - 102px);
     width: 100%;
     overflow: hidden;
     padding: 130px 0 0;
@@ -505,7 +505,7 @@ img.bannerimgshp{
     width: 100%;
     /* height: calc(100vh - 106px); */
     /* height: 1550px; */
-    height: calc(42vw - 102px);
+    height: calc(41.2vw - 102px);
     object-position: 70% 2%;
     object-fit: cover;
 }
@@ -1092,7 +1092,7 @@ footer{
     /* background-clip: content-box; */
     padding: 130px 0 0px;
     /* height: calc(40.40vw); */
-    height: calc(42vw - 185px);
+    height: calc(41.2vw - 185px);
 }
 .service-banner .container{
     display: flex;
@@ -2933,7 +2933,7 @@ img.project-shp{
     overflow: hidden;
     /* height: 730px; */
     /* height: calc(40.40vw); */
-    height: calc(42vw - 80px);
+    height: calc(41.2vw - 80px);
 }
 .platform-banner .container{
     height: 100%;
