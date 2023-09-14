@@ -15,7 +15,7 @@
     height: calc(43.7vw - 102px)
   }
   .service-banner.banner-wrapper {
-    height: calc(43.7vw - 202px)
+    /* height: calc(43.7vw - 202px) */
   }
   .platform-banner {
     height: calc(43.7vw - 102px)
@@ -33,7 +33,7 @@
     height: calc(43.5vw - 102px)
   }
   .service-banner.banner-wrapper {
-    height: calc(43.5vw - 202px)
+    /* height: calc(43.5vw - 202px) */
   }
   .platform-banner {
     height: calc(43.5vw - 102px)
@@ -54,7 +54,7 @@
   }
 
   .service-banner.banner-wrapper {
-    height: calc(44vw - 207px);
+    /* height: calc(44vw - 207px); */
   }
 
   .platform-banner{
@@ -81,7 +81,7 @@
   }
 
   .service-banner.banner-wrapper {
-    height: calc(45.5vw - 207px);
+    /* height: calc(45.5vw - 207px); */
   }
 
   .platform-banner{
@@ -408,7 +408,7 @@
     padding-top: 72px;
   }
   .service-banner.banner-wrapper{
-    height: calc(46.5vw - 175px);
+    /* height: calc(46.5vw - 175px); */
   }
   .service-banner .banner-data h5 {
     margin: 0 0 25px;
@@ -1113,7 +1113,7 @@
     padding-top: 72px;
   }
   .service-banner.banner-wrapper{
-    height: calc(46.07vw - 174px);
+    /* height: calc(46.07vw - 174px); */
   }
   .service-banner {
     padding: 100px 0 35px;
@@ -1994,7 +1994,7 @@
     padding-top: 72px;
   }
   .service-banner.banner-wrapper{
-    height: calc(47vw - 152px);
+    /* height: calc(47vw - 152px); */
   }
   .service-banner {
     padding: 100px 0 35px;
@@ -3228,7 +3228,7 @@
     padding-top: 56px;
   }
   .service-banner.banner-wrapper{
-    height: calc(48vw - 136px);
+    /* height: calc(48vw - 136px); */
   }
   /* .service-banner {
     padding: 100px 0 35px;

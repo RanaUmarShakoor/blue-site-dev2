@@ -1090,9 +1090,9 @@ footer{
     background-position: center;
     background-size: cover;
     /* background-clip: content-box; */
-    padding: 130px 0 0px;
+    padding: 235px 0 0px;
     /* height: calc(40.40vw); */
-    height: calc(41.2vw - 185px);
+    /* height: calc(41.2vw - 185px); */
 }
 .service-banner .container{
     display: flex;
