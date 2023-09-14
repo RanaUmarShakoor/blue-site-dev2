@@ -37,6 +37,9 @@ def about():
 def courses():
     return render_template("courses.html")
 
+@app.route("/videos")
+def videos():
+    return render_template("videos.html")
 
 @app.route("/gallery")
 def gallery():

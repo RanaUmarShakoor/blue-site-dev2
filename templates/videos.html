@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tag -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Favicon & Title -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ url_for('static', filename='images/favicon.png') }}"
+    />
+    <title>educloud</title>
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/bootstrap.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/swiper-bundle.min.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/responsive.css') }}"
+    />
+
+    <style>
+      .filter-section {
+        padding: 40px 0 80px;
+      }
+      .input-group {
+        border: 2px solid black;
+        border-radius: 40px;
+        padding-left: 10px;
+      }
+      .form-control {
+        border: none;
+        background-color: transparent;
+      }
+      .form-control:focus {
+        outline: none;
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+      }
+      button.btn.search_btn {
+        margin: -1.5px -2px -1.5px 0;
+        padding: 0 25px;
+        border: 2px solid black;
+        border-radius: 20px !important;
+        background-color: #5673ea;
+      }
+      .search_btn img {
+        height: 16px;
+        width: 16px;
+      }
+      .tab-bar {
+        display: flex;
+        gap: 30px;
+        margin: 0 3px;
+        border-bottom: 1px solid black;
+      }
+      .tab-bar button {
+        padding: 0;
+        margin-bottom: -1.25px;
+      }
+      .tab-bar .active-tab {
+        color: #5673ea;
+        border-bottom: 2.5px solid #5673ea;
+        border-radius: 0px;
+      }
+      .card {
+        flex: 0 0 23.4%;
+      }
+      .card:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-wrpper">
+      <!-- Header -->
+      <header class="main-header" style="position: relative">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="/">
+              <img
+                src="{{ url_for('static', filename='images/logo.svg') }}"
+                alt="Logo"
+                class="normallg"
+              />
+              <img
+                src="{{ url_for('static', filename='images/logo2.svg') }}"
+                alt="Logo"
+                class="bluelg"
+              />
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#NavbarToggle"
+              aria-controls="NavbarToggle"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="NavbarToggle">
+              <ul class="navbar-nav d-none d-lg-flex">
+                <li><a class="nav-link" href="/index">Home</a></li>
+                <li><a class="nav-link" href="/about">About</a></li>
+                <li><a class="nav-link" href="/courses">Courses</a></li>
+                <li><a class="nav-link active" href="/videos">Videos</a></li>
+                <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                <li><a class="nav-link" href="/blog">Blog</a></li>
+              </ul>
+              <ul class="navbar-nav d-none d-lg-flex">
+                <li class="loginbtn">
+                  <a class="nav-link" href="login">Login</a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav d-lg-none">
+                <li><a class="nav-link" href="/">Home</a></li>
+                <li><a class="nav-link" href="/about">About</a></li>
+                <li><a class="nav-link" href="/courses">Courses</a></li>
+                <li><a class="nav-link active" href="/videos">Videos</a></li>
+                <li><a class="nav-link" href="/gallery">Gallery</a></li>
+                <li><a class="nav-link" href="/blog">Blog</a></li>
+                <li class="loginbtn">
+                  <a class="nav-link" href="/login">Login</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Search & Filter -->
+      <section class="filter-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-5">
+              <div class="input-group">
+                <input
+                  style="outline: none"
+                  type="search"
+                  class="form-control"
+                  placeholder="Search For Anything"
+                  aria-label="Search"
+                  aria-describedby="search-addon"
+                />
+                <button type="button" class="search_btn btn">
+                  <img
+                    src="{{ url_for('static', filename='images/search_icon.png') }}"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="col-3" style="display: flex; align-items: center">
+              <h6 class="d-inline" style="margin: 0 8px 0 0">Filter By:</h6>
+              <div class="d-inline dropdown">
+                <a
+                  style="
+                    border: 2px solid black;
+                    border-radius: 40px;
+                    font-size: 14px;
+                    color: #7d7d7d;
+                  "
+                  class="btn dropdown-toggle"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Certification
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Search & Filter -->
+
+      <!-- Videos Section -->
+      <section>
+        <div class="container">
+          <div class="tab-bar">
+            <button type="button" class="btn active-tab">All Videos</button>
+            <button type="button" class="btn">Cerification</button>
+            <button type="button" class="btn">Podcasts</button>
+            <button type="button" class="btn">Short Videos</button>
+          </div>
+          <div class="" style="display: flex; padding: 50px 0px; gap: 2.1333333%; row-gap: 30px; flex-wrap: wrap;">
+            <div
+              class="card"
+              style="position: relative; border: none; padding: 0"
+            >
+              <article style="position: relative;">
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb1.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div style="position: absolute; right: 15px; bottom: 13px; background-color: black; color: white; padding: 1px; border-radius: 5px;">02:03</div>
+              </article>
+              <div class="card-body" style="padding: 12px 8px">
+                <h6 class="card-title" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur
+                </p>
+              </div>
+            </div>
+            <div
+              class="card"
+              style="position: relative; border: none; padding: 0"
+            >
+              <article style="position: relative;">
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb2.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div style="position: absolute; right: 15px; bottom: 13px; background-color: black; color: white; padding: 1px; border-radius: 5px;">02:03</div>
+              </article>
+              <div class="card-body" style="padding: 12px 8px">
+                <h6 class="card-title" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur
+                </p>
+              </div>
+            </div>
+            
+            <div
+              class="card"
+              style="position: relative; border: none; padding: 0"
+            >
+              <article style="position: relative;">
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb3.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div style="position: absolute; right: 15px; bottom: 13px; background-color: black; color: white; padding: 1px; border-radius: 5px;">02:03</div>
+              </article>
+              <div class="card-body" style="padding: 12px 8px">
+                <h6 class="card-title" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur
+                </p>
+              </div>
+            </div>
+            
+            <div
+              class="card"
+              style="position: relative; border: none; padding: 0"
+            >
+              <article style="position: relative;">
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb4.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div style="position: absolute; right: 15px; bottom: 13px; background-color: black; color: white; padding: 1px; border-radius: 5px;">02:03</div>
+              </article>
+              <div class="card-body" style="padding: 12px 8px">
+                <h6 class="card-title" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              style="position: relative; border: none; padding: 0"
+            >
+              <article style="position: relative;">
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb4.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div style="position: absolute; right: 15px; bottom: 13px; background-color: black; color: white; padding: 1px; border-radius: 5px;">02:03</div>
+              </article>
+              <div class="card-body" style="padding: 12px 8px">
+                <h6 class="card-title" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur
+                </p>
+              </div>
+            </div>
+            
+
+
+          </div>
+        </div>
+      </section>
+      <!-- End Videos Section -->
+
+      <!-- Go To Top -->
+      <button id="myBtn" title="Go to top">
+        <i class="fal fa-angle-up" aria-hidden="true"></i>
+      </button>
+    </div>
+
+    <!-- script -->
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+    <!-- End script -->
+  </body>
+</html>
