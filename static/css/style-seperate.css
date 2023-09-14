@@ -1363,10 +1363,7 @@ footer {
   margin: 0 0.5em;
   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
   border: 3px solid #70707080;
-  border-radius: 10px;
-}
-.card img{
-  border-radius: 8px 8px 0 0;
+  border-radius: 0px;
 }
 .card-body .card-title{
   color: black;
