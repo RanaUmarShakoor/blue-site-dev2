@@ -1573,7 +1573,7 @@ img.gallery-shp{
     position: relative;
 }
 .courses-full-stack-img img{
-    width: 85%;
+    width: 100%;
 }
 .courses-full-stack-data h2{
     font-size: 40px;
@@ -2795,7 +2795,7 @@ img.project-shp{
 .team-banner .banner-data h1{
     margin: 0 0 30px;
 }
-.team-banner .banner-img img{
+.team-banner .banner-img img {
     width: 130%;
 }
 .team-wrp{

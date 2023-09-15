@@ -4,6 +4,19 @@
     left: 5%;
   }
 } */
+@media screen and (min-width: 3000px) {
+  .certification-banner .banner-img img {
+    width: 230%;
+  }
+  .team-banner .banner-img img {
+    width: 230%;
+  }
+  .solutions-banner .banner-img img {
+    width: 230%;
+  }
+}
+
+
 @media screen and (min-width: 2700px) and (max-width: 3000px) {
   .slider-blocks img{
     height: calc(43.7vw - 102px);
@@ -19,6 +32,15 @@
   }
   .platform-banner {
     height: calc(43.7vw - 102px)
+  }
+  .certification-banner .banner-img img {
+    width: 180%;
+  }
+  .team-banner .banner-img img{
+    width: 180%;
+  }
+  .solutions-banner .banner-img img {
+    width: 180%;
   }
 }
 
