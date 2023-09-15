@@ -1014,7 +1014,7 @@ footer{
 /* ***** About Page ***** */
 .about-banner.banner-wrapper{
     /* background-image: url('../images/about_bg.png'); */
-    background: url('../images/about_bg3.png');
+    background: url('../images/about_bg.png');
     background-position: right;
     background-size: cover;
 }
@@ -1086,7 +1086,7 @@ footer{
 
 /* ***** Service Page ***** */
 .service-banner.banner-wrapper{
-    background-image: url('../images/courses_bg2.png');    
+    background-image: url('../images/courses_bg.png');    
     background-position: center;
     background-size: cover;
     /* background-clip: content-box; */
@@ -1108,7 +1108,7 @@ footer{
     margin: 0 0 15px;
 }
 .service-banner .banner-data h5{
-    max-width: 460px;
+    /* max-width: 460px; */
     line-height: 28px;
     margin: 0 0 50px;
 }
@@ -1264,7 +1264,7 @@ footer{
 
 /* ***** Gallery Page ***** */
 .gallery-banner.banner-wrapper{
-    background-image: url('../images/gallery_bg2.png');
+    background-image: url('../images/gallery_bg.png');
     background-position: center;
     background-size: cover;
     padding: 180px 0 120px;
@@ -1307,7 +1307,6 @@ img.gallery-shp{
     display: table;
     text-align: center;
 }
-
 .gallery-row{
     padding: 70px 0;
 }

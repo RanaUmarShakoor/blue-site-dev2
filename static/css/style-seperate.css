@@ -1194,7 +1194,7 @@ footer {
 
 /* ***** Full IT Stack Page ***** */
 .full-it-stack-banner.banner-wrapper {
-  background-image: url("../images/full_it_stack_bg2.png");
+  background-image: url("../images/full_it_stack_bg.png");
   background-size: cover;
   background-position: 65% center;
   padding: 130px 0 100px;
@@ -1205,7 +1205,7 @@ footer {
   margin: 0 0 15px;
 }
 .full-it-stack-banner .banner-data h5 {
-  max-width: 460px;
+  max-width: 420px;
   line-height: 28px;
   margin: 0 0 50px;
 }
@@ -1271,7 +1271,7 @@ footer {
 
 /* ***** Jobs Page ***** */
 .jobs-banner.banner-wrapper{
-  background-image: url("../../static/images/jobs_bg3.png");
+  background-image: url("../../static/images/jobs_bg2.png");
   background-size: cover;
   background-position: 25% center;
 }
@@ -1384,6 +1384,9 @@ footer {
 .owl-carousel .owl-stage-outer .owl-stage .card{
   height: 100%;
 }
+.owl-carousel .owl-stage-outer .owl-stage .card img{
+  object-fit: cover;
+}
 .owl-carousel .owl-nav{
   margin-top: 30px;
   display: flex;
@@ -1410,7 +1413,7 @@ footer {
   color: #000;
   line-height: 36px;
   text-align: center;
-  padding: 100px 40px 0;
+  padding: 45px 40px 0;
   margin: 0;
 }
 .ict-jobs-section h5 span {
@@ -1499,6 +1502,10 @@ footer {
 .roles-card .title h5 {
   font-size: 22px;
   font-weight: 600;
+}
+
+.roles-card .title span {
+  color: #fcb415;
 }
 
 .roles-card .title h6 {

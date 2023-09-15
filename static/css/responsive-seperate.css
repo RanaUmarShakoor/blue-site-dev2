@@ -320,7 +320,7 @@
   .ict-jobs-section h5 {
     font-size: 16px;
     line-height: 32px;
-    padding: 0 35px;
+    padding: 40px 35px;
   }
   .it-jobs-section {
     padding: 100px 0 100px;
@@ -674,7 +674,7 @@
   .ict-jobs-section h5 {
     font-size: 16px;
     line-height: 32px;
-    padding: 0 10px;
+    padding: 35px 10px;
   }
   .it-jobs-section {
     padding: 90px 0 90px;
@@ -1021,7 +1021,7 @@
   .ict-jobs-section h5 {
     font-size: 16px;
     line-height: 32px;
-    padding: 0 10px;
+    padding: 35px 10px;
   }
   .it-jobs-section {
     padding: 90px 0 90px;
@@ -1374,7 +1374,7 @@
     margin: 0 0 15px;
   }
   .jobs-banner-content h5{
-    max-width: 350px;
+    max-width: 334px;
   }
   .jobs-banner-img .main-img {
     width: 105%;
@@ -1415,7 +1415,7 @@
   .ict-jobs-section h5 {
     font-size: 16px;
     line-height: 26px;
-    padding: 0 5px;
+    padding: 25px 5px;
   }
   .it-jobs-section {
     padding: 80px 0 80px;
@@ -2026,7 +2026,7 @@
     margin: 0 0 30px;
   }
   .full-it-stack-banner.banner-wrapper{
-    background-position: center;
+    background-position: 37% center;
   }
   /* .full-it-stack-banner {
     background-image: url("../images/full_stack_it_bg2.png");
@@ -2044,7 +2044,7 @@
   }
   .full-it-stack-banner .banner-data h5 {
     margin: 0;
-    max-width: 400px;
+    max-width: 350px;
   }
   .full-it-stack-banner .banner-data .btn-group {
     margin: 0 auto 60px;
@@ -2181,7 +2181,7 @@
     margin: 0 0 40px;
   }
   .ict-jobs-section {
-    padding: 80px 0 0px;
+    padding: 60px 0 0px;
     margin: 0px 0 5px;
   }
   .ict-jobs-section .card-block-section {
@@ -2820,7 +2820,7 @@
   .full-it-stack-banner.banner-wrapper {
     /* background-image: url("../images/full_stack_it_bg2.png"); */
     background-size: cover;
-    background-position: 50% center;
+    background-position: 40% center;
     /* text-align: center; */
   }
   .full-it-stack-banner-img .main-img {
@@ -2837,6 +2837,7 @@
   }
   .full-it-stack-banner .banner-data h5 {
     margin: 25px 0 30px;
+    max-width: 300px;
   }
   .full-it-stack-banner .btn-group {
     margin: 0 auto 35px;
@@ -2967,7 +2968,7 @@
     margin: 0 0 40px;
   }
   .ict-jobs-section {
-    padding: 80px 0 0px;
+    padding: 55px 0 0px;
     margin: 0px 0 5px;
   }
   .ict-jobs-section .card-block-section {
@@ -4612,7 +4613,7 @@
     padding: 5px;
   }
   .ict-jobs-section {
-    padding: 80px 0 0px;
+    padding: 50px 0 0px;
     margin: 0px 0 5px;
   }
   .ict-jobs-section .card-block-section {
@@ -4693,7 +4694,7 @@
     margin: auto;
   }
   .full-it-stack-banner.banner-wrapper{
-    background-position: 84% center;
+    background-position: 34% center;
   }
   /* .full-it-stack-banner {
     text-align: center;
@@ -4712,6 +4713,7 @@
   }
   .full-it-stack-banner .banner-data h5 {
     margin: 20px 0 25px;
+    max-width: 300px;
   }
   .full-it-stack-banner .btn-group {
     margin: 0 auto 25px;

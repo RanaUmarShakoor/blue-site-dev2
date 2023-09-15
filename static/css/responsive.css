@@ -3229,6 +3229,8 @@
   }
   .service-banner.banner-wrapper{
     /* height: calc(48vw - 136px); */
+    padding: 190px 0 0;
+    /* background-position: 0 100%; */
   }
   /* .service-banner {
     padding: 100px 0 35px;
@@ -4499,6 +4501,7 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 45px;
+    max-width: 65%;
   }
 
   .banner-data .btn-group {
@@ -6640,6 +6643,7 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 45px;
+    max-width: 70%;
   }
 
   .banner-data .btn-group {
@@ -8768,6 +8772,7 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0 0 45px;
+    max-width: 70%;
   }
 
   .banner-data .btn-group {
