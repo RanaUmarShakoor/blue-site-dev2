@@ -1012,8 +1012,8 @@ footer{
 
 
 /* ***** About Page ***** */
-.about-banner.banner-wrapper{
-    /* background-image: url('../images/about_bg.png'); */
+/* .about-banner.banner-wrapper{
+    background-image: url('../images/about_bg.png');
     background: url('../images/about_bg.png');
     background-position: right;
     background-size: cover;
@@ -1024,14 +1024,14 @@ footer{
     align-items: center;
 }
 .abt-banner-img{
-    /* max-width: 900px; */
+    max-width: 900px;
     max-width: 1000px;
     margin: 0 auto;
 }
 .abt-banner-img img{
     width: 100%;
     opacity: 0;
-}
+} */
 .about-wrp{
     padding: 130px 0 100px;
 }
