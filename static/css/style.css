@@ -2938,12 +2938,16 @@ img.project-shp{
     height: 100%;
     display: flex;
     align-items: center;
+    max-width: 2400px;
+    width: 60%;
 }
 
 .platform-box{
     position: relative;
-    max-width: 930px;
-    margin: 0 auto 70px;
+    /* max-width: 930px; */
+    height: 100%;
+    width: 100%;
+    /* margin: 0 auto 70px; */
 }
 .platform-box h1{
     font-size: 52px;
@@ -2957,6 +2961,7 @@ img.project-shp{
 }
 .platform-img img{
     width: 100%;
+    margin: 0 auto;
 }
 img.plat-shp1{
     position: absolute;
