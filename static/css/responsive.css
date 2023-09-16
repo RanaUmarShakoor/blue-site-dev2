@@ -1486,6 +1486,10 @@
     padding: 10px 35px;
   }
 
+  .online-training-banner .banner-img img {
+    top: 25px;
+  }
+
   .online-wrp {
     padding: 60px 0;
   }
@@ -3906,6 +3910,10 @@
     padding: 10px 35px;
   }
 
+  .online-training-banner .banner-img img {
+    top: 20px;
+  }
+
   .online-wrp {
     padding: 60px 0;
   }
@@ -4076,7 +4084,7 @@
   }
 
   .certification-banner .banner-img img {
-    width: 110%;
+    width: 100%;
   }
 
   .certi-track-dt {

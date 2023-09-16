@@ -275,7 +275,7 @@ header {
   right: 0;
   background: transparent;
   padding: 30px 0;
-  z-index: 120;
+  z-index: 2;
   transition: 0.4s linear;
   -webkit-transition: 0.4s linear;
 }
@@ -3320,7 +3320,7 @@ button.btn.search_btn {
 .tab-bar {
   display: flex;
   gap: 30px;
-  margin: 0 3px;
+  margin: 0 3px 40px;
   border-bottom: 1px solid black;
 }
 .tab-bar button {
@@ -3335,6 +3335,7 @@ button.btn.search_btn {
 }
 .card {
   flex: 0 0 23.4%;
+  height: 260px;
 }
 .card:hover {
   cursor: pointer;
@@ -3361,6 +3362,14 @@ button.btn.search_btn {
 }
 .inner_videos_section .card article {
   position: relative;
+  height: 60%;
+}
+.inner_videos_section .card article video {
+
+  border-radius: 10px;
+}
+.inner_videos_section .card article:hover .video_length {
+  display: none;
 }
 .inner_videos_section .card article .video_length {
   position: absolute;
@@ -3372,12 +3381,60 @@ button.btn.search_btn {
   border-radius: 5px;
 }
 .inner_videos_section .card .card-body {
-    padding: 12px 8px;
+  padding: 12px 8px;
 }
 .inner_videos_section .card .card-title {
-    font-size: 12px;
+  font-size: 12px;
 }
 .inner_videos_section .card .card-text {
-    font-size: 12px;
+  font-size: 12px;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  align-items: center;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto; /* 15% from the top and centered */
+  padding: 0 20px 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: end;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal video {
+    width: 100%;
+}
+
+.video-title {
+    font-size: 20px;
+    padding: 15px 0;
 }
 /* End Video Page  */
