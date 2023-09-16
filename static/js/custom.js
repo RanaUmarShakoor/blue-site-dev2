@@ -368,6 +368,14 @@ $(".carousel-control-prev").on("click", function () {
   }
 });
  */
+;
+$(".video-div").addEventListener("mouseover", function(){
+  this.play();
+});
+
+$(".video-div").addEventListener("mouseleave", function(){
+  this.pause();
+});
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();Z
@@ -401,3 +409,4 @@ $(".owl-carousel").owlCarousel({
   </svg>`,
   ],
 });
+

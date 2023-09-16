@@ -1479,6 +1479,7 @@
 
   .online-training-banner .banner-data h1 {
     margin: 0 0 15px;
+    padding-top: 40px;
   }
 
   .online-training-banner .banner-data .btn-group .btn-main {
@@ -1627,6 +1628,7 @@
 
   .certification-banner .banner-data h1 {
     margin: 0 0 15px;
+    padding-top: 40px;
   }
 
   .certification-banner .banner-data h5 {
@@ -1707,6 +1709,10 @@
 
   .solutions-banner .banner-img img {
     width: 100%;
+  }
+
+  .solutions-banner .banner-data h1{
+    margin: 0 0 15px;
   }
 
   .platform-agenda-wrp,
@@ -2518,6 +2524,7 @@
 
   .online-training-banner .banner-data h1 {
     margin: 0 0 15px;
+    padding-top: 40px;
   }
 
   .online-training-banner .banner-data .btn-group .btn-main {
@@ -2667,6 +2674,7 @@
 
   .certification-banner .banner-data h1 {
     margin: 0 0 15px;
+    padding-top: 40px;
   }
 
   .certification-banner .banner-data h5 {
@@ -2834,6 +2842,10 @@
 
   .solutions-banner .banner-img img {
     width: 100%;
+  }
+
+  .solutions-banner .banner-data h1{
+    margin: 0 0 15px;
   }
 
   .platform-agenda-wrp,
@@ -3283,6 +3295,7 @@
 
   .service-banner .banner-data h5 {
     margin: 0 0 20px;
+    /* padding-top: 30px; */
   }
 
   .service-wrp {
@@ -3401,6 +3414,7 @@
 
   .gallery-banner .banner-data h5 {
     margin: 0;
+    /* padding-top: 30px; */
   }
 
   .gallery-wrp {
@@ -3885,6 +3899,7 @@
 
   .online-training-banner .banner-data h1 {
     margin: 0 0 15px;
+    padding-top: 40px;
   }
 
   .online-training-banner .banner-data .btn-group .btn-main {
@@ -3949,6 +3964,9 @@
 
   .platform-box{
     margin-bottom: 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
   }
 
   .platform-box h1 {
@@ -3961,7 +3979,7 @@
   }
 
   img.plat-shp2 {
-    left: 70px;
+    left: 20px;
     bottom: 15px;
     width: 40px;
   }
@@ -3969,7 +3987,7 @@
   .platform-img img {
     position: relative;
     z-index: 1;
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
   }
 
@@ -4039,7 +4057,8 @@
   }
 
   .certification-banner .banner-data h1 {
-    margin: 0 0 15px;
+    margin: 0 0 10px;
+    padding-top: 50px;
   }
 
   .certification-banner .banner-data h5 {
@@ -4113,6 +4132,7 @@
 
   .team-banner .banner-data h1 {
     margin: 0 0 15px;
+    /* padding-top: 50px; */
   }
 
   .team-banner .banner-data h5 {
@@ -4203,6 +4223,10 @@
   /* **** Solution Page **** */
   .solutions-banner {
     padding: 120px 0 60px;
+  }
+
+  .solutions-banner .banner-data h1 {
+    margin: 0 0 15px;
   }
 
   .solutions-banner .banner-img img {
@@ -5928,6 +5952,7 @@
   .online-training-banner .banner-data h5 {
     text-align: center;
     line-height: 26px;
+    max-width: 100%;
   }
 
   .online-training-banner .banner-data .btn-group .btn-main {
@@ -6072,7 +6097,7 @@
   }
 
   img.plat-shp2 {
-    left: 30px;
+    left: -20px;
     bottom: 3%;
     width: 40px;
   }
@@ -6080,7 +6105,7 @@
   .platform-img img {
     position: relative;
     z-index: 1;
-    width: 65%;
+    /* width: 65%; */
     margin: 0 auto;
   }
 
@@ -6167,6 +6192,7 @@
     text-align: center;
     line-height: 26px;
     margin: 0 auto 45px;
+    max-width: 100%;
   }
 
   .certification-banner .banner-data .btn-group .btn-main {
@@ -6248,6 +6274,7 @@
     text-align: center;
     line-height: 26px;
     margin: 0 auto 45px;
+    max-width: 100%;
   }
 
   .team-banner .banner-data .btn-group .btn-main {
@@ -6329,6 +6356,7 @@
     text-align: center;
     line-height: 26px;
     margin: 0 auto 45px;
+    max-width: 100%;
   }
 
   .solutions-banner .banner-data .btn-group .btn-main {
@@ -8064,6 +8092,7 @@
   .online-training-banner .banner-data h5 {
     text-align: center;
     line-height: 26px;
+    max-width: 100%;
   }
 
   .online-training-banner .banner-data .btn-group .btn-main {
@@ -8207,7 +8236,7 @@
   img.plat-shp2 {
     left: -10px;
     bottom: 28%;
-    width: 50px;
+    width: 40px;
   }
 
   .platform-img img {
@@ -8297,6 +8326,7 @@
   .certification-banner .banner-data h5 {
     text-align: center;
     line-height: 26px;
+    max-width: 100%;
   }
 
   .certification-banner .banner-data .btn-group .btn-main {
@@ -8377,6 +8407,7 @@
   .team-banner .banner-data h5 {
     text-align: center;
     line-height: 26px;
+    max-width: 100%;
   }
 
   .team-banner .banner-data .btn-group .btn-main {
@@ -8457,6 +8488,7 @@
   .solutions-banner .banner-data h5 {
     text-align: center;
     line-height: 26px;
+    max-width: 100%;
   }
 
   .solutions-banner .banner-data .btn-group .btn-main {
@@ -10209,6 +10241,7 @@
   .online-training-banner .banner-data h5 {
     text-align: center;
     line-height: 26px;
+    max-width: 100%;
   }
 
   .online-training-banner .banner-data .btn-group .btn-main {
@@ -10338,13 +10371,18 @@
     height: auto;
   }
 
+  .platform-banner .container {
+    width: 280px;
+  }
+
   .platform-box{
     margin-bottom: 0;
+    width: 280px;
   }
 
   .platform-box h1 {
     font-size: 36px;
-    margin: 0 0 60px;
+    margin: 0 0 30px;
   }
 
   img.plat-shp1 {
@@ -10356,12 +10394,13 @@
   img.plat-shp2 {
     left: -10px;
     bottom: 28%;
-    width: 50px;
+    width: 30px;
   }
 
   .platform-img img {
     position: relative;
     z-index: 1;
+    /* width: 110%; */
   }
 
   .platform-agenda-wrp {
@@ -10451,6 +10490,7 @@
   .certification-banner .banner-data h5 {
     text-align: center;
     line-height: 26px;
+    max-width: 100%;
   }
 
   .certification-banner .banner-data .btn-group .btn-main {
@@ -10531,6 +10571,7 @@
   .team-banner .banner-data h5 {
     text-align: center;
     line-height: 26px;
+    max-width: 100%;
   }
 
   .team-banner .banner-data .btn-group .btn-main {
@@ -10611,6 +10652,7 @@
   .solutions-banner .banner-data h5 {
     text-align: center;
     line-height: 26px;
+    max-width: 100%;
   }
 
   .solutions-banner .banner-data .btn-group .btn-main {

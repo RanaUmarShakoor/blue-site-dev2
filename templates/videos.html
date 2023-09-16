@@ -35,59 +35,6 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/responsive.css') }}"
     />
-
-    <style>
-      .filter-section {
-        padding: 40px 0 80px;
-      }
-      .input-group {
-        border: 2px solid black;
-        border-radius: 40px;
-        padding-left: 10px;
-      }
-      .form-control {
-        border: none;
-        background-color: transparent;
-      }
-      .form-control:focus {
-        outline: none;
-        box-shadow: none;
-        border: none;
-        background-color: transparent;
-      }
-      button.btn.search_btn {
-        margin: -1.5px -2px -1.5px 0;
-        padding: 0 30px;
-        border: 2px solid black;
-        border-radius: 20px !important;
-        background-color: #5673ea;
-      }
-      .search_btn img {
-        height: 16px;
-        width: 16px;
-      }
-      .tab-bar {
-        display: flex;
-        gap: 30px;
-        margin: 0 3px;
-        border-bottom: 1px solid black;
-      }
-      .tab-bar button {
-        padding: 0;
-        margin-bottom: -1.25px;
-      }
-      .tab-bar .active-tab {
-        color: #5673ea;
-        border-bottom: 2.5px solid #5673ea;
-        border-radius: 0px;
-      }
-      .card {
-        flex: 0 0 23.4%;
-      }
-      .card:hover {
-        cursor: pointer;
-      }
-    </style>
   </head>
 
   <body>
@@ -214,18 +161,39 @@
             <button type="button" class="btn">Podcasts</button>
             <button type="button" class="btn">Short Videos</button>
           </div>
-          <div class="" style="display: flex; padding: 50px 0px; gap: 2.1333333%; row-gap: 30px; flex-wrap: wrap;">
+          <div
+            class=""
+            style="
+              display: flex;
+              padding: 50px 0px;
+              gap: 2.1333333%;
+              row-gap: 30px;
+              flex-wrap: wrap;
+            "
+          >
             <div
               class="card"
               style="position: relative; border: none; padding: 0"
             >
-              <article style="position: relative;">
+              <article style="position: relative">
                 <img
                   src="{{ url_for('static', filename='images/videos_thumb1.png') }}"
-                  alt=""
+                  alt=""/
                   class="card-img-top"
                 />
-                <div style="position: absolute; right: 15px; bottom: 13px; background-color: black; color: white; padding: 1px; border-radius: 5px;">02:03</div>
+                <div
+                  style="
+                    position: absolute;
+                    right: 15px;
+                    bottom: 13px;
+                    background-color: black;
+                    color: white;
+                    padding: 1px;
+                    border-radius: 5px;
+                  "
+                >
+                  02:03
+                </div>
               </article>
               <div class="card-body" style="padding: 12px 8px">
                 <h6 class="card-title" style="font-size: 12px">
@@ -240,13 +208,32 @@
               class="card"
               style="position: relative; border: none; padding: 0"
             >
-              <article style="position: relative;">
-                <img
+              <article style="position: relative">
+                <video class="video-div card-img-top"
+                  autoplay
+                  poster="{{ url_for('static', filename='images/videos_thumb2.png') }}">
+                  <!-- <source src="{{ url_for('static', filename='video/Mars red “Hello, I’m Misaki”.png') }}" type="video/mp4"> -->
+                  <source src="https://bluesite.azureedge.net/demo-video.mp4" type="video/mp4">
+                  <!-- <source src="https://bluesite.azureedge.net/demo-video.mp4" type="video/ogg"> -->
+                </video>
+                <!-- <img
                   src="{{ url_for('static', filename='images/videos_thumb2.png') }}"
                   alt=""
                   class="card-img-top"
-                />
-                <div style="position: absolute; right: 15px; bottom: 13px; background-color: black; color: white; padding: 1px; border-radius: 5px;">02:03</div>
+                /> -->
+                <div
+                  style="
+                    position: absolute;
+                    right: 15px;
+                    bottom: 13px;
+                    background-color: black;
+                    color: white;
+                    padding: 1px;
+                    border-radius: 5px;
+                  "
+                >
+                  02:03
+                </div>
               </article>
               <div class="card-body" style="padding: 12px 8px">
                 <h6 class="card-title" style="font-size: 12px">
@@ -257,18 +244,30 @@
                 </p>
               </div>
             </div>
-            
+
             <div
               class="card"
               style="position: relative; border: none; padding: 0"
             >
-              <article style="position: relative;">
+              <article style="position: relative">
                 <img
                   src="{{ url_for('static', filename='images/videos_thumb3.png') }}"
                   alt=""
                   class="card-img-top"
                 />
-                <div style="position: absolute; right: 15px; bottom: 13px; background-color: black; color: white; padding: 1px; border-radius: 5px;">02:03</div>
+                <div
+                  style="
+                    position: absolute;
+                    right: 15px;
+                    bottom: 13px;
+                    background-color: black;
+                    color: white;
+                    padding: 1px;
+                    border-radius: 5px;
+                  "
+                >
+                  02:03
+                </div>
               </article>
               <div class="card-body" style="padding: 12px 8px">
                 <h6 class="card-title" style="font-size: 12px">
@@ -279,18 +278,30 @@
                 </p>
               </div>
             </div>
-            
+
             <div
               class="card"
               style="position: relative; border: none; padding: 0"
             >
-              <article style="position: relative;">
+              <article style="position: relative">
                 <img
                   src="{{ url_for('static', filename='images/videos_thumb4.png') }}"
                   alt=""
                   class="card-img-top"
                 />
-                <div style="position: absolute; right: 15px; bottom: 13px; background-color: black; color: white; padding: 1px; border-radius: 5px;">02:03</div>
+                <div
+                  style="
+                    position: absolute;
+                    right: 15px;
+                    bottom: 13px;
+                    background-color: black;
+                    color: white;
+                    padding: 1px;
+                    border-radius: 5px;
+                  "
+                >
+                  02:03
+                </div>
               </article>
               <div class="card-body" style="padding: 12px 8px">
                 <h6 class="card-title" style="font-size: 12px">
@@ -306,13 +317,25 @@
               class="card"
               style="position: relative; border: none; padding: 0"
             >
-              <article style="position: relative;">
+              <article style="position: relative">
                 <img
                   src="{{ url_for('static', filename='images/videos_thumb3.png') }}"
                   alt=""
                   class="card-img-top"
                 />
-                <div style="position: absolute; right: 15px; bottom: 13px; background-color: black; color: white; padding: 1px; border-radius: 5px;">02:03</div>
+                <div
+                  style="
+                    position: absolute;
+                    right: 15px;
+                    bottom: 13px;
+                    background-color: black;
+                    color: white;
+                    padding: 1px;
+                    border-radius: 5px;
+                  "
+                >
+                  02:03
+                </div>
               </article>
               <div class="card-body" style="padding: 12px 8px">
                 <h6 class="card-title" style="font-size: 12px">
@@ -323,13 +346,268 @@
                 </p>
               </div>
             </div>
-            
 
+            <div
+              class="card"
+              style="position: relative; border: none; padding: 0"
+            >
+              <article style="position: relative">
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb4.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div
+                  style="
+                    position: absolute;
+                    right: 15px;
+                    bottom: 13px;
+                    background-color: black;
+                    color: white;
+                    padding: 1px;
+                    border-radius: 5px;
+                  "
+                >
+                  02:03
+                </div>
+              </article>
+              <div class="card-body" style="padding: 12px 8px">
+                <h6 class="card-title" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur
+                </p>
+              </div>
+            </div>
 
+            <div
+              class="card"
+              style="position: relative; border: none; padding: 0"
+            >
+              <article style="position: relative">
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb2.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div
+                  style="
+                    position: absolute;
+                    right: 15px;
+                    bottom: 13px;
+                    background-color: black;
+                    color: white;
+                    padding: 1px;
+                    border-radius: 5px;
+                  "
+                >
+                  02:03
+                </div>
+              </article>
+              <div class="card-body" style="padding: 12px 8px">
+                <h6 class="card-title" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="card"
+              style="position: relative; border: none; padding: 0"
+            >
+              <article style="position: relative">
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb1.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div
+                  style="
+                    position: absolute;
+                    right: 15px;
+                    bottom: 13px;
+                    background-color: black;
+                    color: white;
+                    padding: 1px;
+                    border-radius: 5px;
+                  "
+                >
+                  02:03
+                </div>
+              </article>
+              <div class="card-body" style="padding: 12px 8px">
+                <h6 class="card-title" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text" style="font-size: 12px">
+                  Lorem ipsum dolor sit amet, consectetur
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- End Videos Section -->
+
+      <!-- Short Videos Section -->
+      <section class="videos_section short_videos">
+        <div class="container">
+          <h2>Short Videos</h2>
+          <!-- Videos  -->
+          <div class="inner_videos_section">
+            
+            <!-- Video # 1 -->
+            <div class="card">
+              <article>
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb1.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="video_length">02:03</div>
+              </article>
+              <div class="card-body">
+                <h6 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+              </div>
+            </div>
+
+            <!-- Video # 2 -->
+            <div class="card">
+              <article>
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb1.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="video_length">02:03</div>
+              </article>
+              <div class="card-body">
+                <h6 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+              </div>
+            </div>
+            
+            <!-- Video # 3 -->
+            <div class="card">
+              <article>
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb1.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="video_length">02:03</div>
+              </article>
+              <div class="card-body">
+                <h6 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+              </div>
+            </div>
+
+            <!-- Video # 4 -->
+            <div class="card">
+              <article>
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb1.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="video_length">02:03</div>
+              </article>
+              <div class="card-body">
+                <h6 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+              </div>
+            </div>
+
+            <!-- Video # 5 -->
+            <div class="card">
+              <article>
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb1.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="video_length">02:03</div>
+              </article>
+              <div class="card-body">
+                <h6 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+              </div>
+            </div>
+
+            <!-- Video # 6 -->
+            <div class="card">
+              <article>
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb1.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="video_length">02:03</div>
+              </article>
+              <div class="card-body">
+                <h6 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+              </div>
+            </div>
+
+            <!-- Video # 7 -->
+            <div class="card">
+              <article>
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb1.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="video_length">02:03</div>
+              </article>
+              <div class="card-body">
+                <h6 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+              </div>
+            </div>
+
+            <!-- Video # 8 -->
+            <div class="card">
+              <article>
+                <img
+                  src="{{ url_for('static', filename='images/videos_thumb1.png') }}"
+                  alt=""
+                  class="card-img-top"
+                />
+                <div class="video_length">02:03</div>
+              </article>
+              <div class="card-body">
+                <h6 class="card-title">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                </h6>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-- End Short Videos Section -->
 
       <!-- Go To Top -->
       <button id="myBtn" title="Go to top">
