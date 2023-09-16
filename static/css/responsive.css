@@ -14,6 +14,12 @@
   .solutions-banner .banner-img img {
     width: 230%;
   }
+  .full-stack-jobs-wrp .courses-full-stack-data h2.spreaded{
+    display: block;
+  }
+  .full-stack-jobs-wrp .courses-full-stack-data h2.regular{
+    display: none;
+  }
 }
 
 

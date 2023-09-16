@@ -1596,6 +1596,12 @@ img.gallery-shp{
 .full-stack-jobs-wrp .courses-full-stack-data h2{
     color: #0A1854;
 }
+.full-stack-jobs-wrp .courses-full-stack-data h2.spreaded{
+    display: none;
+}
+.full-stack-jobs-wrp .courses-full-stack-data h2.regular{
+    display: block;
+}
 .full-stack-jobs-wrp .courses-full-stack-img img{
     padding-top: 80px;
     margin-left: 40px;
