@@ -66,6 +66,17 @@
   .platform-banner {
     height: calc(43.5vw - 102px)
   }
+  .platform-banner .container {
+    max-width: 1800px;
+    width: 60%;
+  }
+  .platform-banner .platform-box {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: end;
+  }
 }
 
 @media (min-width: 1900px) and (max-width: 2100px) {
@@ -127,7 +138,7 @@
   }
 
   .platform-img img {
-    width: 95%;
+    width: 90%;
   }
 
 /* 
@@ -138,6 +149,12 @@
   /* .slider-center {
     left: 15%;
   } */
+  .certification-banner .banner-img img{
+    width: 110%;
+  }
+  .team-banner .banner-img img{
+    width: 115%;
+  }
 }
 
 @media (min-width: 1201px) and (max-width: 1400px) {
@@ -1514,7 +1531,7 @@
   .platform-banner {
     /* height: auto; */
     height: calc(47vw - 102px);
-    padding: 120px 0 0;
+    padding: 110px 0 0;
   }
 
   .platform-box{
@@ -1627,7 +1644,7 @@
   }
 
   .certification-banner .banner-img img {
-    width: 110%;
+    width: 95%;
   }
 
   .certi-track-dt {
@@ -8797,10 +8814,10 @@
   }
 
   .banner-data h5 {
-    font-size: 16px;
+    font-size: 12px;
     line-height: 24px;
     margin: 0 0 45px;
-    max-width: 70%;
+    max-width: 275px;
   }
 
   .banner-data .btn-group {
