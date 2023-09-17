@@ -4264,6 +4264,17 @@
 
   /* **** End Solution Page **** */
 
+  /* **** Videos Page **** */
+  .inner_videos_section {
+    gap: 5.2%;
+    row-gap: 5px;
+    padding: 10px 0 15px;
+  }
+  .inner_videos_section .card {
+    flex: 0 0 47.4%;
+  }
+  /* **** End Video Page **** */
+
   #myBtn {
     right: 15px;
     bottom: 15px;
@@ -4272,7 +4283,7 @@
   /****** START VIDEO RESPONSIVE *****/
   iframe {
     height: 353px;
-  }
+  }  
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -6415,6 +6426,21 @@
 
   /* **** End Solution Page **** */
 
+  /* **** Videos Page **** */
+  .inner_videos_section {
+    gap: 5.2%;
+    row-gap: 5px;
+    padding: 10px 0 15px;
+  }
+  .inner_videos_section .card {
+    flex: 0 0 47.4%;
+  }
+  .modal-content {
+    width: 86%;
+    padding: 0 5px 5px;
+  }
+  /* **** End Video Page **** */
+
   #myBtn {
     right: 15px;
     bottom: 15px;
@@ -8546,6 +8572,21 @@
   }
 
   /* **** End Solution Page **** */
+
+  /* **** Videos Page **** */
+  .inner_videos_section {
+    gap: 5.2%;
+    row-gap: 5px;
+    padding: 10px 0 15px;
+  }
+  .inner_videos_section .card {
+    flex: 0 0 47.4%;
+  }
+  .modal-content {
+    width: 90%;
+    padding: 0 5px 5px;
+  }
+  /* **** End Video Page **** */
 
   #myBtn {
     right: 15px;
@@ -10711,6 +10752,60 @@
 
   /* **** End Solution Page **** */
 
+  /* **** Videos Page **** */
+  .filter-section {
+    padding: 30px 0 70px;
+  }
+  .input-group input {
+    font-size: 12px;
+  }
+  .input-group button.btn.search_btn {
+    padding: 0 20px;
+  }
+  .input-group button img {
+    height: 14px;
+    width: 14px;
+  }
+  .filter h6 {
+    font-size: 14px;
+  }
+  .filter .dropdown .dropdown-toggle {
+    font-size: 12px;
+  }
+  .filter .dropdown .dropdown-item {
+    font-size: 12px;
+  }
+  .tab-bar {
+    margin: 0 0 20px;
+    gap: 15px;
+  }
+  .tab-bar button {
+    font-size: 11px;
+  }
+  .inner_videos_section {
+    gap: 0%;
+    row-gap: 25px;
+    padding: 10px 0 30px;
+  }
+  .inner_videos_section .card {
+    flex: 0 0 100%;
+  }
+  .inner_videos_section .card article {
+    height: auto;
+  }
+  .modal-content {
+    width: 98%;
+    padding: 0 5px 5px;
+  }
+  .video-title {
+    font-size: 14px;
+    padding: 5px 0 0;
+  }
+  .video-description {
+    font-size: 10px;
+  }
+  /* **** End Video Page **** */
+  
   #myBtn {
     right: 15px;
     bottom: 15px;

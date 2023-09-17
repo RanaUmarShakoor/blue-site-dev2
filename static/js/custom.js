@@ -382,15 +382,25 @@ $('.search_btn').on('click', function(){
 
 })
 
-
+let isDropdownOpen = false;
 $('#dropdownMenuLink').on("click", function(){
-  $(this).siblings('.dropdown-menu').css("display", "block");
+  if(isDropdownOpen == false)
+  {
+    $(this).siblings('.dropdown-menu').css("display", "block");
+    isDropdownOpen = true;
+  }
+  else
+  {
+    $(this).siblings('.dropdown-menu').css("display", "none");
+    isDropdownOpen = false;
+  }
 })
 
 $('.dropdown-menu').children().on('click', function(){
   let title = $.trim( $(this).text() );
   $(this).parents().siblings('#dropdownMenuLink').text(title);
   $(this).parents('.dropdown-menu').css("display", "none");
+  isDropdownOpen = false;
 })
 
 $('.tab-btn').on("click", function(){
@@ -410,10 +420,12 @@ $(".video-div").on("mouseleave", function(){
 var modal = document.getElementById("videoModal");
 
 $(".video-card").on("click", function(){
-  let title = "";
+  let title = "", description = "";
   title = ( $.trim( $(this).children('.card-body').children('.card-title').text() ) );
+  description = ( $.trim( $(this).children('.card-body').children('.card-text').text() ) );
 
   $(".video-title").text(title);
+  $(".video-description").text(description);
   modal.style.display = "flex";
 
   $("modal-video").load();

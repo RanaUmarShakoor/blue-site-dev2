@@ -3351,13 +3351,6 @@ button.btn.search_btn {
   border-radius: 0px;
   /* padding: 0 0 40px; */
 }
-.card {
-  flex: 0 0 23.4%;
-  height: 260px;
-}
-.card:hover {
-  cursor: pointer;
-}
 .videos_section .container h2 {
   font-size: 35px;
   font-weight: 600;
@@ -3370,13 +3363,17 @@ button.btn.search_btn {
   display: flex;
   padding: 10px 0px 50px;
   gap: 2.1333333%;
-  row-gap: 30px;
+  row-gap: 10px;
   flex-wrap: wrap;
 }
 .inner_videos_section .card {
+  flex: 0 0 23.4%;
   position: relative;
   border: none;
   padding: 0;
+}
+.inner_videos_section .card:hover {
+  cursor: pointer;
 }
 .inner_videos_section .card article {
   position: relative;
@@ -3391,8 +3388,8 @@ button.btn.search_btn {
 }
 .inner_videos_section .card article .video_length {
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 4px;
+  bottom: 4px;
   background-color: black;
   color: white;
   padding: 1px 3px;
@@ -3456,6 +3453,9 @@ button.btn.search_btn {
 
 .video-title {
     font-size: 20px;
-    padding: 15px 0;
+    padding: 15px 0 0;
+}
+.video-description {
+  font-size: 12px;
 }
 /* End Video Page  */
