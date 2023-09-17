@@ -3296,6 +3296,9 @@ img.plat-shp2 {
   border-radius: 40px;
   padding-left: 10px;
 }
+.input-group input {
+  outline: none
+}
 .form-control {
   border: none;
   background-color: transparent;
@@ -3317,6 +3320,18 @@ button.btn.search_btn {
   height: 16px;
   width: 16px;
 }
+.filter {
+  display: flex; align-items: center
+}
+.filter h6 {
+  margin: 0 8px 0 0;
+}
+.filter .dropdown .dropdown-toggle {
+  border: 2px solid black;
+  border-radius: 40px;
+  font-size: 14px;
+  color: #7d7d7d;
+}
 .tab-bar {
   display: flex;
   gap: 30px;
@@ -3326,6 +3341,9 @@ button.btn.search_btn {
 .tab-bar button {
   padding: 0;
   margin-bottom: -1.25px;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 .tab-bar .active-tab {
   color: #5673ea;
@@ -3365,19 +3383,19 @@ button.btn.search_btn {
   height: 60%;
 }
 .inner_videos_section .card article video {
-
   border-radius: 10px;
+  object-fit: cover;
 }
 .inner_videos_section .card article:hover .video_length {
   display: none;
 }
 .inner_videos_section .card article .video_length {
   position: absolute;
-  right: 15px;
-  bottom: 13px;
+  right: 0px;
+  bottom: 0px;
   background-color: black;
   color: white;
-  padding: 1px;
+  padding: 1px 3px;
   border-radius: 5px;
 }
 .inner_videos_section .card .card-body {
@@ -3388,6 +3406,9 @@ button.btn.search_btn {
 }
 .inner_videos_section .card .card-text {
   font-size: 12px;
+}
+.inner_videos_section .card:hover .card-title {
+  color: #516fe9;
 }
 
 .modal {

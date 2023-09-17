@@ -370,6 +370,34 @@ $(".carousel-control-prev").on("click", function () {
  */
 
 // Video Page 
+$('.search_btn').on('click', function(){
+  let title = $('.search_bar').val().trim().toLowerCase();
+  $('.search_bar').val("");
+
+  console.log(title)
+  if($.trim($('.card-title').text().toLowerCase()) != title){
+    // $('.card-title').parents('.card-body').css('display', 'none');
+    console.log($('.card-title').text().toLowerCase().trim())
+  }
+
+})
+
+
+$('#dropdownMenuLink').on("click", function(){
+  $(this).siblings('.dropdown-menu').css("display", "block");
+})
+
+$('.dropdown-menu').children().on('click', function(){
+  let title = $.trim( $(this).text() );
+  $(this).parents().siblings('#dropdownMenuLink').text(title);
+  $(this).parents('.dropdown-menu').css("display", "none");
+})
+
+$('.tab-btn').on("click", function(){
+  $('.tab-btn').removeClass('active-tab');
+  $(this).addClass('active-tab');
+})
+
 $(".video-div").on("mouseenter", function(){
   this.play();
 })
