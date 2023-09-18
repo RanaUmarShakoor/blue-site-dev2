@@ -20,6 +20,12 @@
   .full-stack-jobs-wrp .courses-full-stack-data h2.regular{
     display: none;
   }
+  .courses-full-stack-wrp.full-stack-jobs-wrp {
+    padding: 23px 0 0;
+  }
+  .courses-full-stack-wrp.full-stack-jobs-wrp img {
+    width: 104%;
+  }
 }
 
 
@@ -47,6 +53,12 @@
   }
   .solutions-banner .banner-img img {
     width: 180%;
+  }
+  .courses-full-stack-wrp.full-stack-jobs-wrp {
+    padding: 23px 0 0;
+  }
+  .courses-full-stack-wrp.full-stack-jobs-wrp img {
+    width: 104%;
   }
 }
 
@@ -77,6 +89,9 @@
     flex-flow: column;
     justify-content: end;
   }
+  .courses-full-stack-wrp.full-stack-jobs-wrp img {
+    width: 104%;
+  }
 }
 
 @media (min-width: 1900px) and (max-width: 2100px) {
@@ -100,6 +115,9 @@
     height: calc(44vw - 102px);
     padding: 110px 0 0;
   }
+  .full-stack-jobs-wrp .courses-full-stack-img img {
+    width: 104%;
+  }
 }
 
 @media (min-width: 1400px) and (max-width: 1900px) {
@@ -117,6 +135,12 @@
 
   .banner-wrapper {
     height: calc(45.5vw - 102px);
+  }
+
+  .full-stack-jobs-wrp .courses-full-stack-img img {
+    padding-top: 50px;
+    margin-right: 5px;
+    width: 104%;
   }
 
   .service-banner.banner-wrapper {
@@ -526,6 +550,11 @@
     font-size: 40px;
     line-height: 60px;
   }
+
+  .full-stack-jobs-wrp .courses-full-stack-img img {
+    padding-top: 18px;
+    width: 100%;
+  }  
 
   .tools-wrp {
     padding: 30px;
@@ -1264,6 +1293,10 @@
   .guide-block .btn-group .btn-main {
     padding: 12px 30px;
     font-size: 14px;
+  }
+  .full-stack-jobs-wrp .courses-full-stack-img img {
+    padding: 25px 0 0;
+    width: 106%;
   }
 
   /* **** End Courses Page **** */

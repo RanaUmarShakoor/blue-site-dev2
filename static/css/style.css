@@ -1660,8 +1660,9 @@ img.gallery-shp {
   display: block;
 }
 .full-stack-jobs-wrp .courses-full-stack-img img {
-  padding-top: 80px;
-  margin-left: 40px;
+  padding-top: 30px;
+  /* margin-left: 40px; */
+  /* width: 120%; */
 }
 /* ***** End Course Page ***** */
 

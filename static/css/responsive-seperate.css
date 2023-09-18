@@ -1297,7 +1297,8 @@
   } */
   .full-it-stack-banner.banner-wrapper{
     padding: 70px 0 0;
-    background-position: 40% center;
+    background-size: 135%;
+    background-position: 0% 20%;
   }
   .full-it-stack-banner .container{
     height: 100%;
@@ -2026,7 +2027,8 @@
     margin: 0 0 30px;
   }
   .full-it-stack-banner.banner-wrapper{
-    background-position: 37% center;
+    background-size: 270%;
+    background-position: 36% 27%;
   }
   /* .full-it-stack-banner {
     background-image: url("../images/full_stack_it_bg2.png");
@@ -2044,7 +2046,8 @@
   }
   .full-it-stack-banner .banner-data h5 {
     margin: 0;
-    max-width: 350px;
+    font-size: 16px;
+    max-width: 390px;
   }
   .full-it-stack-banner .banner-data .btn-group {
     margin: 0 auto 60px;
@@ -2819,8 +2822,8 @@
   }
   .full-it-stack-banner.banner-wrapper {
     /* background-image: url("../images/full_stack_it_bg2.png"); */
-    background-size: cover;
-    background-position: 40% center;
+    background-size: 300%;
+    background-position: 35% 13%;
     /* text-align: center; */
   }
   .full-it-stack-banner-img .main-img {
@@ -2837,7 +2840,7 @@
   }
   .full-it-stack-banner .banner-data h5 {
     margin: 25px 0 30px;
-    max-width: 300px;
+    max-width: 350px;
   }
   .full-it-stack-banner .btn-group {
     margin: 0 auto 35px;
@@ -4694,7 +4697,8 @@
     margin: auto;
   }
   .full-it-stack-banner.banner-wrapper{
-    background-position: 34% center;
+    /* background-size: 400%;
+    background-position: 42% 10%; */
   }
   /* .full-it-stack-banner {
     text-align: center;
@@ -4777,11 +4781,11 @@
 
 @media screen and (min-width: 400px) and (max-width: 448px) {
   /* **** Full IT Stack Page **** */
-  .full-it-stack-banner {
+  .full-it-stack-banner.banner-wrapper {
     /* background-image: url("../images/full_stack_it_bg2.png"); */
     /* background-size: 115%; */
-    background-size: cover;
-    background-position: right;
+    background-size: 400%;
+    background-position: 42% 10%;
     /* text-align: center; */
   }
   .tools-wrp {
@@ -4816,13 +4820,13 @@
 
 @media screen and (min-width: 350px) and (max-width: 400px) {
   /* **** Full IT Stack Page **** */
-  .full-it-stack-banner {
+  .full-it-stack-banner.banner-wrapper {
     /* background-image: url("../images/full_stack_it_bg2.png"); */
     /* background-size: 118%; */
-    background-size: cover;
-    background-position: right;
+    background-size: 420%;
+    background-position: 40% 10%;
+    padding: 150px 0 100px;
     /* text-align: center; */
-    padding: 50px 0 0;
   }
   .tools-wrp {
     padding: 0;
@@ -4854,15 +4858,15 @@
   /* **** End Full IT Stack Page **** */
 }
 
-@media screen and (min-width: 325px) and (max-width: 350px) {
+@media screen and (min-width: 300px) and (max-width: 350px) {
   /* **** Full IT Stack Page **** */
-  .full-it-stack-banner {
+  .full-it-stack-banner.banner-wrapper {
     /* background-image: url("../images/full_stack_it_bg2.png"); */
     /* background-size: 125%; */
-    background-size: cover;
-    background-position: right;
+    background-size: 400%;
+    background-position: 40% 10%;
+    padding: 160px 0 110px;
     /* text-align: center; */
-    padding: 50px 0 0;
   }
   .tools-wrp {
     padding: 0;
