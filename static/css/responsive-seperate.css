@@ -4712,7 +4712,7 @@
     margin: 40px auto 15px;
   }
   .full-it-stack-banner .banner-data h1 {
-    font-size: 48px;
+    font-size: 34px;
     margin: 0;
   }
   .full-it-stack-banner .banner-data h5 {
@@ -4865,7 +4865,7 @@
     /* background-size: 125%; */
     background-size: 400%;
     background-position: 40% 10%;
-    padding: 160px 0 110px;
+    padding: 150px 0 100px;
     /* text-align: center; */
   }
   .tools-wrp {
@@ -4912,12 +4912,12 @@
     padding: 30px 0 0px;
   }
   .full-it-stack-banner .banner-data h6 {
-    font-size: 10px;
+    /* font-size: 10px; */
     margin: 40px auto 15px;
   }
   .full-it-stack-banner .banner-data h1 {
-    font-size: 36px;
-    margin: 0;
+    /* font-size: 36px; */
+    /* margin: 0; */
   }
   .full-it-stack-banner .banner-data h5 {
     font-size: 12px;
