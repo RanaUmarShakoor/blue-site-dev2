@@ -45,7 +45,10 @@ def videos():
 def gallery():
     return render_template("gallery.html")
 
-# Replace with jobs
+@app.route("/community")
+def community():
+    return render_template("community.html")
+
 @app.route("/jobs")
 def jobs():
     return render_template("jobs.html")
@@ -58,7 +61,6 @@ def full_it_stack():
 def blog():
     return render_template("blog.html")
 
-
 @app.route("/blog-details")
 def blog_details():
     return render_template("blog-details.html")
@@ -67,7 +69,6 @@ def blog_details():
 def exchange():
     return render_template("exchange.html")
 
-# Replace with full-it-stack
 @app.route("/vacancies")
 def vacancies():
     return render_template("vacancies.html")
