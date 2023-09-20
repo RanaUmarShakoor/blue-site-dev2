@@ -113,8 +113,11 @@
                             <li><a class="nav-link" href="#">Services</a></li>
                         </ul>
                         <ul class="navbar-nav d-none d-lg-flex">
-                            <li class="loginbtn">
-                                <a class="nav-link" href="login">Login</a>
+                            <li class="user-name">
+                                <a class="nav-link" href="#">Leslie Alexander</a>
+                            </li>
+                            <li class="user-img">
+                                <img src="{{ url_for('static', filename='images/user-img.png') }}" alt="">
                             </li>
                         </ul>
 
@@ -125,8 +128,19 @@
                             <li><a class="nav-link" href="#">Manage</a></li>
                             <li><a class="nav-link active" href="#">Community</a></li>
                             <li><a class="nav-link" href="#">Services</a></li>
-                            <li class="loginbtn">
-                                <a class="nav-link" href="/login">Login</a>
+                            <!-- <li class="user-name">
+                                <a class="nav-link" href="#">
+                                    <img class="nav-img" src="{{ url_for('static', filename='images/user-img.png') }}" alt="">
+                                    Leslie Alexander
+                                </a>
+                            </li> -->
+                        </ul>
+                        <ul class="navbar-nav user-info d-lg-none">
+                            <li class="user-name">
+                                <a class="nav-link" href="#">
+                                    <img class="nav-img" src="{{ url_for('static', filename='images/user-img.png') }}" alt="">
+                                    Leslie Alexander
+                                </a>
                             </li>
                         </ul>
                     </div>

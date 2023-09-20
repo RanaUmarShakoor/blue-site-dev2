@@ -317,6 +317,20 @@ header {
   .navbar-light .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 0.6);
   }
+
+  .navbar-light .navbar-nav li.user-name {
+    margin-right: 10px;
+    padding: 5px 0 0;
+  }
+
+  .navbar-light .navbar-nav li.user-img img {
+    height: 55px;
+    width: 55px;
+    border: 2px solid white;
+    border-radius: 100%;
+    object-fit: contain;
+  }
+
   /* **** End Header **** */
 
   /* **** toggler **** */
