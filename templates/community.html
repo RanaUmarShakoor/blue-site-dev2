@@ -2,95 +2,26 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Meta tag -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon & Title -->
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static', filename='images/favicon.png') }}" />
+    <title>educloud</title>
 
     <link href="https://fullcalendar.io/docs/dist/base.css?1668533862" rel="stylesheet" />
     <link rel="stylesheet" href="https://fullcalendar.io/docs/dist/demos.css?1668533862" />
-    <link rel="stylesheet" type="text/css" href="/static/css/lightpick.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/lightpick.css') }}" />
     <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" />
-    <link rel="stylesheet" type="text/css" href="/static/css/style - community.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="/static/css/style.css" /> -->
-    <link rel="stylesheet" type="text/css" href="/static/css/responsive - community.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="/static/css/responsive.css" /> -->
+        href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.css" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style - community.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive - community.css') }}" />
     <title>DASHBOARD</title>
 </head>
 
 <body>
     <div class="main agenda-main">
-        <!-- <aside class="sidebar">
-        <div class="brand-holder">
-          <a href="https://blue-site-dev2.azurewebsites.net/"
-            ><img src="/static/images/logo.png" alt=""
-          /></a>
-        </div>
-        <div class="user-info">
-          <div class="avatar">
-            <img src="/static/images/avatar.png" alt="" class="img-fluid" />
-          </div>
-          <div class="dropdown">
-            <a
-              class="user-cta"
-              href="#"
-              id="dropdownMenuLink"
-              data-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Henk Visser
-              <i><img src="/static/images/arrow-down.svg" alt="" /></i>
-            </a>
-
-            <div class="dropdown-menu">
-              <ul>
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another 2</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="designation">Administrator</div>
-        </div>
-        <ul class="navbar-menu">
-          <li>
-            <a href="/"
-              ><i><img src="/static/images/dashboard.svg" alt="" /></i>
-              <span>Dashboard</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="/classroom"
-              ><i><img src="/static/images/book.svg" alt="" /></i>
-              <span>Classroom</span>
-            </a>
-          </li>
-          <li>
-            <a href="/agenda"
-              ><i><img src="/static/images/agenda.svg" alt="" /></i>
-              <span>Agenda</span>
-            </a>
-          </li>
-          <li>
-            <a href="/manage"
-              ><i><img src="/static/images/manage.svg" alt="" /></i>
-              <span>Manage</span>
-            </a>
-          </li>
-
-          <li>
-            <a href="/community" class="active"
-              ><i
-                ><img
-                  class="community-icon"
-                  src="/static/images/community.svg"
-                  alt=""
-              /></i>
-              <span>Community</span>
-            </a>
-          </li>
-        </ul>
-      </aside> -->
         <header class="main-header">
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
@@ -138,7 +69,8 @@
                         <ul class="navbar-nav user-info d-lg-none">
                             <li class="user-name">
                                 <a class="nav-link" href="#">
-                                    <img class="nav-img" src="{{ url_for('static', filename='images/user-img.png') }}" alt="">
+                                    <img class="nav-img" src="{{ url_for('static', filename='images/user-img.png') }}"
+                                        alt="">
                                     Leslie Alexander
                                 </a>
                             </li>
@@ -151,16 +83,19 @@
         <main class="main container">
             <div class="nav-header">
                 <h2 class="title-page d-flex">
-                    <i><img src="/static/images/community-icon.svg" alt="" /></i>
+                    <i><img src="{{ url_for('static', filename='images/community-icon.svg') }}" alt="" /></i>
                     <span>Community</span>
                 </h2>
                 <div class="right-links">
-                    <a href="#" class="date"><i><img src="/static/images/calendar.svg" alt="" /></i> 13 September
+                    <a href="#" class="date"><i><img src="{{ url_for('static', filename='images/calendar.svg') }}"
+                                alt="" /></i> 13 September
                         2023</a>
-                    <a href="#" class="notification"><i><img src="/static/images/message-icon.svg" alt="" /></i>
+                    <a href="#" class="notification"><i><img
+                                src="{{ url_for('static', filename='images/message-icon.svg') }}" alt="" /></i>
                         <!-- <span></span> -->
                     </a>
-                    <a href="#" class="notification"><i><img src="/static/images/bell.svg" alt="" /></i>
+                    <a href="#" class="notification"><i><img src="{{ url_for('static', filename='images/bell.svg') }}"
+                                alt="" /></i>
                         <!-- <span></span> -->
                     </a>
                 </div>
@@ -210,8 +145,8 @@
                                         <div class="community-detail-box">
                                             <div class="user-title">
                                                 <div class="user-holder">
-                                                    <img src="/static/images/Ava-user-icon1.png" alt=""
-                                                        class="img-fluid" />
+                                                    <img src="{{ url_for('static', filename='images/Ava-user-icon1.png') }}"
+                                                        alt="" class="img-fluid" />
                                                 </div>
                                                 <div class="user-text">
                                                     <h4>Golanginya</h4>
@@ -221,7 +156,7 @@
                                                     <a href="#" class="cta-title" data-toggle="dropdown"
                                                         aria-haspopup="true" aria-expanded="false">
                                                         <span>
-                                                            <i><img src="/static/images/more-fill.svg"
+                                                            <i><img src="{{ url_for('static', filename='images/more-fill.svg') }}"
                                                                     alt="" /></i></span>
                                                     </a>
                                                     <div class="dropdown-menu cst-drop dropdown-menu-right">
@@ -244,8 +179,8 @@
                                                 </p>
                                             </div>
                                             <div class="image-holder">
-                                                <img src="/static/images/community-detail-img1.png" alt=""
-                                                    class="img-fluid" />
+                                                <img src="{{ url_for('static', filename='images/community-detail-img1.png') }}"
+                                                    alt="" class="img-fluid" />
                                             </div>
                                             <div class="detail-list">
                                                 <div class="detail-list-left">
@@ -352,19 +287,21 @@
                                             </div>
                                             <div class="community-comment">
                                                 <form>
-                                                    <span><img src="/static/images/avatar.png" alt=""
-                                                            class="img-fluid" /></span>
+                                                    <span><img
+                                                            src="{{ url_for('static', filename='images/avatar.png') }}"
+                                                            alt="" class="img-fluid" /></span>
                                                     <div class="relative">
                                                         <input type="text" class="form-control"
                                                             placeholder="Add a comment..." />
                                                         <ul>
                                                             <li>
                                                                 <a href="#"><img
-                                                                        src="/static/images/attechment-icon.svg"
+                                                                        src="{{ url_for('static', filename='images/attechment-icon.svg') }}"
                                                                         alt="" /></a>
                                                             </li>
                                                             <li>
-                                                                <a href="#"><img src="/static/images/smile-icon.svg"
+                                                                <a href="#"><img
+                                                                        src="{{ url_for('static', filename='images/smile-icon.svg') }}"
                                                                         alt="" /></a>
                                                             </li>
                                                         </ul>
@@ -373,14 +310,15 @@
                                                 <div class="latest-comments">
                                                     <h3>
                                                         The latest
-                                                        <a href="#"><img src="/static/images/down-arrow2.svg"
+                                                        <a href="#"><img
+                                                                src="{{ url_for('static', filename='images/down-arrow2.svg') }}"
                                                                 alt="" /></a>
                                                     </h3>
                                                     <div class="comments-detail">
                                                         <div class="media">
                                                             <div class="user-holder">
-                                                                <img src="/static/images/Ava-user-icon2.png" alt=""
-                                                                    class="img-fluid" />
+                                                                <img src="{{ url_for('static', filename='images/Ava-user-icon2.png') }}"
+                                                                    alt="" class="img-fluid" />
                                                             </div>
                                                             <div class="detail-text">
                                                                 <div class="user-text m-0">
@@ -391,12 +329,12 @@
                                                                     <ul>
                                                                         <li>
                                                                             <a href="#"><strong>15</strong>
-                                                                                <img src="/static/images/heart-icon.svg"
+                                                                                <img src="{{ url_for('static', filename='images/heart-icon.svg') }}"
                                                                                     alt="" /></a>
                                                                         </li>
                                                                         <li>
                                                                             <a href="#"><img
-                                                                                    src="/static/images/sms-icon.svg"
+                                                                                    src="{{ url_for('static', filename='images/sms-icon.svg') }}"
                                                                                     alt="" /></a>
                                                                         </li>
                                                                     </ul>
@@ -420,8 +358,8 @@
                                         <div class="community-detail-box">
                                             <div class="user-title">
                                                 <div class="user-holder">
-                                                    <img src="/static/images/Ava-user-icon3.png" alt=""
-                                                        class="img-fluid" />
+                                                    <img src="{{ url_for('static', filename='images/Ava-user-icon3') }}"
+                                                        alt="" class="img-fluid" />
                                                 </div>
                                                 <div class="user-text">
                                                     <h4>Reslin</h4>
@@ -431,7 +369,7 @@
                                                     <a href="#" class="cta-title" data-toggle="dropdown"
                                                         aria-haspopup="true" aria-expanded="false">
                                                         <span>
-                                                            <i><img src="/static/images/more-fill.svg"
+                                                            <i><img src="{{ url_for('static', filename='images/more-fill.svg') }}"
                                                                     alt="" /></i></span>
                                                     </a>
                                                     <div class="dropdown-menu cst-drop dropdown-menu-right">
@@ -454,8 +392,8 @@
                                                 </p>
                                             </div>
                                             <div class="image-holder">
-                                                <img src="/static/images/community-detail-img2.png" alt=""
-                                                    class="img-fluid" />
+                                                <img src="{{ url_for('static', filename='images/community-detail-img2.png') }}"
+                                                    alt="" class="img-fluid" />
                                             </div>
                                             <div class="detail-list">
                                                 <div class="detail-list-left">
@@ -570,11 +508,12 @@
                                                         <ul>
                                                             <li>
                                                                 <a href="#"><img
-                                                                        src="/static/images/attechment-icon.svg"
+                                                                        src="{{ url_for('static', filename='images/attechment-icon.svg') }}"
                                                                         alt="" /></a>
                                                             </li>
                                                             <li>
-                                                                <a href="#"><img src="/static/images/smile-icon.svg"
+                                                                <a href="#"><img
+                                                                        src="{{ url_for('static', filename='images/smile-icon.svg') }}"
                                                                         alt="" /></a>
                                                             </li>
                                                         </ul>
@@ -583,14 +522,15 @@
                                                 <div class="latest-comments">
                                                     <h3>
                                                         The latest
-                                                        <a href="#"><img src="/static/images/down-arrow2.svg"
+                                                        <a href="#"><img
+                                                                src="{{ url_for('static', filename='images/down-arrow2.svg') }}"
                                                                 alt="" /></a>
                                                     </h3>
                                                     <div class="comments-detail">
                                                         <div class="media">
                                                             <div class="user-holder">
-                                                                <img src="/static/images/Ava-user-icon2.png" alt=""
-                                                                    class="img-fluid" />
+                                                                <img src="{{ url_for('static', filename='images/Ava-user-icon2') }}"
+                                                                    alt="" class="img-fluid" />
                                                             </div>
                                                             <div class="detail-text">
                                                                 <div class="user-text m-0">
@@ -601,13 +541,14 @@
                                                                     <ul>
                                                                         <li>
                                                                             <a href="#"><strong>15</strong>
-                                                                                <img src="/static/images/heart-icon.svg"
+                                                                                <img src="{{ url_for('static', filename='images/heart-icon.svg') }}"
                                                                                     alt="" /></a>
                                                                         </li>
                                                                         <li>
                                                                             <a href="#"><img
-                                                                                    src="/static/images/sms-icon.svg"
-                                                                                    alt="" /></a>
+                                                                                    src="{{ url_for('static', filename='images/sms-icon.svg') }}"
+                                                                                    alt="" />
+                                                                            </a>
                                                                         </li>
                                                                     </ul>
                                                                 </div>
@@ -641,7 +582,8 @@
                                         <a href="#" class="cta-title" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             <span>
-                                                <i><img src="/static/images/vertical-dots-icon.svg" alt="" /></i></span>
+                                                <i><img src="{{ url_for('static', filename='images/vertical-dots-icon.svg') }}"
+                                                        alt="" /></i></span>
                                         </a>
                                         <div class="dropdown-menu cst-drop dropdown-menu-right">
                                             <ul>
@@ -653,11 +595,14 @@
                                     </div>
                                 </div>
                                 <div class="event-box">
-                                    <span><img src="/static/images/event-img1.png" alt="" class="img-fluid" /></span>
+                                    <span><img src="{{ url_for('static', filename='images/event-img1.png') }}" alt=""
+                                            class="img-fluid" /></span>
                                     <div class="text-box">
                                         <h4>
                                             Awwwards demo
-                                            <a href="#"><img src="/static/images/bell-icon.svg" alt="" /></a>
+                                            <a href="#"><img
+                                                    src="{{ url_for('static', filename='images/bell-icon.svg') }}"
+                                                    alt="" /></a>
                                         </h4>
                                         <p>14 Participants</p>
                                         <a href="#" class="join-btn"><svg width="14" height="14" viewBox="0 0 14 14"
@@ -673,11 +618,14 @@
                                     </div>
                                 </div>
                                 <div class="event-box">
-                                    <span><img src="/static/images/event-img2.png" alt="" class="img-fluid" /></span>
+                                    <span><img src="{{ url_for('static', filename='images/event-img2.png') }}" alt=""
+                                            class="img-fluid" /></span>
                                     <div class="text-box">
                                         <h4>
                                             Acme Co.
-                                            <a href="#"><img src="/static/images/bell-icon.svg" alt="" /></a>
+                                            <a href="#"><img
+                                                    src="{{ url_for('static', filename='images/bell-icon.svg') }}"
+                                                    alt="" /></a>
                                         </h4>
                                         <p>14 Participants</p>
                                         <a href="#" class="join-btn"><svg width="14" height="14" viewBox="0 0 14 14"
@@ -693,11 +641,14 @@
                                     </div>
                                 </div>
                                 <div class="event-box">
-                                    <span><img src="/static/images/event-img3.png" alt="" class="img-fluid" /></span>
+                                    <span><img src="{{ url_for('static', filename='images/event-img3.png') }}" alt=""
+                                            class="img-fluid" /></span>
                                     <div class="text-box">
                                         <h4>
                                             Binford Ltd.
-                                            <a href="#"><img src="/static/images/bell-icon.svg" alt="" /></a>
+                                            <a href="#"><img
+                                                    src="{{ url_for('static', filename='images/bell-icon.svg') }}"
+                                                    alt="" /></a>
                                         </h4>
                                         <p>14 Participants</p>
                                         <a href="#" class="join-btn"><svg width="14" height="14" viewBox="0 0 14 14"
@@ -720,7 +671,8 @@
                                         <a href="#" class="cta-title" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             <span>
-                                                <i><img src="/static/images/vertical-dots-icon.svg" alt="" /></i></span>
+                                                <i><img src="{{ url_for('static', filename='images/vertical-dots-icon.svg') }}"
+                                                        alt="" /></i></span>
                                         </a>
                                         <div class="dropdown-menu cst-drop dropdown-menu-right">
                                             <ul>
@@ -732,7 +684,8 @@
                                     </div>
                                 </div>
                                 <div class="event-box">
-                                    <span><img src="/static/images/event-img4.png" alt="" class="img-fluid" /></span>
+                                    <span><img src="{{ url_for('static', filename='images/event-img4.png') }}" alt=""
+                                            class="img-fluid" /></span>
                                     <div class="text-box">
                                         <a href="#" class="follow-link">+Follow</a>
                                         <h4>Catering</h4>
@@ -740,7 +693,8 @@
                                     </div>
                                 </div>
                                 <div class="event-box">
-                                    <span><img src="/static/images/event-img5.png" alt="" class="img-fluid" /></span>
+                                    <span><img src="{{ url_for('static', filename='images/event-img5.png') }}" alt=""
+                                            class="img-fluid" /></span>
                                     <div class="text-box">
                                         <a href="#" class="follow-link">+Follow</a>
                                         <h4>Heads of department</h4>
@@ -748,7 +702,8 @@
                                     </div>
                                 </div>
                                 <div class="event-box">
-                                    <span><img src="/static/images/event-img6.png" alt="" class="img-fluid" /></span>
+                                    <span><img src="{{ url_for('static', filename='images/event-img6.png') }}" alt=""
+                                            class="img-fluid" /></span>
                                     <div class="text-box">
                                         <a href="#" class="follow-link">+Follow</a>
                                         <h4>Teaching Assistants</h4>
@@ -771,7 +726,8 @@
                                         <a href="#" class="cta-title" data-toggle="dropdown" aria-haspopup="true"
                                             aria-expanded="false">
                                             <span>
-                                                <i><img src="/static/images/vertical-dots-icon.svg" alt="" /></i></span>
+                                                <i><img src="{{ url_for('static', filename='images/vertical-dots-icon.svg') }}"
+                                                        alt="" /></i></span>
                                         </a>
                                         <div class="dropdown-menu cst-drop dropdown-menu-right">
                                             <ul>
@@ -783,7 +739,8 @@
                                     </div>
                                 </div>
                                 <div class="event-box">
-                                    <span><img src="/static/images/Cameron-user.png" alt="" class="img-fluid" /><span></span></span>
+                                    <span><img src="{{ url_for('static', filename='images/Cameron-user.png') }}" alt=""
+                                            class="img-fluid" /><span></span></span>
                                     <div class="text-box">
                                         <a href="#" class="chat-link follow-link"><svg
                                                 xmlns="http://www.w3.org/2000/svg" width="23" height="24"
@@ -800,7 +757,8 @@
                                     </div>
                                 </div>
                                 <div class="event-box">
-                                    <span><img src="/static/images/jerome-user.png" alt="" class="img-fluid" /><span></span></span>
+                                    <span><img src="{{ url_for('static', filename='images/jerome-user.png') }}" alt=""
+                                            class="img-fluid" /><span></span></span>
                                     <div class="text-box">
                                         <a href="#" class="chat-link follow-link"><svg
                                                 xmlns="http://www.w3.org/2000/svg" width="23" height="24"
@@ -820,7 +778,8 @@
                                     </div>
                                 </div>
                                 <div class="event-box">
-                                    <span><img src="/static/images/devon-user.png" alt="" class="img-fluid" /></span>
+                                    <span><img src="{{ url_for('static', filename='images/devon-user.png') }}" alt=""
+                                            class="img-fluid" /></span>
                                     <div class="text-box">
                                         <a href="#" class="chat-link follow-link">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24"
@@ -844,18 +803,18 @@
 
     <!-- Optional JavaScript; choose one of the two! -->
 
-    <script src="/static/js/jquery-3.5.1.slim.min.js"></script>
-    <script src="/static/js/jquery.js"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.5.1.slim.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
     <script src="https://dove.fullcalendar.io/script.js" ata-site="SURPPYIE" defer></script>
     <script type="text/javascript" src="https://fullcalendar.io/docs/dist/demos.js?1668533862"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-    <script src="/static/js/lightpick.js"></script>
+    <script src="{{ url_for('static', filename='js/lightpick.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/locale-all.js"></script>
-    <script src="/static/js/bootstrap.bundle.min.js"></script>
-    <script src="/static/js/swiper-bundle.min.js"></script>
-    <script src="/static/js/script.js"></script>
+    <script src="{{ url_for('static', filename='js/bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 
 </html>

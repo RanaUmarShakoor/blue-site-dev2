@@ -21,7 +21,10 @@ var swiper = new Swiper(".course-slider", {
     },
 });
 
-
+$('button.nav-link').click(function() {
+    $('button.nav-link').removeClass('active');
+    $(this).addClass('active');
+})
 // $(".menu-icon").click(function() {
 //     $(".sidebar").addClass("active");
 // });
