@@ -205,7 +205,7 @@ header {
     left: 0;
     right: 0;
     background: transparent;
-    padding: 30px 0;
+    padding: 20px 0;
     z-index: 120;
     transition: 0.4s linear;
     -webkit-transition: 0.4s linear;
@@ -501,9 +501,10 @@ header {
 .right-links a {
     display: inline-flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 10px;
+    font-weight: 500;
     line-height: 22px;
-    color: #686c8d;
+    color: #696E7E;
     margin-right: 30px;
 }
 
@@ -3041,19 +3042,19 @@ header {
 }
 
 .user-text h4 {
-    color: #030A41;
-    letter-spacing: 0.05em;
-    font-weight: 500;
-    font-size: 16px;
+    color: #000;
+    /* letter-spacing: 0.05em; */
+    font-weight: 600;
+    font-size: 18px;
     line-height: 1;
     margin-bottom: 10px;
 }
 
 .user-text span {
-    color: #686C8D;
+    color: #696E7E;
     letter-spacing: 0.05em;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 16px;
     display: block;
     line-height: 1;
 }
@@ -3242,11 +3243,11 @@ header {
 }
 
 .detail-text p {
-    font-weight: 300;
+    font-weight: 500;
     font-size: 14px;
     line-height: 25px;
-    letter-spacing: 0.05em;
-    color: #030A41;
+    /* letter-spacing: 0.05em; */
+    color: #696E7E;
     margin: 16px 0 10px 0;
 }
 
@@ -3291,10 +3292,10 @@ header {
 }
 
 .user-text ul li a {
-    font-weight: 400;
-    font-size: 13px;
+    font-weight: 500;
+    font-size: 16px;
     letter-spacing: 0.03em;
-    color: #F93C5E;
+    color: #FF0000;
 }
 
 .user-text ul li a strong {
@@ -3374,6 +3375,17 @@ header {
     align-items: center;
     margin: 0;
     justify-content: space-between;
+    position: relative;
+}
+
+.event-box.groups-box .text-box h4 {
+    width: calc(100% - 55px);
+}
+
+.event-box .text-box h4 a {
+    position: absolute;
+    right: 0;
+    top: 6px;
 }
 
 .event-box .text-box p {
@@ -3385,7 +3397,7 @@ header {
 }
 
 .join-btn {
-    border: 1px solid #686C8D;
+    border: 2px solid #696E7E;
     border-radius: 10px;
     width: 100px;
     height: 37px;
@@ -3413,7 +3425,7 @@ header {
 
 .follow-link {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 14px;
     color: #516FE9;
     position: absolute;
     top: 10px;

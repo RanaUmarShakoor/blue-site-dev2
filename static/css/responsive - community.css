@@ -208,6 +208,7 @@
 
   .navbar-light .navbar-nav li {
     margin-right: 20px;
+    padding: 4px 0 0;
   }
 
   .navbar-light .navbar-nav .nav-link {
@@ -405,6 +406,73 @@
   .standart-manage {
     display: none;
   }
+
+  .user-text h4 {
+    font-size: 16px;
+  }
+
+  .user-text span {
+    font-size: 14px;
+  }
+
+  .community-detail-box .text-box h4 {
+    font-size: 13px;
+  }
+
+  .community-detail-box .text-box p {
+    font-size: 13px;
+  }
+
+  .detail-list-left ul li a {
+    font-size: 14px;
+  }
+
+  .community-comment form .relative .form-control {
+    font-size: 14px;
+  }
+
+  .detail-text p {
+    font-size: 13px;
+  }
+
+  .follow-link {
+    font-size: 12px;
+    top: 7.5px;
+  }
+
+  .event-box .text-box h4 {
+    font-size: 13px;
+  }
+
+  .event-box .text-box p {
+    font-size: 12px;
+  }
+
+  .join-btn {
+    font-size: 12px;
+    width: 85px;
+    height: 32px;
+  }
+
+  .join-btn svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .group-link {
+    font-size: 13px;
+  }
+
+  .group-link svg {
+    height: 12px;
+  }
+
+  .chat-link {
+    width: 18px;
+    height: 18px;
+    top: 45%;
+  }
+
 }
 
 @media (max-width: 991px) {
@@ -414,6 +482,8 @@
 
   header.main-header {
     padding: 8px 0;
+    width: 100.19vw;
+    overflow-x: hidden;
   }
 
   .navbar-collapse {
