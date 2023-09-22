@@ -528,7 +528,7 @@ header {
 }
 
 .right-links .date label input {
-    padding: 10px 0 10px 25px;
+    padding: 10px 0 10px 28px;
     background: transparent;
     border: none;
     z-index: 2;
@@ -542,7 +542,7 @@ header {
     padding-left: 4px;
     position: absolute;
     right: 0;
-    top: 8px;
+    top: 13px;
     z-index: 3;
 }
 
@@ -3335,6 +3335,10 @@ header {
     margin-right: 3px;
     font-weight: 400;
     display: inline-block;
+}
+
+.user-text ul li a svg {
+    margin-bottom: 2px;
 }
 
 .community-right {
