@@ -517,6 +517,35 @@ header {
     max-width: 100%;
 }
 
+.right-links .date label div {
+    position: relative;
+}
+
+.right-links .date label img {
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+}
+
+.right-links .date label input {
+    padding: 10px 0 10px 25px;
+    background: transparent;
+    border: none;
+    z-index: 2;
+    position: relative;
+}
+
+.right-links .date label .patch {
+    background: #F2F5FA;
+    width: 101px;
+    height: 21px;
+    padding-left: 4px;
+    position: absolute;
+    right: 0;
+    top: 8px;
+    z-index: 3;
+}
+
 .right-links .notification i {
     width: 24px;
 }
@@ -3057,6 +3086,10 @@ header {
     font-size: 16px;
     display: block;
     line-height: 1;
+}
+
+.dropdoown {
+    margin-bottom: auto;
 }
 
 .community-detail-box .text-box h4 {

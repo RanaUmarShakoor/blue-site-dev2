@@ -206,6 +206,10 @@
 
 @media (max-width: 1199px) {
 
+  header.main-header {
+    padding: 10px 0;
+  }
+
   .navbar-light .navbar-nav li {
     margin-right: 20px;
     padding: 4px 0 0;

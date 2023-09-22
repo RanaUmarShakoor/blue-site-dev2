@@ -21,10 +21,30 @@
 //     },
 // });
 
+const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
 $('button.nav-link').click(function() {
     $('button.nav-link').removeClass('active');
     $(this).addClass('active');
+    // console.log($('input#two').val() )
+
+
 })
+
+$('.date-picker').on('click', function(){
+    $('#date-btn').focus();
+    // $('#date-picker').datepicker();
+})
+
+$('#date-btn').on('change', function(){
+    let date = new Date($('#date-btn').val());
+    let day = date.getDate();
+    let month = date.getMonth();
+    let year = date.getFullYear();
+    console.log(day + " " + months[month], year); 
+    $('div.patch').text(day + " " + months[month] + ", " + year);
+})
+
 // $(".menu-icon").click(function() {
 //     $(".sidebar").addClass("active");
 // });
