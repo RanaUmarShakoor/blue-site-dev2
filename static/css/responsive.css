@@ -24,7 +24,8 @@
     padding: 23px 0 0;
   }
   .courses-full-stack-wrp.full-stack-jobs-wrp img {
-    width: 113%;
+    width: 114%;
+    padding-top: 0;
   }
 }
 
@@ -58,7 +59,8 @@
     padding: 23px 0 0;
   }
   .courses-full-stack-wrp.full-stack-jobs-wrp img {
-    width: 110%;
+    width: 114%;
+    padding-top: 0;
   }
 }
 
@@ -90,7 +92,8 @@
     justify-content: end;
   }
   .courses-full-stack-wrp.full-stack-jobs-wrp img {
-    width: 108%;
+    width: 112%;
+    padding-top: 0;
   }
 }
 
@@ -138,7 +141,7 @@
   }
 
   .full-stack-jobs-wrp .courses-full-stack-img img {
-    padding-top: 35px;
+    padding-top: 20px;
     margin-right: 5px;
     width: 108%;
   }
@@ -10323,7 +10326,8 @@
   .online-training-banner .banner-data h5 {
     text-align: center;
     line-height: 26px;
-    max-width: 100%;
+    max-width: 98%;
+    margin: 0 auto 5px;
   }
 
   .online-training-banner .banner-data .btn-group .btn-main {
@@ -10454,12 +10458,12 @@
   }
 
   .platform-banner .container {
-    width: 280px;
+    width: 100%;
   }
 
   .platform-box{
     margin-bottom: 0;
-    width: 280px;
+    width: 100%;
   }
 
   .platform-box h1 {
