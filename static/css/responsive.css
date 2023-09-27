@@ -24,8 +24,11 @@
     padding: 23px 0 0;
   }
   .courses-full-stack-wrp.full-stack-jobs-wrp img {
-    width: 114%;
-    padding-top: 0;
+    width: 108%;
+    padding-top: 20px;
+  }
+  .certification-banner .banner-img img {
+    margin-left: -160px;
   }
 }
 
@@ -59,8 +62,14 @@
     padding: 23px 0 0;
   }
   .courses-full-stack-wrp.full-stack-jobs-wrp img {
-    width: 114%;
-    padding-top: 0;
+    width: 108%;
+    padding-top: 20px;
+  }
+  .certification-banner .banner-img img {
+    margin-left: -120px;
+  }
+  .team-banner .banner-img img {
+    margin-left: -100px;
   }
 }
 
@@ -86,15 +95,27 @@
   }
   .platform-banner .platform-box {
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
     display: flex;
     flex-flow: column;
     justify-content: end;
   }
   .courses-full-stack-wrp.full-stack-jobs-wrp img {
-    width: 112%;
-    padding-top: 0;
+    width: 108%;
+    padding-top: 20px;
   }
+  .certification-banner .banner-img img {
+    width: 158%;
+    margin-left: -120px;
+  }
+  .team-banner .banner-img img {
+    width: 158%;
+    margin-left: -100px;
+  }
+  .solutions-banner .banner-img img {
+    width: 158%;
+  }
+
 }
 
 @media (min-width: 1900px) and (max-width: 2100px) {
@@ -120,6 +141,12 @@
   }
   .full-stack-jobs-wrp .courses-full-stack-img img {
     width: 108%;
+  }
+  .certification-banner .banner-img img {
+    margin-left: -90px;
+  }
+  .team-banner .banner-img img {
+    margin-left: -80px;
   }
 }
 

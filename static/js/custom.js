@@ -408,11 +408,11 @@ $('.tab-btn').on("click", function(){
   $(this).addClass('active-tab');
 })
 
-$(".video-div").on("mouseenter", function(){
+$(".video-card-inner.video-div").on("mouseenter", function(){
   this.play();
 })
 
-$(".video-div").on("mouseleave", function(){
+$(".video-card-inner.video-div").on("mouseleave", function(){
   this.pause();
   this.load()
 })
