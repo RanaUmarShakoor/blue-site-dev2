@@ -7381,7 +7381,7 @@
     background: url('../images/full_stack_jobs_bg2.png')0 0 no-repeat;
     background-size: cover;
     background-position: 80%;
-    padding: 70px 0;
+    padding: 60px 0 70px;
   }
   .courses-full-stack-wrp.full-stack-jobs-wrp .row{
     flex-flow: column-reverse;
@@ -7391,8 +7391,10 @@
   }
   .full-stack-jobs-wrp .courses-full-stack-img img{
       padding: 0;
-      margin: 0 auto 40px;
+      margin: 0 auto 30px;
+      width: 80%;
   }
+
 
 
   .tools-wrp {
@@ -9536,7 +9538,7 @@
     background: url('../images/full_stack_jobs_bg2.png')0 0 no-repeat;
     background-size: cover;
     background-position: 80%;
-    padding: 70px 0;
+    padding: 40px 0 50px;
   }
   .courses-full-stack-wrp.full-stack-jobs-wrp .row{
     flex-flow: column-reverse;
@@ -9546,9 +9548,9 @@
   }
   .full-stack-jobs-wrp .courses-full-stack-img img{
       padding: 0;
-      margin: 0 auto 40px;
+      margin: 0 auto 30px;
+      width: 80%;
   }
-
 
   .tools-wrp {
     padding: 30px 15px 0;
