@@ -536,56 +536,32 @@
   .navbar-light .navbar-nav {
     padding: 15px 0;
     margin: 0;
-    height: 85%;
+    height: 100%;
     overflow: auto;
   }
 
-  .navbar-light .navbar-nav.user-info {
-    height: auto;
-  }
-
-  .navbar-light .navbar-nav.user-info .nav-link {
-    padding: 12px 10px 12px 20px;
-  }
-
-
   .navbar-light .navbar-nav li {
     margin: 0;
-    padding: 0;
   }
 
   .navbar-light .navbar-nav li:last-child {
     margin: 0px;
-    padding: 0px;
+    padding: 0 15px;
   }
 
   .navbar-light .navbar-nav .nav-link {
     color: #040f3b;
-    padding: 12px 10px 11px 40px;
-    font-size: 16px;
+    padding: 12px 10px 12px 40px;
   }
 
   .navbar-light .navbar-nav .nav-link:after {
     width: 6px;
     height: 6px;
-    object-fit: contain;
     background-color: #040f3b;
     opacity: 0.4;
     top: 20px;
     left: 20px;
   }
-
-  .navbar-light .navbar-nav .user-name .nav-link:after {
-    width: 0;
-    height: 0;
-  }
-
-  /* .navbar-light .navbar-nav .nav-link.active:after {
-    width: 6px;
-    height: 6px;
-    opacity: 1;
-    background: #516fe9;
-  } */
 
   .navbar-light .navbar-nav .nav-link:before {
     background: linear-gradient(
@@ -602,7 +578,7 @@
     opacity: 0.1;
   }
 
-  .navbar-light .navbar-nav .nav-link.active::after {
+  .navbar-light .navbar-nav .nav-link.active:after {
     width: 6px;
     height: 6px;
     opacity: 1;
@@ -1213,7 +1189,7 @@
     background: #516fe9;
     color: #fff;
   }
-  
+
   .selection-courses .row {
     display: grid !important;
     grid-template-columns: repeat(2, 45%);
