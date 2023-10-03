@@ -890,39 +890,31 @@
   .navbar-light .navbar-nav {
     padding: 15px 0;
     margin: 0;
-    height: 85%;
+    height: 100%;
     overflow: auto;
   }
 
   .navbar-light .navbar-nav li {
     margin: 0;
-    padding: 0;
   }
 
   .navbar-light .navbar-nav li:last-child {
     margin: 0px;
-    padding: 0px;
+    padding: 0 15px;
   }
 
   .navbar-light .navbar-nav .nav-link {
     color: #040f3b;
-    padding: 12px 10px 11px 40px;
-    font-size: 16px;
+    padding: 12px 10px 12px 40px;
   }
 
   .navbar-light .navbar-nav .nav-link:after {
     width: 6px;
     height: 6px;
-    object-fit: contain;
     background-color: #040f3b;
     opacity: 0.4;
     top: 20px;
     left: 20px;
-  }
-
-  .navbar-light .navbar-nav .user-name .nav-link:after {
-    width: 0;
-    height: 0;
   }
 
   .navbar-light .navbar-nav .nav-link:before {
@@ -954,6 +946,24 @@
 
   .navbar-light .navbar-nav .nav-link.active:before {
     width: 100%;
+  }
+
+  .navbar-light .navbar-nav .loginbtn .nav-link {
+    background-color: #16d594;
+    width: 100%;
+    text-align: center;
+    border: none;
+    margin: 25px 0 0;
+    color: #fff;
+  }
+
+  .navbar-light .navbar-nav .loginbtn .nav-link:after {
+    display: none;
+  }
+
+  .navbar-light .navbar-nav .loginbtn .nav-link:hover {
+    background: #516fe9;
+    color: #fff;
   }
 
 
@@ -1128,7 +1138,7 @@
   .navbar-light .navbar-nav {
     padding: 15px 0;
     margin: 0;
-    height: 85%;
+    height: 100%;
     overflow: auto;
   }
 
@@ -1138,7 +1148,7 @@
 
   .navbar-light .navbar-nav li:last-child {
     margin: 0px;
-    padding: 0;
+    padding: 0 15px;
   }
 
   .navbar-light .navbar-nav .nav-link {
@@ -1203,7 +1213,7 @@
     background: #516fe9;
     color: #fff;
   }
-
+  
   .selection-courses .row {
     display: grid !important;
     grid-template-columns: repeat(2, 45%);
