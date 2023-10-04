@@ -205,8 +205,8 @@ header {
     left: 0;
     right: 0;
     background: transparent;
-    padding: 25px 0;
-    z-index: 120;
+    padding: 30px 0;
+    z-index: 2;
     transition: 0.4s linear;
     -webkit-transition: 0.4s linear;
   }
@@ -274,10 +274,9 @@ header {
     bottom: 0;
     left: 0;
   }
-  
   .navbar-light .navbar-nav .nav-link.active:after {
     width: 25px;
-  } 
+  }
   .navbar-light .navbar-nav .nav-link.active {
     font-weight: bold;
     color: #fff;
@@ -318,22 +317,8 @@ header {
   .navbar-light .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 0.6);
   }
-
-  .navbar-light .navbar-nav li.user-name {
-    margin-right: 10px;
-    padding: 5px 0 0;
-  }
-
-  .navbar-light .navbar-nav li.user-img img {
-    height: 55px;
-    width: 55px;
-    border: 2px solid white;
-    border-radius: 100%;
-    object-fit: contain;
-  }
-
   /* **** End Header **** */
-
+  
   /* **** toggler **** */
 .navbar .navbar-toggler {
     background-color: transparent;
